@@ -6,6 +6,7 @@ public class CharacterController : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
     protected Vector2 velocity;
     [SerializeField]
     protected float maxSpeed,damping;
@@ -20,6 +21,7 @@ public class CharacterController : MonoBehaviour
         //utils = FindAnyObjectByType<utilty>().GetComponent<utilty>();
         rb = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
     
 
@@ -27,7 +29,6 @@ public class CharacterController : MonoBehaviour
     public void Move(Vector2 _velocity)
     {
         rb.velocity = _velocity;
-        
     }
 
     public void Move()
