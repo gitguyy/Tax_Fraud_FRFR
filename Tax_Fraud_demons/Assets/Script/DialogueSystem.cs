@@ -149,7 +149,7 @@ public class DialogueSystem : MonoBehaviour
                 dialogue.talkUpdate(ref t);
                 //Debug.Log("spelling");
                
-            
+                if(t.Length != 0)
                 letters.Invoke(t.Length);
             
                 

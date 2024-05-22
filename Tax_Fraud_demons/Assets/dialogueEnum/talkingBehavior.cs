@@ -12,7 +12,7 @@ public class talkingBehavior : dialogueEnumerator
     public Actor actor;
     float curTime;
     int iterator = 0;
-    string spelledString;
+    string spelledString = "";
     public int stringID;
     public UnityEvent<int> sendID = new();
     InitializeAnswers init;
