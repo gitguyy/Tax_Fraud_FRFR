@@ -5,19 +5,21 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private Animator animator;
     protected Vector2 velocity;
     [SerializeField]
     protected float maxSpeed,damping;
     protected float speed;
     
-    private utilty utils;
+    //private utilty utils;
     protected float direction;
 
     // Start is called before the first frame update
     protected virtual void Start()
     {
-        utils = FindAnyObjectByType<utilty>().GetComponent<utilty>();
+        //utils = FindAnyObjectByType<utilty>().GetComponent<utilty>();
         rb = gameObject.GetComponent<Rigidbody2D>();
+        animator = gameObject.GetComponent<Animator>();
     }
     
 
@@ -25,12 +27,15 @@ public class CharacterController : MonoBehaviour
     public void Move(Vector2 _velocity)
     {
         rb.velocity = _velocity;
+        
     }
 
     public void Move()
     {
         rb.velocity = new Vector2(direction * maxSpeed, rb.velocity.y);
+        UpdateAnimator();
     }
+    
     public void dampenedMove()
     {
         
@@ -53,8 +58,10 @@ public class CharacterController : MonoBehaviour
             rb.velocity = new Vector2( speed, rb.velocity.y);
         }
         
-        
-        
-        
+    }
+    private void UpdateAnimator()
+    {
+        bool isWalking = rb.velocity.x != 0;
+        animator.SetBool("Walking", isWalking);
     }
 }
