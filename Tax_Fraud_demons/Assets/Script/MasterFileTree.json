@@ -5,25 +5,56 @@
         "T ohhh a new deemooon",
         "T I've got a very important, almost mendatory question.....",
         "Q Do you like big red lucious J U I C Y cherries?",
-        "T Oh really well I dont like demons who dont like cherries",
-        "T that makes me really happy to hear",
         "A nop",
         "A well.. yes?",
-        "T okay so what did u want again?"
+        "S ",
+        "T Oh really well I dont like demons who dont like cherries",
+        "E ",
+        "S ",
+        "T that makes me really happy to hear",
+        "T I really respect you for that :)",
+        "E ",
+
+        "N okay so what did u want again?",
+        "T oh you wanted to know about a traitor?",
+        "Q wait do you think I did it???",
+        "A well you never know.....",
+        "A no",
+        "S ",
+        "T NO I DIDNT COMMIT TAX FRAUD....",
+        "T im serious......",
+        "T pinky promise..?",
+        "E ",
+        "S ",
+        "T phew, thats a relief...",
+        "E ",
+        "N Okay so what now?"
+
+
       ]
     },
     {
       "dialogue": [
-        ".....what do you want from me?",
-        "Im clearly not in the mood to talk to Strangers today....",
-        "are you trying to anger me?!",
-        "Q",
-        "Well then....stop?",
-        "well good job buddy, I applaud you!",
-        "A",
-        "no",
-        "yupp",
-        "T"
+        "T .....what do you want from me?",
+        "T Im clearly not in the mood to talk to Strangers today....",
+        "Q are you trying to anger me?!",
+
+        "A no",
+        "A yupp",
+        
+        "S",
+        "T Well then....stop?",
+        "E",
+        "S",
+        "T well good job buddy, I applaud you!",
+        "T Now fuck off",
+        "E ",
+        
+        "N so what do u want?"
+
+
+
+
       ]
     },
     {
@@ -47,6 +78,28 @@
         "......",
         "just please, I am damned to endless purgatory, I dont need some Idiot bugging me...",
         "T"
+      ]
+    },
+    {
+      "dialogue": [
+        "T You know, one of my co-workers has been going around trying to get people to invest in tax free stock",
+        "Q Really weird guy, tried to sell me horse armor once....",
+        "A Anything else suspicious about him?",
+        "A Did he say anything else?",
+        "S ",
+        "T Ever since he has been here, the coffee machine hasn't.",
+        "E ",
+        "S ",
+        "T That the IRS are a bunch of wankers who ain't got nothin' on him.",
+        "E " ,
+        "N  Anyway, if you are looking for his desk, it's the one right next to the Be Rich, Do Crime poster.",
+        "T ......"
+
+
+
+
+
+
       ]
     }
 

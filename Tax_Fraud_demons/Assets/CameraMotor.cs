@@ -9,6 +9,8 @@ public class CameraMotor : MonoBehaviour
     [SerializeField]
     private float damp;
     Vector2 transformVector;
+    [SerializeField]
+    Vector3 offSet;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +21,7 @@ public class CameraMotor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transformVector = Vector2.Lerp(transform.position, target.position, damp);
+        transformVector = Vector2.Lerp(transform.position + offSet, target.position, damp);
         transform.position = new Vector3(transformVector.x, transformVector.y, transform.position.z);
     }
 }

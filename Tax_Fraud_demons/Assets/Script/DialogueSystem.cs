@@ -5,6 +5,7 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SearchService;
 
 public class DialogueSystem : MonoBehaviour
 {
@@ -25,29 +26,45 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField]
     private TextAsset myText;
     private string t;
+    int ID;
+    int dialogueID;
+
+    
+    
+    
+    
     
 
-    private int ID;
-    private int dialogueID;
+   
 
-    int iterator;
-    float time;
-    string spelledString;
-    public UnityEvent<int> letters;
+    
+    public UnityEvent<int> letters = new();
     ActorCollection myActors;
 
     public ShowDialogue show;
     public PlayerOperations player;
-    
-   
+    public GameObject Bubble;
+    public talkingBehavior dialogue;
+
+    GameObject curObject;
+    GameObject curBubble;
+
     [SerializeField]
     private float letterTimer;
+
+    [SerializeField]
+    Vector3 offSet;
+    
 
     public enum DialogueType
     {
         Question,
         Answer,
         Text,
+        End,
+        Start,
+        Clue,
+        NewText,
         Null
     }
 
@@ -60,13 +77,24 @@ public class DialogueSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         t = myText.text;
+        player = PlayerOperations.instance;
         myActors = JsonUtility.FromJson<ActorCollection>(t);
         Debug.Log(myActors.actors[0].dialogue[0]);
+        dialogue = gameObject.AddComponent<talkingBehavior>();
+        ((talkingBehavior)dialogue).player = player;
+        show.destroy += DestroyBubble;
+        
+
+    }
+
+    private void Update()
+    {
         
     }
 
-    
+
 
     public string getText()
     {
@@ -75,36 +103,62 @@ public class DialogueSystem : MonoBehaviour
 
     public void onTalk(GameObject g)
     {
+
         
+
 
       
         if(g.GetComponent<NpcInformations>() != null)
         {
+            ((talkingBehavior)dialogue).setTimer(letterTimer);
+
             //update the text
-            
+
 
             int temp = g.GetComponent<NpcInformations>().getID();
             ID = temp;
-            if(curText().Length > iterator)
+            
+            
+           
+
+
+            if (curObject != g )
             {
-                t = spellLine(curText(), letterTimer, ref time, ref iterator, ref spelledString);
+                dialogue.onEnter(myActors.actors[ID]);
+                if (curBubble != null)
+                {
+                    DestroyBubble();
+                    Debug.Log("reset");
+                    ((talkingBehavior)dialogue).onExit(ref t);
+
+                }
+                
+                
+                    
+                    curBubble = instantiateBubble(g);
+                   
+                
+                curObject = g;
+
+            }
+            
+            
+            
+
+                
+                dialogue.talkUpdate(ref t);
+                //Debug.Log("spelling");
+               
+            
                 letters.Invoke(t.Length);
+            
                 
-               // Debug.Log("text: " + curText());
-                show.setText(t);
-                
-            }else if(curText().Length <= iterator)
-            {
-                Debug.Log("reset" + curText().Length);
-                t = curText();
-                show.setText(t);
-                iterator = 0;
-                spelledString = "";
-                getNextText(ref dialogueID);
-                player.setTalking(false);
                 
                
-            }
+                show.setText(t);
+                
+            
+            
 
             
            
@@ -114,89 +168,41 @@ public class DialogueSystem : MonoBehaviour
         
     }
     //takes the starting id of where in the dialogue we currently are
-    public string curText()
-    {
+   
 
-
-        return myActors.actors[ID].dialogue[dialogueID].Remove(0,2);
-
-
-
-    }
+   
     
-    public char curLetter(int thisChar, int thisLine)
-    {
-        return myActors.actors[ID].dialogue[thisLine].ToCharArray()[thisChar];
-    }
+   
     //just ignore all the references needed i assure you its not spaghetti future me(rewrite it)
 
-    public string spellLine(string spellString, float timeBetweenLetters, ref float curtime, ref int iterator, ref string spelledString)
-    {
-        curtime += Time.deltaTime;
-        
-        if(curtime >= timeBetweenLetters)
-        {
-            spelledString += spellString.ToCharArray()[iterator];
-            iterator++;
-            curtime = 0;
-            return spelledString;
-        }
-
-        return spelledString;
-        
-        
-    }
+   
 
     
     //gets the next text
 
-    public int getNextText(ref int dialogueID)
+   
+
+   
+
+    
+
+    private GameObject instantiateBubble(GameObject g)
     {
-
-        string checkText = myActors.actors[ID].dialogue[dialogueID];
-        int temp = dialogueID;
-        if(checkDialogueType(checkText) == DialogueType.Text)
-        {
-            dialogueID++;
-            return temp++;
-        }
-        if(checkDialogueType(checkText) == DialogueType.Answer)
-        {
-            //do answer logic thingy
-            return temp;
-        }
-        if(checkDialogueType(checkText) == DialogueType.Question)
-        {
-            // do question logic
-
-            return temp;
-        }
-        return temp;
+        GameObject copy = Instantiate(Bubble, g.transform.position +offSet, Quaternion.identity);
+        letters.AddListener(copy.GetComponent<BubbleInformation>().updateLength);
+        return copy;
+        
+        
     }
 
-    public DialogueType checkDialogueType(string type)
+    public void DestroyBubble()
     {
-
-        switch (type[0])
-        {
-            case 'Q': return DialogueType.Question;
-            case 'A': return DialogueType.Answer;
-            case 'T': return DialogueType.Text;
-            default: return DialogueType.Null;
+        Destroy(curBubble);
+        ((talkingBehavior)dialogue).onExit(ref t);
 
 
-        }
+
 
     }
-
-    public int checkAnswer()
-    {
-        return 0;
-    }
-
-
-
-
-
 
 }

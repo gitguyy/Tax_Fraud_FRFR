@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ShowDialogue : MonoBehaviour
 {
@@ -10,8 +12,13 @@ public class ShowDialogue : MonoBehaviour
     TextMeshProUGUI textShow;
     Camera cam;
     Transform curTransform;
+    public Action destroy;
+    [SerializeField]
+    Vector3 offSet;
     
-    
+
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +27,7 @@ public class ShowDialogue : MonoBehaviour
         textShow = GetComponent<TextMeshProUGUI>();
         textShow.text = t;
         cam = Camera.main;
+
         
     }
 
@@ -29,7 +37,7 @@ public class ShowDialogue : MonoBehaviour
         //check for what transform to show the text at
         if(curTransform != null)
         {
-            textShow.transform.position = cam.WorldToScreenPoint(curTransform.position);
+            textShow.transform.position = cam.WorldToScreenPoint(curTransform.position+ offSet);
             //t = "press E to interact";
            
 
@@ -50,9 +58,15 @@ public class ShowDialogue : MonoBehaviour
        
     }
     //gets the transform of the object the player is talking to
-    public void setTransform(Transform _transfrom)
+    public void setTransform(Transform _transform)
     {
-        curTransform = _transfrom;
+        if(curTransform != _transform)
+        {
+            t = "";
+            destroy.Invoke();
+            
+        }
+        curTransform = _transform;
     }
 
     

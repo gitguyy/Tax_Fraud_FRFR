@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class NpcInformations : MonoBehaviour
 {
+    [SerializeField]
     private int ID = 0;
     bool isTalking;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -27,4 +29,5 @@ public class NpcInformations : MonoBehaviour
     {
         return ID;
     }
+    
 }

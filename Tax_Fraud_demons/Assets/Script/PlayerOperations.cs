@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 public class PlayerOperations : MonoBehaviour
 {
@@ -13,10 +14,18 @@ public class PlayerOperations : MonoBehaviour
     public UnityEvent<GameObject> talk;
     GameObject InteractObject;
     UnityEvent interact;
-    bool talking;
+    public bool talking;
+    public GameObject bubble;
+    public static PlayerOperations instance;
 
-    
-    
+    private void Awake() // To make this class a singleton, there is only a single static instance in your scene
+    {
+        if (instance == null) instance = this;
+        else Destroy(gameObject.GetComponent<PlayerOperations>()) ;
+    }
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +38,9 @@ public class PlayerOperations : MonoBehaviour
         if(canTalkWith && Input.GetKeyDown(KeyCode.E))
         {
             talking = true;   
-            Debug.Log("im trying to talk mate");
+           
+           
+
         }
         if(talking)
         {
