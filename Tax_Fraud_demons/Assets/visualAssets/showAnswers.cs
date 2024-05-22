@@ -53,7 +53,7 @@ public class showAnswers : MonoBehaviour
             //Debug.Log("answer: " + answer);
             t.spellLineUpdate(ref answer, ref answered, copy);
             myText.text = answer;
-            if(copyBubble != null)
+            if(copyBubble != null && answer.Length != 0)
             {
                 copyBubble.GetComponent<BubbleInformation>().updateLength(answer.Length);
             }
