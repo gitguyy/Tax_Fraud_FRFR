@@ -34,6 +34,7 @@ public class CharacterController : MonoBehaviour
     public void Move()
     {
         rb.velocity = new Vector2(direction * maxSpeed, rb.velocity.y);
+        FlipSprite();
         UpdateAnimator();
     }
     
@@ -64,5 +65,13 @@ public class CharacterController : MonoBehaviour
     {
         bool isWalking = rb.velocity.x != 0;
         animator.SetBool("Walking", isWalking);
+    }
+
+    private void FlipSprite()
+    {
+        if (direction != 0)
+        {
+            spriteRenderer.flipX = direction < 0;
+        }
     }
 }

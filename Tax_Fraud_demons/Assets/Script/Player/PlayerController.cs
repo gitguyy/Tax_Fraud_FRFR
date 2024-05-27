@@ -15,6 +15,7 @@ public class PlayerController : CharacterController
     {
         getInput();
         Move();
+        
     }
 
     void getInput()
