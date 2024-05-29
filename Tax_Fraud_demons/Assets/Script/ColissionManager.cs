@@ -32,7 +32,6 @@ public class ColissionManager : MonoBehaviour
         player.canInteractWith = false;
         player.canTalkWith = false;
         Debug.Log("interacatable object is null");
-
     }
 
 
