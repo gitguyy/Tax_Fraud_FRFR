@@ -42,7 +42,7 @@ public class FollowCursor : MonoBehaviour
                 if (item != null)
                 {
                     InventoryManager inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
-                    inventoryManager.AddItem(item.ItemName, item.Sprite);
+                    //inventoryManager.AddItem(item.ItemName, item.Sprite);
                     Destroy(interactedObject);
                 }
             }
