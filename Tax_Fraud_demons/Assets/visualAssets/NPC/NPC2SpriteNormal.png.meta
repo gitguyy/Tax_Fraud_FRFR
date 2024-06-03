@@ -126,12 +126,12 @@ TextureImporter:
       name: NPC2SpriteNormal_0
       rect:
         serializedVersion: 2
-        x: 261
-        y: 39
-        width: 73
-        height: 75
+        x: 245
+        y: 31
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
