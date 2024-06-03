@@ -47,7 +47,7 @@ public class DialogueSystem : MonoBehaviour
     public talkingBehavior dialogue;
 
     GameObject curObject;
-    GameObject curBubble;
+   
 
     [SerializeField]
     private float letterTimer;
@@ -81,10 +81,10 @@ public class DialogueSystem : MonoBehaviour
         t = myText.text;
         player = PlayerOperations.instance;
         myActors = JsonUtility.FromJson<ActorCollection>(t);
-        Debug.Log(myActors.actors[0].dialogue[0]);
+        //Debug.Log(myActors.actors[0].dialogue[0]);
         dialogue = gameObject.AddComponent<talkingBehavior>();
         ((talkingBehavior)dialogue).player = player;
-        show.destroy += DestroyBubble;
+       
         
 
     }
@@ -125,17 +125,7 @@ public class DialogueSystem : MonoBehaviour
             if (curObject != g )
             {
                 dialogue.onEnter(myActors.actors[ID]);
-                if (curBubble != null)
-                {
-                    DestroyBubble();
-                    Debug.Log("reset");
-                    ((talkingBehavior)dialogue).onExit(ref t);
-
-                }
-                
-                
-                    
-                    curBubble = instantiateBubble(g);
+               
                    
                 
                 curObject = g;
@@ -195,14 +185,6 @@ public class DialogueSystem : MonoBehaviour
         
     }
 
-    public void DestroyBubble()
-    {
-        Destroy(curBubble);
-        ((talkingBehavior)dialogue).onExit(ref t);
-
-
-
-
-    }
+   
 
 }

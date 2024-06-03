@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 public class InitializeAnswers : MonoBehaviour
 {
     talkingBehavior t;
@@ -29,6 +30,7 @@ public class InitializeAnswers : MonoBehaviour
     private Camera cam;
     int counting;
     List<showAnswers> copies = new();
+    
 
     GameObject parentAnswer;
     int answerID;

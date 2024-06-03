@@ -35,17 +35,7 @@ public class ShowDialogue : MonoBehaviour
     void Update()
     {
         //check for what transform to show the text at
-        if(curTransform != null)
-        {
-            textShow.transform.position = cam.WorldToScreenPoint(curTransform.position+ offSet);
-            //t = "press E to interact";
-           
-
-
-        }else if(curTransform == null)
-        {
-            //t = "";
-        }
+      
 
         textShow.text = t;
         
@@ -63,7 +53,7 @@ public class ShowDialogue : MonoBehaviour
         if(curTransform != _transform)
         {
             t = "";
-            destroy.Invoke();
+           
             
         }
         curTransform = _transform;

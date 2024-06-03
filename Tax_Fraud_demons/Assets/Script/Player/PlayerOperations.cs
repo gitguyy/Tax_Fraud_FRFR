@@ -34,7 +34,7 @@ public class PlayerOperations : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(canTalkWith && Input.GetKeyDown(KeyCode.E))
+        if(canTalkWith && Input.GetMouseButtonDown(0))
         {
             talking = true;   
            

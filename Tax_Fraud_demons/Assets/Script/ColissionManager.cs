@@ -11,14 +11,20 @@ public class ColissionManager : MonoBehaviour
     Transform transformToSend;
     GameObject gameObjectToSend;
 
+
     private void Start()
     {
-        player = this.GetComponent<PlayerOperations>();
+        Debug.Log("name: " + this.gameObject.name);
+        player = PlayerOperations.instance;
+      
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
 
+        player.talking = false;
+
+        Debug.Log("collidin");
+       
         checkTag(other.tag);
         getObjectInfo(other);
         
@@ -26,6 +32,8 @@ public class ColissionManager : MonoBehaviour
 
 
     }
+
+   
 
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -38,7 +46,8 @@ public class ColissionManager : MonoBehaviour
 
     void checkTag(string tag)
     {
-        switch(tag)
+      
+        switch (tag)
         {
             case "NPC":
 

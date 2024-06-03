@@ -13,7 +13,7 @@ public class FollowCursor : MonoBehaviour
     void Start()
     {
         // Create a sprite renderer component for the cursor object
-        spriteRenderer = gameObject.AddComponent<SpriteRenderer>();
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = cursorSprite;
         spriteRenderer.sortingLayerName = "UI"; // Set the sorting layer to UI to ensure it's rendered on top
     }
@@ -24,11 +24,11 @@ public class FollowCursor : MonoBehaviour
         Vector3 mousePos = Input.mousePosition;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
         mousePos.z = 0f;
-        transform.position = mousePos;
+        transform.position = new Vector3(mousePos.x, mousePos.y, transform.position.z);
         
         if (Input.GetMouseButtonDown(0)) // Change the button as needed (e.g., 0 for left mouse button)
         {
-            Debug.Log("Mouse clicked at position: " + mousePos); // Log mouse position for debugging
+            //Debug.Log("Mouse clicked at position: " + mousePos); // Log mouse position for debugging
 
             RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, Mathf.Infinity, interactableLayer);
             if (hit.collider != null)
@@ -48,7 +48,7 @@ public class FollowCursor : MonoBehaviour
             }
             else
             {
-                Debug.Log("No interactable object hit.");
+                //Debug.Log("No interactable object hit.");
             }
         }
         //add animation? or resize?
