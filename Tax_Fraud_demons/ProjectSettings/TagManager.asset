@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NPC
   - DOOR
+  - InventoryButton
   layers:
   - Default
   - TransparentFX
@@ -45,4 +46,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 1900068221
+    locked: 0
+  - name: Cursor
+    uniqueID: 591611321
     locked: 0

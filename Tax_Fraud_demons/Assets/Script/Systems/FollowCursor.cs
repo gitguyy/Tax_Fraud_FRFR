@@ -15,7 +15,7 @@ public class FollowCursor : MonoBehaviour
         // Create a sprite renderer component for the cursor object
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = cursorSprite;
-        spriteRenderer.sortingLayerName = "UI"; // Set the sorting layer to UI to ensure it's rendered on top
+        spriteRenderer.sortingLayerName = "Cursor"; // Set the sorting layer to UI to ensure it's rendered on top
     }
 
     void Update()
