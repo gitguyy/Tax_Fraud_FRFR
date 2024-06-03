@@ -15,6 +15,7 @@ public class ShowDialogue : MonoBehaviour
     public Action destroy;
     [SerializeField]
     Vector3 offSet;
+    GameObject dialogueBox;
     
 
 

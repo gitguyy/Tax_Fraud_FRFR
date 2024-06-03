@@ -52,9 +52,13 @@ public class talkingBehavior : dialogueEnumerator
 
         actor = _actor;
         curText = actor.dialogue[0];
-      
-        
-            init = FindObjectOfType<InitializeAnswers>();
+        iterator = 0;
+        spelledString = "";
+        stringID = 0;
+       
+
+
+        init = FindObjectOfType<InitializeAnswers>();
        
             //Debug.Log("initializing answer");
         
@@ -168,9 +172,9 @@ public class talkingBehavior : dialogueEnumerator
         curText = null;
         iterator = 0;
         stringID = 0;
-        
-        
-       //resetting everything
+        Debug.Log("exited dialogue");
+
+        //resetting everything
     }
 
     public  void onExit(ref string s)
@@ -181,7 +185,7 @@ public class talkingBehavior : dialogueEnumerator
         stringID = 0;
         sendID.RemoveAllListeners();
 
-
+       
 
 
         //resetting everything
