@@ -996,6 +996,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 588841789}
+  - {fileID: 1216201676}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2084,7 +2085,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &588841789
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2096,8 +2097,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1216201676}
+  m_Children: []
   m_Father: {fileID: 344784349}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2815,7 +2815,6 @@ Transform:
   - {fileID: 1063694940}
   - {fileID: 739028097}
   - {fileID: 1342902831}
-  - {fileID: 1181357557}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &936855815
@@ -3861,7 +3860,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1592230815}
-  m_Father: {fileID: 891523319}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3983,11 +3982,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 588841789}
+  m_Father: {fileID: 344784349}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -215, y: -112}
+  m_AnchoredPosition: {x: -215.00128, y: -111.99996}
   m_SizeDelta: {x: 437.9673, y: 71.31}
   m_Pivot: {x: -0.000000010244548, y: 1.0000001}
 --- !u!114 &1216201677
@@ -4003,6 +4002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offSet: {x: 0, y: 0, z: 0}
+  dialogueBox: {fileID: 588841788}
 --- !u!114 &1216201678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7337,11 +7337,12 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 375294829}
+  - {fileID: 344784349}
+  - {fileID: 1181357557}
   - {fileID: 1880940116}
   - {fileID: 496254359}
   - {fileID: 647407663}
   - {fileID: 2085004894}
-  - {fileID: 344784349}
   - {fileID: 1642449041}
   - {fileID: 891523319}
   - {fileID: 967317060}
