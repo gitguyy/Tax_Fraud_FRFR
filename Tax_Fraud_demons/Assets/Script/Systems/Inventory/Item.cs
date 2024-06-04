@@ -19,7 +19,16 @@ public class Item : MonoBehaviour
     {
         inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
     }
-
+    
+    /*
+    private void OnMouseDown()
+    {
+        inventoryManager.AddItem(itemName, sprite, itemDescription);
+        Destroy(gameObject);
+    }
+    */
+    
+     //TO COLLIDE WITH ITEMS
     private void OnCollisionEnter2D(Collision2D collision)
     {
         inventoryManager.AddItem(itemName, sprite, itemDescription);

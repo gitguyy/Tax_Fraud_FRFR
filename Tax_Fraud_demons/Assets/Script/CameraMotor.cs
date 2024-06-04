@@ -7,21 +7,23 @@ public class CameraMotor : MonoBehaviour
     [SerializeField]
     private Transform target;
     [SerializeField]
-    private float damp;
-    Vector2 transformVector;
+    private float damp = 0.1f; // Ensure damp is between 0 and 1 for proper interpolation
     [SerializeField]
-    Vector3 offSet;
+    private Vector3 offSet;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private Transform leftBoundary; // Transform for the left boundary
+    [SerializeField]
+    private Transform rightBoundary; // Transform for the right boundary
 
     // Update is called once per frame
     void Update()
     {
-        transformVector = Vector2.Lerp(transform.position + offSet, target.position, damp);
-        transform.position = new Vector3(transformVector.x, transformVector.y, transform.position.z);
+        Vector3 targetPosition = target.position + offSet;
+        Vector3 smoothedPosition = Vector3.Lerp(transform.position, targetPosition, damp);
+
+        // Clamp the camera's position within the left and right limits using the boundary transforms
+        float clampedX = Mathf.Clamp(smoothedPosition.x, leftBoundary.position.x, rightBoundary.position.x);
+        transform.position = new Vector3(clampedX, smoothedPosition.y, transform.position.z);
     }
 }

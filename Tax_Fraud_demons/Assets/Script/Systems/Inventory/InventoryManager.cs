@@ -7,35 +7,26 @@ public class InventoryManager : MonoBehaviour
 {
     public GameObject InventoryMenu;
     private bool menuActivated;
-    public ItemSlot[] itemSlot; //use to deselect other things
-    
+    public ItemSlot[] itemSlot; // use to deselect other things
+
     void Start()
     {
-        
+        menuActivated = InventoryMenu.activeSelf;
     }
-    
+
     void Update()
     {
-        if (Input.GetButtonDown("Inventory") && menuActivated)
+        if (Input.GetButtonDown("Inventory"))
         {
-            //Time.timeScale = 1;
-            InventoryMenu.SetActive(false);
-            menuActivated = false;
-        }
-        else if (Input.GetButtonDown("Inventory") && !menuActivated)
-        {
-            //Time.timeScale = 0;
-            InventoryMenu.SetActive(true);
-            menuActivated = true;
+            ToggleInventory();
         }
     }
 
     public void AddItem(string itemName, Sprite itemSprite, string itemDescription)
     {
-        //Debug.Log("itemName =" + itemName + "itemSprite =" + itemSprite);
         for (int i = 0; i < itemSlot.Length; i++)
         {
-            if (itemSlot[i].isFull == false)
+            if (!itemSlot[i].isFull)
             {
                 itemSlot[i].AddItem(itemName, itemSprite, itemDescription);
                 return;
@@ -43,12 +34,18 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    public void DeselectAllSlots() //used in the ItemSlot script
+    public void DeselectAllSlots()
     {
         for (int i = 0; i < itemSlot.Length; i++)
         {
             itemSlot[i].selectedShader.SetActive(false);
             itemSlot[i].thisItemSelected = false;
         }
+    }
+
+    public void ToggleInventory()
+    {
+        menuActivated = !menuActivated;
+        InventoryMenu.SetActive(menuActivated);
     }
 }
