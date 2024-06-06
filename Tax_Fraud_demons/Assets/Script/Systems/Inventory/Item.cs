@@ -8,7 +8,7 @@ public class Item : MonoBehaviour
 {
     [SerializeField] private string itemName;
     [SerializeField] private Sprite sprite;
-    
+    [SerializeField] private int itemID; // Add itemID
     [TextArea]
     [SerializeField] private string itemDescription;
     
@@ -20,18 +20,16 @@ public class Item : MonoBehaviour
         inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
     }
     
-    /*
-    private void OnMouseDown()
+    // Getter for itemID
+    public int GetItemID()
     {
-        inventoryManager.AddItem(itemName, sprite, itemDescription);
-        Destroy(gameObject);
+        return itemID;
     }
-    */
     
      //TO COLLIDE WITH ITEMS
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        inventoryManager.AddItem(itemName, sprite, itemDescription);
+        inventoryManager.AddItem(itemID, itemName, sprite, itemDescription);
         Destroy(gameObject);
     }
 }
