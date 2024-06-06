@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     public string[] sceneNames;
-
     
     public void loadScene(string _sceneName)
     {
@@ -22,12 +21,11 @@ public class SceneLoader : MonoBehaviour
         {
             Debug.LogError("sceneName outside of Array");
             return name;
-        }else
+        }
+        else
         {
             name = sceneNames[_sceneName];
-
             return name;
         }
-        
     }
 }
