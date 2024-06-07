@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.U2D;
 
 public class Item : MonoBehaviour
 {
     [SerializeField] private string itemName;
     [SerializeField] private Sprite sprite;
+    [SerializeField] private int itemID;
     
     [TextArea]
     [SerializeField] private string itemDescription;
@@ -33,7 +35,7 @@ public class Item : MonoBehaviour
     {
         if(Input.GetMouseButton(0) && other.tag == "Mouse")
         {
-            inventoryManager.AddItem(itemName, sprite, itemDescription);
+            inventoryManager.AddItem(itemID,itemName, sprite, itemDescription);
             Destroy(gameObject);
         }
         
