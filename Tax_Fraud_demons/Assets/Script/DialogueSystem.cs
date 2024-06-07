@@ -25,9 +25,11 @@ public class DialogueSystem : MonoBehaviour
 
     [SerializeField]
     private TextAsset myText;
-    private string t;
-    int ID;
+    public string t;
+    public int ID;
     int dialogueID;
+    public static DialogueSystem Instance;
+    
 
     
     
@@ -58,18 +60,22 @@ public class DialogueSystem : MonoBehaviour
 
     public enum DialogueType
     {
-        Question,
-        Answer,
-        Text,
+        Player,
         End,
         Start,
         Clue,
-        NewText,
+        NPC,
         Null
     }
 
-    
-   
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+    }
+
+
+
 
 
 

@@ -29,9 +29,13 @@ public class Item : MonoBehaviour
     */
     
      //TO COLLIDE WITH ITEMS
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        inventoryManager.AddItem(itemName, sprite, itemDescription);
-        Destroy(gameObject);
+        if(Input.GetMouseButton(0) && other.tag == "Mouse")
+        {
+            inventoryManager.AddItem(itemName, sprite, itemDescription);
+            Destroy(gameObject);
+        }
+        
     }
 }

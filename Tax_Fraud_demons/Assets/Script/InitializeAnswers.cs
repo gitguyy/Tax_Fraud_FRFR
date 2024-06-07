@@ -79,7 +79,7 @@ public class InitializeAnswers : MonoBehaviour
     public void Initialize()
     {
         EventManager e = EventManager.Instance;
-        e.OnEvent.AddListener(this.getAnswerID);
+        //e.OnEvent.AddListener(this.getAnswerID);
         copies.Clear();
         amnt = 0;
         t.getActor();
@@ -149,47 +149,47 @@ public class InitializeAnswers : MonoBehaviour
         int temp = 0;
 
 
-        while(dialogueSys.dialogue.checkDialogueType(dialogueSys.dialogue.actor.dialogue[start]) != DialogueSystem.DialogueType.NewText)
-        {
+        //while(dialogueSys.dialogue.checkDialogueType(dialogueSys.dialogue.actor.dialogue[start]) != DialogueSystem.DialogueType.NewText)
+        //{
 
-            //Debug.Log("got into the thingy for: " + temp +"Times " +"answerID is " + answerID + "startAmount is " + startAmnt);
-            //Debug.Log(dialogueSys.dialogue.actor.dialogue[start]);
-            temp++;
-            start++;
+        //    //Debug.Log("got into the thingy for: " + temp +"Times " +"answerID is " + answerID + "startAmount is " + startAmnt);
+        //    //Debug.Log(dialogueSys.dialogue.actor.dialogue[start]);
+        //    temp++;
+        //    start++;
            
-            if (dialogueSys.dialogue.checkDialogueType(dialogueSys.dialogue.actor.dialogue[start]) == DialogueSystem.DialogueType.Start)
-            {
-                Debug.Log("hah");
-                startAmnt++;
-                start++;
-            }
+        //    if (dialogueSys.dialogue.checkDialogueType(dialogueSys.dialogue.actor.dialogue[start]) == DialogueSystem.DialogueType.Start)
+        //    {
+        //        Debug.Log("hah");
+        //        startAmnt++;
+        //        start++;
+        //    }
            
-            if (startAmnt == answerID)
-            {
+        //    if (startAmnt == answerID)
+        //    {
                
                
                 
-                   // Debug.Log(start - dialogueSys.dialogue.stringID);
-                    dialogueSys.dialogue.stringID = start;
+        //           // Debug.Log(start - dialogueSys.dialogue.stringID);
+        //            dialogueSys.dialogue.stringID = start;
                     
-                    //Debug.Log("Heyo S" + dialogueSys.dialogue.actor.dialogue[start]);
+        //            //Debug.Log("Heyo S" + dialogueSys.dialogue.actor.dialogue[start]);
                 
                
              
 
                 
-                break;
-            }
-        }
+        //        break;
+        //    }
+        //}
 
 
         
 
-        initializing = false;
-        t.actor.dialogue[0] = null;
-        playerOp.talking = true;
-        EventManager e = EventManager.Instance;
-        e.OnEvent.RemoveListener(this.getAnswerID);
+        //initializing = false;
+        //t.actor.dialogue[0] = null;
+        //playerOp.talking = true;
+        //EventManager e = EventManager.Instance;
+        //e.OnEvent.RemoveListener(this.getAnswerID);
 
 
 

@@ -4,6 +4,7 @@ using UnityEngine;
 using static DialogueSystem;
 using UnityEngine.Events;
 using Unity.VisualScripting;
+using System.Numerics;
 
 public class talkingBehavior : dialogueEnumerator
 {
@@ -17,7 +18,18 @@ public class talkingBehavior : dialogueEnumerator
     public UnityEvent<int> sendID = new();
     InitializeAnswers init;
     talkingBehavior[] behaviors;
-    
+    int startID;
+    EventManager manager;
+    DialogueSystem system;
+
+
+    private void Start()
+    {
+        manager = EventManager.Instance;
+        system = DialogueSystem.Instance;
+    }
+
+
 
     public PlayerOperations player {  get;  set; }
 
@@ -49,7 +61,7 @@ public class talkingBehavior : dialogueEnumerator
     public  override void onEnter(Actor _actor)
     {
         Debug.Log("onEnter");
-
+        startID = 0;
         actor = _actor;
         curText = actor.dialogue[0];
         iterator = 0;
@@ -62,7 +74,7 @@ public class talkingBehavior : dialogueEnumerator
        
             //Debug.Log("initializing answer");
         
-        sendID.AddListener(init.setID);
+        //sendID.AddListener(init.setID);
         
        
     }
@@ -75,8 +87,31 @@ public class talkingBehavior : dialogueEnumerator
 
     public override void talkUpdate(ref string text)
     {
-        curText = actor.dialogue[stringID];
-        if(iterator < getText().Length)
+        
+            curText = actor.dialogue[stringID];
+        if (checkDialogueType(curText) == DialogueType.Player)
+        {
+            Debug.Log("player is talking");
+            showPlayerSprite listener = FindObjectOfType<showPlayerSprite>();
+            ShowNPCSprite listenerNPC = FindObjectOfType<ShowNPCSprite>();
+            manager.Event.AddListener(listenerNPC.hideNPC);
+            manager.Event.AddListener(listener.showSprite);
+            manager.RaiseEvent();
+            
+            
+        }
+        if (checkDialogueType(curText) == DialogueType.NPC)
+        {
+            Debug.Log("NPC is talking");
+            showPlayerSprite listener = FindObjectOfType<showPlayerSprite>();
+            ShowNPCSprite listenerNPC = FindObjectOfType<ShowNPCSprite>();
+            manager.EventInt.AddListener(listenerNPC.showNPC);
+            manager.Event.AddListener(listener.hideSprite);
+            manager.RaiseEvent();
+            manager.RaiseEvent(system.ID);
+            
+        }
+        if (iterator < getText().Length)
         {
             text = spellLine(ref curTime, ref iterator, ref spelledString);
         }
@@ -181,7 +216,13 @@ public class talkingBehavior : dialogueEnumerator
     {
 
         s = null;
+       
+        stringID = 0;
+        startID = 0;
+       
+        curText = actor.dialogue[0];
         iterator = 0;
+        spelledString = "";
         stringID = 0;
         sendID.RemoveAllListeners();
 
@@ -197,10 +238,9 @@ public class talkingBehavior : dialogueEnumerator
 
         switch (type[0])
         {
-            case 'Q': return DialogueType.Question;
-            case 'N': return DialogueType.NewText;
-            case 'A': return DialogueType.Answer;
-            case 'T': return DialogueType.Text;
+            case 'N':return DialogueType.NPC;
+            case 'P': return DialogueType.Player;
+            case 'C': return DialogueType.Clue;
             case 'E':return DialogueType.End;
             case 'S': return DialogueType.Start;
             default: return DialogueType.Null;
@@ -236,59 +276,41 @@ public class talkingBehavior : dialogueEnumerator
         Debug.Log("dialogue: " + actor.dialogue[dialogueID]);
         string checkText = actor.dialogue[dialogueID];
         int temp = dialogueID;
-        if (checkDialogueType(checkText) == DialogueType.Text)
+        if (checkDialogueType(checkText) == DialogueType.Player)
         {
-            
-        
-            
+
+          
                 dialogueID++;
             
 
-           
+
+
             return temp++;
         }
-        if (checkDialogueType(checkText) == DialogueType.Answer)
-        {
-            
-            //do answer logic thingy
-            return temp;
-        }
-        if (checkDialogueType(checkText) == DialogueType.Start)
+        if (checkDialogueType(checkText) == DialogueType.NPC)
         {
 
-            //do answer logic thingy
+
+           
             dialogueID++;
-            return temp;
+            //showNpc.Invoke(DialogueSystem.instance.ID);
+
+
+
+            return temp++;
         }
-        if (checkDialogueType(checkText) == DialogueType.Question)
-        {
-            // do question logic
-            sendID.Invoke(stringID);
-            
-            return temp;
-        }
+
+
+      
         if (checkDialogueType(checkText) == DialogueType.End)
         {
             // do question logic
-            while (checkDialogueType(actor.dialogue[dialogueID]) != DialogueType.NewText)
-            {
-                dialogueID++;
-               
-            }
+            dialogueID = startID;
 
            
             return dialogueID;
         }
-        if (checkDialogueType(checkText) == DialogueType.NewText)
-        {
-            // do question logic
-            
-                
-            
-
-            dialogueID++;
-            return temp;
-        }
+       
         return temp;
     }
 

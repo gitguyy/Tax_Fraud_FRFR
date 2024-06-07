@@ -16,14 +16,23 @@ public class EventManager : MonoBehaviour
         else Destroy(gameObject);
     }
 
-    public UnityEvent<int> OnEvent = new UnityEvent<int>();
+    public UnityEvent<int> EventInt = new UnityEvent<int>();
+    public UnityEvent Event = new UnityEvent();
 
     public void RaiseEvent(int i)
     {
-        OnEvent.Invoke(i);
+        EventInt.Invoke(i);
         Debug.Log("Raised Event");
+        EventInt.RemoveAllListeners();
 
         //You can use this function to have additional things happen when raising your event, but you can also directly invoke it elsewhere
+    }
+
+    public void RaiseEvent()
+    {
+        Event.Invoke();
+        Debug.Log("Raised Event");
+        Event.RemoveAllListeners();
     }
 
     // Start is called before the first frame update

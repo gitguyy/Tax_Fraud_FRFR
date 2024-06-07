@@ -1,56 +1,20 @@
-  { "actors":
-  [
+{
+  "actors": [
+
+
+
     {
       "dialogue": [
-        "T ohhh a new deemooon",
-        "T I've got a very important, almost mendatory question.....",
-        "Q Do you like big red lucious J U I C Y cherries?",
-        "A nop",
-        "A well.. yes?",
-        "S ",
-        "T Oh really well I dont like demons who dont like cherries",
+        "P sooooo how are ya?",
+        "N Quite good i'd say...",
+        "P Well i would say you are lying!",
+        "N What makes you suspect that???",
         "E ",
-        "S ",
-        "T that makes me really happy to hear",
-        "T I really respect you for that :)",
-        "E ",
-
-        "N okay so what did u want again?",
-        "T oh you wanted to know about a traitor?",
-        "Q wait do you think I did it???",
-        "A well you never know.....",
-        "A no",
-        "S ",
-        "T NO I DIDNT COMMIT TAX FRAUD....",
-        "T im serious......",
-        "T pinky promise..?",
-        "E ",
-        "S ",
-        "T phew, thats a relief...",
-        "E ",
-        "N Okay so what now?"
+        "P hah i have proof now!!!!",
+        "N oh no you found my doctors notice that says I have triple cancer",
+        "E"
 
 
-      ]
-    },
-    {
-      "dialogue": [
-        "T .....what do you want from me?",
-        "T Im clearly not in the mood to talk to Strangers today....",
-        "Q are you trying to anger me?!",
-
-        "A no",
-        "A yupp",
-        
-        "S",
-        "T Well then....stop?",
-        "E",
-        "S",
-        "T well good job buddy, I applaud you!",
-        "T Now fuck off",
-        "E ",
-        
-        "N so what do u want?"
 
 
 
@@ -59,44 +23,11 @@
     },
     {
       "dialogue": [
-        "Im an inanimate object, why are you trying to talk to me...?",
-        "are you.... crazy?",
-        "Q",
-        "well i beg to differ",
-        "at least your honest with yourself",
-        "make up your mind, like you made up me talking to you...",
-        "A",
-        "noo..?",
-        "jup",
-        "well crazy is a little harsh",
-
-        "T",
-        ".......(youre still trying to talk to a houseplant buddy)......",
-        "........(stop).........",
-        "youre one persistent fuck arent you?",
-        "Q",
-        "......",
-        "just please, I am damned to endless purgatory, I dont need some Idiot bugging me...",
-        "T"
-      ]
-    },
-    {
-      "dialogue": [
-        "T You know, one of my co-workers has been going around trying to get people to invest in tax free stock",
-        "Q Really weird guy, tried to sell me horse armor once....",
-        "A Anything else suspicious about him?",
-        "A Did he say anything else?",
-        "S ",
-        "T Ever since he has been here, the coffee machine hasn't.",
-        "T and hes just really obnoxious",
+        "P hey!",
+        "N .......",
         "E ",
-        "S ",
-        "T That the IRS are a bunch of wankers who ain't got nothin' on him.",
-        "E " ,
-        "N  Anyway, if you are looking for his desk, it's the one right next to the Be Rich, Do Crime poster.",
-        "T ......"
-
-
+        "P .....",
+        "E "
 
 
 
@@ -104,5 +35,5 @@
       ]
     }
 
-   ]
+  ]
   }

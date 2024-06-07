@@ -25,7 +25,7 @@ public class ShowDialogue : MonoBehaviour
         cam = Camera.main;
         
         // Initially hide the dialogue box //ERIH ADD
-        dialogueBox.SetActive(false);
+        //dialogueBox.SetActive(false);
     }
 
     void Update()
@@ -34,7 +34,7 @@ public class ShowDialogue : MonoBehaviour
         textShow.text = t;
         
         // Toggle dialogue box visibility based on whether there's text //ERIH ADD
-        dialogueBox.SetActive(!string.IsNullOrEmpty(t));
+        //dialogueBox.SetActive(!string.IsNullOrEmpty(t));
     }
     
     //gets the current string
@@ -43,7 +43,7 @@ public class ShowDialogue : MonoBehaviour
         t = _text;
         
         // Toggle dialogue box visibility based on whether there's text //ERIH ADD
-        dialogueBox.SetActive(!string.IsNullOrEmpty(t));
+        //dialogueBox.SetActive(!string.IsNullOrEmpty(t));
     }
     
     //gets the transform of the object the player is talking to
@@ -52,7 +52,7 @@ public class ShowDialogue : MonoBehaviour
         if(curTransform != _transform)
         {
             t = "";
-            dialogueBox.SetActive(false); // Hide dialogue box when switching target //ERIH ADD
+            //dialogueBox.SetActive(false); // Hide dialogue box when switching target //ERIH ADD
         }
         curTransform = _transform;
     }

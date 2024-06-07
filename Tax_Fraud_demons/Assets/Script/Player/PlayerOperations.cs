@@ -16,9 +16,13 @@ public class PlayerOperations : MonoBehaviour
     public bool talking;
     public GameObject bubble;
     public static PlayerOperations instance;
+    [SerializeField]
+    private GameObject dialogueBox;
+    DialogueSystem system;
 
     private void Awake() // To make this class a singleton, there is only a single static instance in your scene
     {
+        
         if (instance == null) instance = this;
         else Destroy(gameObject.GetComponent<PlayerOperations>()) ;
     }
@@ -28,7 +32,8 @@ public class PlayerOperations : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        system = DialogueSystem.Instance;
+        dialogueBox.SetActive(false);
     }
 
     // Update is called once per frame
@@ -36,8 +41,8 @@ public class PlayerOperations : MonoBehaviour
     {
         if(canTalkWith && Input.GetMouseButtonDown(0))
         {
-            talking = true;   
-           
+            talking = true;
+            dialogueBox.SetActive(true);
            
 
         }
@@ -48,9 +53,23 @@ public class PlayerOperations : MonoBehaviour
         
         if (canInteractWith && !canTalkWith && Input.GetKeyDown(KeyCode.E))
         {
-            
+            dialogueBox.SetActive(false);
             Debug.Log("im trying to talk mate");
             
+            
+        }
+        if (!canInteractWith && !canTalkWith && Input.GetMouseButtonDown(0))
+        {
+            if(InteractObject != null)
+            {
+                dialogueBox.SetActive(false);
+                Debug.Log("im trying to talk mate");
+                system.dialogue.onExit(ref system.t);
+                system.onTalk(InteractObject);
+            }
+           
+            
+
         }
     }
 
