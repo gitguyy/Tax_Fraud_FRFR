@@ -3,24 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - NPC
-  - DOOR
-  - InventoryButton
-  - Mouse
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-<<<<<<< Updated upstream
-  - Player
-=======
-  - Actor
->>>>>>> Stashed changes
+  - 
   - Water
   - UI
-  - interactableLayer
-  - Cursor
+  - 
+  - 
   - 
   - 
   - 
@@ -48,10 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: UI
-    uniqueID: 1900068221
-    locked: 0
-  - name: Cursor
-    uniqueID: 591611321
     locked: 0
