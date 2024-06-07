@@ -1176,13 +1176,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!114 &734790244
+=======
+--- !u!1 &735814822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 735814824}
+  - component: {fileID: 735814823}
+  m_Layer: 0
+  m_Name: cursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &735814823
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 734790238}
+=======
+  m_GameObject: {fileID: 735814822}
+>>>>>>> Stashed changes
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87b72d1964ca8a74ca0a5e34782f6c8d, type: 3}
@@ -1191,7 +1216,26 @@ MonoBehaviour:
   cursorSprite: {fileID: 21300000, guid: 25d0389aaac42cb4197bd6fba1403e28, type: 3}
   interactableLayer:
     serializedVersion: 2
+<<<<<<< Updated upstream
     m_Bits: 0
+=======
+    m_Bits: 8
+--- !u!4 &735814824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735814822}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.842937, y: 2.5640454, z: 0.00055090315}
+  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes
 --- !u!1 &780820780
 GameObject:
   m_ObjectHideFlags: 0
@@ -1890,7 +1934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1783807257}
   - component: {fileID: 1783807258}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2817,8 +2861,12 @@ SceneRoots:
   - {fileID: 2007366063}
   - {fileID: 1427869506}
   - {fileID: 1880940116}
+<<<<<<< Updated upstream
   - {fileID: 734790243}
   - {fileID: 1285909548}
   - {fileID: 1969123620}
   - {fileID: 199822585}
   - {fileID: 2027885254}
+=======
+  - {fileID: 735814824}
+>>>>>>> Stashed changes

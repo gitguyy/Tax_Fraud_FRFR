@@ -12,7 +12,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
+<<<<<<< Updated upstream
   - Player
+=======
+  - Actor
+>>>>>>> Stashed changes
   - Water
   - UI
   - interactableLayer
