@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -16,6 +15,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
  public bool isFull;
  public string itemDescription;
  public Sprite emptySprite;
+ public int itemID; // Add itemID
  
  //======ITEM SLOT======//
  [SerializeField] private Image itemImage;
@@ -36,7 +36,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
   inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
  }
 
- public void AddItem(string itemName, Sprite itemSprite, string itemDescription)
+ public void AddItem(int itemID, string itemName, Sprite itemSprite, string itemDescription)
  {
   this.itemName = itemName;
   this.itemSprite = itemSprite;

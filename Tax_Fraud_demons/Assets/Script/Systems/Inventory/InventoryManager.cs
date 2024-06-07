@@ -22,13 +22,13 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    public void AddItem(string itemName, Sprite itemSprite, string itemDescription)
+    public void AddItem(int itemID,string itemName, Sprite itemSprite, string itemDescription)
     {
         for (int i = 0; i < itemSlot.Length; i++)
         {
             if (!itemSlot[i].isFull)
             {
-                itemSlot[i].AddItem(itemName, itemSprite, itemDescription);
+                itemSlot[i].AddItem(itemID, itemName, itemSprite, itemDescription);
                 return;
             }
         }
