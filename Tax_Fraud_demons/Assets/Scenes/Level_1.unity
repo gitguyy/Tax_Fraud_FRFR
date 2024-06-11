@@ -2797,7 +2797,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 591611321
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 30
   m_Sprite: {fileID: 21300000, guid: 25d0389aaac42cb4197bd6fba1403e28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4014,6 +4014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Devil Toe
   sprite: {fileID: 21300000, guid: a6829a45c82100048803370f48698b07, type: 3}
+  itemID: 0
   itemDescription: Ewwwww! It's a toe of a devil, does this even have value?
 --- !u!50 &1172076297
 Rigidbody2D:
@@ -6846,6 +6847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Paper Note
   sprite: {fileID: 21300000, guid: 7d5f9f0960fb9f546bae30ececb68558, type: 3}
+  itemID: 0
   itemDescription: "This note says \" HAHAHA I just did a tax evasion tactic called
     360 MLG trick-shot-noscope on them plebs, lets gooo!!! I'll be finnalyy able
     to buy a Lambo, p\u0101r\u0101k vienk\u0101r\u0161i! \""
