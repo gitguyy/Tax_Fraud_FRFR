@@ -9,6 +9,14 @@ public class InventoryManager : MonoBehaviour
     private bool menuActivated;
     public ItemSlot[] itemSlot; // use to deselect other things
 
+    #region Singleton
+    public static InventoryManager Instance;
+    private void Awake()
+    {
+        Instance = this;
+    }
+    #endregion
+
     void Start()
     {
         menuActivated = InventoryMenu.activeSelf;

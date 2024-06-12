@@ -1,0 +1,72 @@
+{
+  "suspect": [
+    { "angryAnswer": [ "M what", "m1 how do you even get to this conclusion?", "M You Are Utterly WRONG", "M HELL YOU ARE STUPID" ] },
+    {
+
+      "phase": [
+
+        //S = Suspect the second letter is the state the character is in
+        //P = Player
+        {
+          "textBlock": {
+            "dialogue": [ "C so... umm what am I doing here exactly?", "P I've got a few Questions for you" ],
+            "clue": [ 0 ]
+          }
+        },
+        {
+          "textBlock": {
+            "dialogue": [ "N Yes..?", "P Do you know anything about a package that has come in?" ],
+            "clue": [ 0 ]
+          }
+        },
+        {
+          "textBlock": {
+            "dialogue": [ "A No no no i Dont know anything about anything" ],
+            "clue": [ 1 ]
+          }
+        }
+
+
+
+
+
+
+
+      ]
+    },
+    {
+
+      "phase": [
+
+        //S = Suspect the second letter is the state the character is in
+        //P = Player
+        { "angryAnswer": [ "what", "how do you even get to this conclusion?", "You Are Utterly WRONG", "HELL YOU ARE STUPID" ] },
+        {
+          "textBlock": {
+            "dialogue": [ "P Well this paper tells a different story.....", "A What.... no ummmm...." ],
+            "clue": [ 0 ]
+          }
+        },
+        {
+          "textBlock": {
+            "dialogue": [ "" ],
+            "clue": [ 0 ]
+          }
+        },
+        {
+          "textBlock": {
+            "dialogue": [ "" ],
+            "clue": [ 0 ]
+          }
+        }
+
+
+
+
+
+
+
+      ]
+    }
+  ]
+}
