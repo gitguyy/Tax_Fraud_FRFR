@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,7 @@ public class talkingBehavior : dialogueEnumerator
 {
     string curText;
     float spellTimer;
-    public Actor actor;
+    public  Actor actor;
     float curTime;
     int iterator = 0;
     string spelledString = "";
@@ -70,7 +71,7 @@ public class talkingBehavior : dialogueEnumerator
        
 
 
-        init = FindObjectOfType<InitializeAnswers>();
+        //init = FindObjectOfType<InitializeAnswers>();
        
             //Debug.Log("initializing answer");
         
@@ -219,7 +220,7 @@ public class talkingBehavior : dialogueEnumerator
        
         stringID = 0;
         startID = 0;
-       if(actor.dialogue[0]!= null)
+       if(actor.dialogue[0] != null)
         {
             curText = actor.dialogue[0];
         }
