@@ -220,10 +220,7 @@ public class talkingBehavior : dialogueEnumerator
        
         stringID = 0;
         startID = 0;
-       if(actor.dialogue[0] != null)
-        {
-            curText = actor.dialogue[0];
-        }
+        curText = "";
        
         iterator = 0;
         spelledString = "";
