@@ -59,14 +59,20 @@ public class InterrogationLogic : MonoBehaviour
         public int clue;
     }
     #endregion
-
+    #region Initializing
     private void OnEnable()
     {
         text = info.GetText();
         mySuspect = JsonUtility.FromJson<suspect>(text.ToString());
         inventoryManager = InventoryManager.Instance;
+        
+    }
+
+    private void Start()
+    {
         d = GameObject.FindAnyObjectByType<ShowDialogue>();
     }
+    #endregion
     #region thirdPartyUsedMethods
     public bool checkForClueID(int ID)
     {
