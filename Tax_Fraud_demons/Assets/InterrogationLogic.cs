@@ -7,16 +7,23 @@ using UnityEngine.Events;
 public class InterrogationLogic : MonoBehaviour
 {
     #region Variables
+    [SerializeField]
     private InterrogationInformation info;
     private Sprite[] npcSprites;
     private TextAsset text;
-    private talkingBehavior t;
-    private suspect mySuspect;
+    
+    private suspectContainer mySuspectContainer = new();
+    private suspect mySuspect = new();
+    public bool won;
+
     private string curText;
     private int curTextID;
+    private int curBlock;
     InventoryManager inventoryManager;
-    ShowDialogue  d;
-    int curBlock;
+    SceneLoader loader;
+
+    
+    
     UnityEvent<string> sendText;
     public enum suspectState
     {
@@ -34,26 +41,49 @@ public class InterrogationLogic : MonoBehaviour
     
     #endregion
     #region Singleton
-    static InterrogationLogic Instance;
+    public static InterrogationLogic Instance;
     private void Awake()
     {
         Instance = this;
     }
     #endregion
     #region Structs(Suspect)
+    [System.Serializable]
+    struct suspectContainer
+    {
+        public suspect suspect;
+    }
+    [System.Serializable]
     struct suspect
     {
-       public phase[] phases; public string[] angryAnswer;
+
+        public PhaseContainer[] phases;
+
+    }
+    [System.Serializable]
+    struct PhaseContainer
+    {
+        public phase phase;
+    }
+    [System.Serializable]
+    struct BlockContainer
+    {
+        public block block;
     }
 
+
+    [System.Serializable]
     struct phase
     {
-        public textBlock[] block;
+        public string[] angryAnswer;
+        public BlockContainer[] textBlocks;
         
         
     }
+    [System.Serializable]
 
-    struct textBlock
+   
+    struct block
     {
         public string[] dialogue;
         public int clue;
@@ -63,20 +93,21 @@ public class InterrogationLogic : MonoBehaviour
     private void OnEnable()
     {
         text = info.GetText();
-        mySuspect = JsonUtility.FromJson<suspect>(text.ToString());
+        mySuspectContainer = JsonUtility.FromJson<suspectContainer>(text.ToString());
+        mySuspect = mySuspectContainer.suspect;
         inventoryManager = InventoryManager.Instance;
         
     }
 
     private void Start()
     {
-        d = GameObject.FindAnyObjectByType<ShowDialogue>();
+        
     }
     #endregion
     #region thirdPartyUsedMethods
     public bool checkForClueID(int ID)
     {
-        if (mySuspect.phases[curPhase].block[curBlock].clue == ID)
+        if (mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.clue == ID)
         {
             return true;
         }
@@ -87,19 +118,67 @@ public class InterrogationLogic : MonoBehaviour
 
     public void goToNextPhase()
     {
-        curPhase++;
+        if(mySuspect.phases.Length > curPhase)
+        {
+            curPhase++;
+        }else
+        {
+            won = true;
+        }
+        
+    }
+
+    
+    public void NextDialogue()
+    {
+        if(curTextID < mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue.Length)
+        {
+           
+            curTextID++;
+            if(curTextID == mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue.Length)
+            {
+                getNextBlock();
+            }
+           
+        }
+     
+       
+    }
+
+    void getNextBlock()
+    {
+        if (curBlock < mySuspect.phases[curPhase].phase.textBlocks.Length)
+        {
+            Debug.Log("getting next block");
+
+            curTextID = 0;
+            curBlock++;
+            if(curBlock == mySuspect.phases[curPhase].phase.textBlocks.Length)
+            {
+                Reset();
+            }
+        }
+    }
+    private void Reset()
+    {
+        Debug.Log("resetting block");
+        curBlock = 0;
+        curTextID = 0;
+        loader.loadScene("Level_1");
+        
     }
 
     public string getText()
     {
-        return mySuspect.phases[curPhase].block[curBlock].dialogue[curTextID].Remove(0,2);
+        Debug.Log("id to length ratio: " + mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue.Length + "/" + curTextID);
+        return mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue[curTextID].Remove(0,2);
     }
 
     #endregion;
     #region AnimationInformation
     public suspectState returnState()
     {
-        switch ((mySuspect.phases[curPhase].block[curBlock].dialogue[curTextID][0]))
+        switch ((mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue[curTextID][0]))
         {
             case 'T': return suspectState.Talking;
             case 'C':return suspectState.Contemplating;

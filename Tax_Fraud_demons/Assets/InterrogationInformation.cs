@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "InterrogationInfo")]
 public class InterrogationInformation : ScriptableObject
 {
     [SerializeField]
@@ -9,6 +10,7 @@ public class InterrogationInformation : ScriptableObject
     Sprite[] npcSprites;
     [SerializeField]
     private TextAsset text;
+
 
     public TextAsset GetText()
     {

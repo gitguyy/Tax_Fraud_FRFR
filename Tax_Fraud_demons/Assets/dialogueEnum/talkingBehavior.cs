@@ -10,6 +10,7 @@ using System.Numerics;
 public class talkingBehavior : dialogueEnumerator
 {
     string curText;
+    [SerializeField]
     float spellTimer;
     public  Actor actor;
     float curTime;
@@ -171,8 +172,8 @@ public class talkingBehavior : dialogueEnumerator
         else
         {
             
-            //getNextText(ref stringID);
-            //spelledString = "";
+           
+            spelledString = "";
             iterator = 0;
             done = true;
           
