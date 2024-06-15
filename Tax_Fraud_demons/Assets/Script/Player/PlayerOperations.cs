@@ -42,19 +42,23 @@ public class PlayerOperations : MonoBehaviour
         if(canTalkWith && Input.GetMouseButtonDown(0))
         {
             talking = true;
+            Debug.Log("trying to talk with yer");
             dialogueBox.SetActive(true);
+            
            
 
         }
+       
         if(talking)
         {
             talk.Invoke(InteractObject);
+            
         }
         
         if (canInteractWith && !canTalkWith && Input.GetKeyDown(KeyCode.E))
         {
             dialogueBox.SetActive(false);
-            Debug.Log("im trying to talk mate");
+            
             
             
         }

@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class InterrogationLogic : MonoBehaviour
 {
     #region Variables
-    [SerializeField]
+    
     private InterrogationInformation info;
     private Sprite[] npcSprites;
     private TextAsset text;

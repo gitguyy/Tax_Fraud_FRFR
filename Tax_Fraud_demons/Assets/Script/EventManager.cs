@@ -31,7 +31,7 @@ public class EventManager : MonoBehaviour
     public void RaiseEvent()
     {
         Event.Invoke();
-        Debug.Log("Raised Event");
+        //Debug.Log("Raised Event");
         Event.RemoveAllListeners();
     }
 

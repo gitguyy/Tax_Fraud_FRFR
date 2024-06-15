@@ -23,7 +23,7 @@ public class ColissionManager : MonoBehaviour
 
         player.talking = false;
 
-        Debug.Log("collidin");
+        Debug.Log("collidin with: " + other.gameObject.name);
        
         checkTag(other.tag);
         getObjectInfo(other);

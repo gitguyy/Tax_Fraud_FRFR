@@ -24,7 +24,7 @@ public class showPlayerSprite : MonoBehaviour
     // Start is called before the first frame update
     public void showSprite()
     {
-        Debug.Log("sprite is being shown");
+        //Debug.Log("sprite is being shown");
         col.a = 100;
         pic.color = col;
     }

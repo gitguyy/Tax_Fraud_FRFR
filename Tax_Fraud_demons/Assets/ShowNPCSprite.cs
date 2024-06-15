@@ -30,7 +30,7 @@ public class ShowNPCSprite : MonoBehaviour
         
         pic.color = col;
 
-        Debug.Log("showing NPC" + col.a);
+        //Debug.Log("showing NPC" + col.a);
     }
 
     public void hideNPC()
@@ -40,7 +40,7 @@ public class ShowNPCSprite : MonoBehaviour
          
         col.a = 0;
         pic.color = col;
-        Debug.Log("hide NPC" + col.a);
+        //Debug.Log("hide NPC" + col.a);
     }
 
     // Update is called once per frame

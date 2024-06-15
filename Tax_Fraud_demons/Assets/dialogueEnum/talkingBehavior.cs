@@ -93,7 +93,7 @@ public class talkingBehavior : dialogueEnumerator
             curText = actor.dialogue[stringID];
         if (checkDialogueType(curText) == DialogueType.Player)
         {
-            Debug.Log("player is talking");
+            //Debug.Log("player is talking");
             showPlayerSprite listener = FindObjectOfType<showPlayerSprite>();
             ShowNPCSprite listenerNPC = FindObjectOfType<ShowNPCSprite>();
             manager.Event.AddListener(listenerNPC.hideNPC);
@@ -275,7 +275,7 @@ public class talkingBehavior : dialogueEnumerator
 
     public int getNextText(ref int dialogueID)
     {
-        Debug.Log("dialogue: " + actor.dialogue[dialogueID]);
+        //Debug.Log("dialogue: " + actor.dialogue[dialogueID]);
         string checkText = actor.dialogue[dialogueID];
         int temp = dialogueID;
         if (checkDialogueType(checkText) == DialogueType.Player)
