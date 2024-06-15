@@ -17,7 +17,7 @@
                 "block": {
 
 
-                  "dialogue": [ "C so... umm what am I doing here exactly?", "P I've got a few Questions for you" ],
+                  "dialogue": [ "C OI my guy whaaats upppp ", "P well, lets  ignore the fact youre stoned at work....","P I got a few questions for you" ],
                   "clue": 0
 
                 }
@@ -28,8 +28,8 @@
                 "block": {
 
 
-                  "dialogue": [ "N Yes...?", "P do you know anything about a package that came in?","N No i dont know anything about a package" ],
-                  "clue": 1
+                  "dialogue": [ "C what ya want?", "P do you know anything about a package that came in?","N I only know where the best catnip comes from höhö" ],
+                  "clue": 0
 
                 }
 
@@ -39,7 +39,7 @@
                 "block": {
 
 
-                  "dialogue": [ "P Okay", "C Is that all then?","P Yes, thank you" ],
+                  "dialogue": [ "P Okay", "T Is that all then?","P Yes, thank you" ],
                   "clue": 0
 
                 }

@@ -96,6 +96,7 @@ public class InterrogationLogic : MonoBehaviour
         mySuspectContainer = JsonUtility.FromJson<suspectContainer>(text.ToString());
         mySuspect = mySuspectContainer.suspect;
         inventoryManager = InventoryManager.Instance;
+        loader = new();
         
     }
 

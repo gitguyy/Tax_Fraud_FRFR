@@ -19,8 +19,10 @@ public class InterigationTable : MonoBehaviour
     {
         if (Input.GetMouseButton(0) && other.CompareTag("Mouse"))
         {
+           
             if (interrogationCanvas != null)
             {
+                Debug.Log("cmon");
                 interrogationCanvas.SetActive(true); // Show the canvas
             }
         }
