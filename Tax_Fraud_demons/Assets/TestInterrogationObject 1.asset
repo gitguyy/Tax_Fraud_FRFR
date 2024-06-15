@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: TestInterrogationObject 1
   m_EditorClassIdentifier: 
   npcSprites: []
-  text: {fileID: 4900000, guid: 73b9ac0ba7dda4c41a45634c965dc329, type: 3}
+  text: {fileID: 4900000, guid: f0dfdf7a8d0fb354a8138b1882c42746, type: 3}

@@ -11,6 +11,7 @@ public class InterrogationLogic : MonoBehaviour
     private InterrogationInformation info;
     private Sprite[] npcSprites;
     private TextAsset text;
+    private sendInfo getInfo;
     
     private suspectContainer mySuspectContainer = new();
     private suspect mySuspect = new();
@@ -92,17 +93,25 @@ public class InterrogationLogic : MonoBehaviour
     #region Initializing
     private void OnEnable()
     {
-        text = info.GetText();
-        mySuspectContainer = JsonUtility.FromJson<suspectContainer>(text.ToString());
-        mySuspect = mySuspectContainer.suspect;
-        inventoryManager = InventoryManager.Instance;
-        loader = new();
+        if (sendInfo.Instance != null)
+        {
+            getInfo = sendInfo.Instance;
+            text = getInfo.interrogationInfo.GetText();
+        }else
+        {
+            text = info.GetText();
+        }
+       
         
     }
 
     private void Start()
     {
         
+        mySuspectContainer = JsonUtility.FromJson<suspectContainer>(text.ToString());
+        mySuspect = mySuspectContainer.suspect;
+        inventoryManager = InventoryManager.Instance;
+        loader = new();
     }
     #endregion
     #region thirdPartyUsedMethods

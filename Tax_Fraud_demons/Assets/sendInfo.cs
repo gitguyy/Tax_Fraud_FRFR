@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class sendInfo : MonoBehaviour
 {
-    InterrogationInformation interrogationInfo;
+    public InterrogationInformation interrogationInfo;
     public static sendInfo Instance;
     // Start is called before the first frame update
     private void Awake()
@@ -22,9 +22,10 @@ public class sendInfo : MonoBehaviour
         
     }
 
-    void receiveInfo(InterrogationInformation info)
+    public void receiveInfo(InterrogationInformation info)
     {
         interrogationInfo = info;
+        Debug.Log("info given");
         
     }
 }
