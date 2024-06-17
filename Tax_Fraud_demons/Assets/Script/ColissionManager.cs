@@ -11,19 +11,27 @@ public class ColissionManager : MonoBehaviour
     Transform transformToSend;
     GameObject gameObjectToSend;
 
-
+    private void OnEnable()
+    {
+        
+    }
     private void Start()
     {
-        Debug.Log("name: " + this.gameObject.name);
+        setObject.AddListener(PlayerOperations.instance.setInteract);
+       
         player = PlayerOperations.instance;
-      
+        if(player == null)
+        {
+            player = PlayerOperations.instance;
+        }
+
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
 
         player.talking = false;
 
-        Debug.Log("collidin with: " + other.gameObject.name);
+        
        
         checkTag(other.tag);
         getObjectInfo(other);
@@ -39,7 +47,7 @@ public class ColissionManager : MonoBehaviour
     {
         player.canInteractWith = false;
         player.canTalkWith = false;
-        Debug.Log("interacatable object is null");
+      
     }
 
 
@@ -52,15 +60,16 @@ public class ColissionManager : MonoBehaviour
 
                 player.canTalkWith = true;
                 player.canInteractWith = true;
-                Debug.Log("interacatable object is NPC");
+               
+               
                 break;
             case "DOOR":
                 player.canTalkWith = false;
                 player.canInteractWith = true;
-                Debug.Log("interacatable object is DOOR");
+                
                 break;
             default:
-                Debug.Log("interacatable object is wether door nor npc");
+                
                 break;
             
 

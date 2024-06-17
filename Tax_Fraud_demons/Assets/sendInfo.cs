@@ -9,7 +9,14 @@ public class sendInfo : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        Instance = this;
+        if(Instance == null)
+        {
+            Instance = this;
+        }else
+        {
+            Destroy(this.gameObject);
+        }
+        
     }
     void Start()
     {

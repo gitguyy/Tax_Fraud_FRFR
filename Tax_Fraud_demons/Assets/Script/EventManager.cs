@@ -22,7 +22,7 @@ public class EventManager : MonoBehaviour
     public void RaiseEvent(int i)
     {
         EventInt.Invoke(i);
-        Debug.Log("Raised Event");
+        
         EventInt.RemoveAllListeners();
 
         //You can use this function to have additional things happen when raising your event, but you can also directly invoke it elsewhere

@@ -12,7 +12,7 @@
         "E ",
         "P hah i have proof now!!!!",
         "N oh no you found my doctors notice that says I have triple cancer",
-        "E"
+        "E "
 
 
 
@@ -24,7 +24,9 @@
     {
       "dialogue": [
         "P hey!",
-        "N .......",
+        "N ......Jo that guys not doing too good",
+        "P how... do YOU know that..?",
+        "NP......trust a gal, will ya?",
         "E ",
         "P .....",
         "E "

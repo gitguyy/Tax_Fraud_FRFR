@@ -3184,6 +3184,7 @@ GameObject:
   - component: {fileID: 588841789}
   - component: {fileID: 588841791}
   - component: {fileID: 588841790}
+  - component: {fileID: 588841792}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -3248,6 +3249,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588841788}
   m_CullTransparentMesh: 1
+--- !u!114 &588841792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588841788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de7afe01f26895949a82dbb5c4550c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -3764,7 +3777,7 @@ MonoBehaviour:
   setObject:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2085004898}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerOperations, Assembly-CSharp
         m_MethodName: setInteract
         m_Mode: 0
@@ -3885,8 +3898,7 @@ Transform:
   m_LocalPosition: {x: 1.9485474, y: 0.7272949, z: -0.093208976}
   m_LocalScale: {x: 5, y: 5, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 967317060}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &734790244
@@ -4933,15 +4945,15 @@ Transform:
   m_GameObject: {fileID: 967317059}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6012628, y: 0.19321422, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0}
+  m_LocalPosition: {x: -1.0577667, y: 1.693366, z: -0.093208976}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1415902487}
   - {fileID: 547497230}
   - {fileID: 2105643349}
   - {fileID: 619394802}
-  m_Father: {fileID: 734790243}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &987147143 stripped
 RectTransform:
@@ -7236,6 +7248,70 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a9480c37a4746c4f8e619d2123fba8e, type: 3}
+--- !u!1 &1760545349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1760545351}
+  - component: {fileID: 1760545350}
+  m_Layer: 0
+  m_Name: playerOperations
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1760545350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760545349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c197fff920c837448a699a8260e4e3e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canTalkWith: 0
+  canInteractWith: 0
+  talk:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2105643348}
+        m_TargetAssemblyTypeName: DialogueSystem, Assembly-CSharp
+        m_MethodName: onTalk
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  talking: 0
+  bubble: {fileID: 3711577606038012193, guid: f2e307418bb5c504db048308ceb1e990, type: 3}
+  dialogueBox: {fileID: 0}
+--- !u!4 &1760545351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760545349}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -24.562798, y: 1.9812354, z: -9.687983}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1779263672
 GameObject:
   m_ObjectHideFlags: 0
@@ -7515,6 +7591,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9199cc677202b1c4788d817bb10b22fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1857710557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1857710558}
+  - component: {fileID: 1857710559}
+  m_Layer: 0
+  m_Name: progressionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1857710558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857710557}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -36.59879, y: 0.06641269, z: -8.9996805}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1857710559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857710557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007e748e445de9245b05be8e0e82d10e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterDialogue: 
+  progressionLevel: 0
 --- !u!1 &1880940114
 GameObject:
   m_ObjectHideFlags: 0
@@ -8969,7 +9091,6 @@ GameObject:
   - component: {fileID: 2085004893}
   - component: {fileID: 2085004896}
   - component: {fileID: 2085004895}
-  - component: {fileID: 2085004898}
   - component: {fileID: 2085004899}
   - component: {fileID: 2085004900}
   - component: {fileID: 2085004902}
@@ -9082,38 +9203,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2085004898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085004892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c197fff920c837448a699a8260e4e3e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canTalkWith: 0
-  canInteractWith: 0
-  talk:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2105643348}
-        m_TargetAssemblyTypeName: DialogueSystem, Assembly-CSharp
-        m_MethodName: onTalk
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  talking: 0
-  bubble: {fileID: 3711577606038012193, guid: f2e307418bb5c504db048308ceb1e990, type: 3}
-  dialogueBox: {fileID: 588841788}
 --- !u!114 &2085004899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9211,6 +9300,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2088977434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2088977436}
+  - component: {fileID: 2088977435}
+  m_Layer: 0
+  m_Name: Scenemanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2088977435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088977434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c56ef1e912d5842a31d23b9a53ba40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasTransitioned: 0
+  transitioned:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &2088977436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088977434}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -36.59879, y: 0.06641269, z: -8.9996805}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2099444597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9384,7 +9521,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   show: {fileID: 1216201677}
-  player: {fileID: 2085004898}
+  player: {fileID: 0}
   Bubble: {fileID: 3711577606038012193, guid: f2e307418bb5c504db048308ceb1e990, type: 3}
   dialogue: {fileID: 0}
   letterTimer: 0.02
@@ -9576,3 +9713,7 @@ SceneRoots:
   - {fileID: 891523319}
   - {fileID: 734790243}
   - {fileID: 1779263674}
+  - {fileID: 967317060}
+  - {fileID: 1760545351}
+  - {fileID: 1857710558}
+  - {fileID: 2088977436}

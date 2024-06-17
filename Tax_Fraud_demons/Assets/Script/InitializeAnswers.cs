@@ -83,7 +83,7 @@ public class InitializeAnswers : MonoBehaviour
         copies.Clear();
         amnt = 0;
         t.getActor();
-        amnt = t.getAnswerAmount(ID);
+        //amnt = t.getAnswerAmount(ID);
         counting = 0;
          
         //Debug.Log(t.getAnswerAmount(ID));
@@ -145,8 +145,7 @@ public class InitializeAnswers : MonoBehaviour
         
         int start = dialogueSys.dialogue.stringID;
         Debug.Log("initial string: " + dialogueSys.dialogue.actor.dialogue[start]);
-        int startAmnt = 0;
-        int temp = 0;
+        
 
 
         //while(dialogueSys.dialogue.checkDialogueType(dialogueSys.dialogue.actor.dialogue[start]) != DialogueSystem.DialogueType.NewText)

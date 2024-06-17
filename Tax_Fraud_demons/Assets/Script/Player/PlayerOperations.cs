@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class PlayerOperations : MonoBehaviour
 {
-    [HideInInspector]
+
     public bool canTalkWith;
     [HideInInspector]
     public bool canInteractWith;
@@ -22,16 +23,30 @@ public class PlayerOperations : MonoBehaviour
 
     private void Awake() // To make this class a singleton, there is only a single static instance in your scene
     {
-        
-        if (instance == null) instance = this;
-        else Destroy(gameObject.GetComponent<PlayerOperations>()) ;
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject); // Keep the GameObject persistent across scenes
+        }
+        else
+        {
+            Destroy(gameObject); // Destroy duplicate instances
+        }
+        //instance = this;
+        //else Destroy(gameObject.GetComponent<PlayerOperations>()) ;
     }
 
 
+    private void OnEnable()
+    {
+       
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+        dialogueBox = GameObject.FindAnyObjectByType<DialogueBox>().gameObject;
+        
         system = DialogueSystem.Instance;
         dialogueBox.SetActive(false);
     }
@@ -39,43 +54,66 @@ public class PlayerOperations : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(canTalkWith && Input.GetMouseButtonDown(0))
+        if(dialogueBox == null)
         {
-            talking = true;
-            Debug.Log("trying to talk with yer");
-            dialogueBox.SetActive(true);
+            if(FindAnyObjectByType<DialogueBox>()!= null)
+            {
+               
+                dialogueBox = GameObject.FindAnyObjectByType<DialogueBox>().gameObject;
+                dialogueBox.gameObject.SetActive(false);
+            }
             
-           
+        }
+        if(dialogueBox != null)
+        {
+            if (canTalkWith && Input.GetMouseButtonDown(0))
+            {
+                talking = true;
+               
+                dialogueBox.SetActive(true);
 
-        }
-       
-        if(talking)
-        {
-            talk.Invoke(InteractObject);
-            
-        }
-        
-        if (canInteractWith && !canTalkWith && Input.GetKeyDown(KeyCode.E))
-        {
-            dialogueBox.SetActive(false);
-            
-            
-            
-        }
-        if (!canInteractWith && !canTalkWith && Input.GetMouseButtonDown(0))
-        {
-            if(InteractObject != null)
+
+
+            }
+
+            if (talking)
+            {
+                talk.Invoke(InteractObject);
+              
+
+            }
+            if (Input.GetMouseButtonDown(0))
+            {
+              
+            }
+
+            if (canInteractWith && !canTalkWith && Input.GetKeyDown(KeyCode.E))
             {
                 dialogueBox.SetActive(false);
-                Debug.Log("im trying to talk mate");
-                system.dialogue.onExit(ref system.t);
-                system.onTalk(InteractObject);
-            }
-           
-            
 
+
+
+            }
+            if (!canInteractWith && !canTalkWith && Input.GetMouseButtonDown(0) && dialogueBox.activeSelf == true)
+            {
+                if (InteractObject != null)
+                {
+                    dialogueBox.SetActive(false);
+
+                    system.dialogue.onExit(ref system.t);
+                    system.show.setText("");
+
+                    system.onTalk(InteractObject);
+                }
+
+
+
+            }
         }
+        
+        
     }
+  
 
     public void setInteract(GameObject _object)
     {

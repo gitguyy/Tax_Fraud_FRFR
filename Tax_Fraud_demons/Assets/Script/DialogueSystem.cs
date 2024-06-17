@@ -5,6 +5,7 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.SearchService;
 
 public class DialogueSystem : MonoBehaviour
@@ -29,6 +30,7 @@ public class DialogueSystem : MonoBehaviour
     public int ID;
     int dialogueID;
     public static DialogueSystem Instance;
+    MySceneManager sceneManager;
     
 
     
@@ -47,6 +49,7 @@ public class DialogueSystem : MonoBehaviour
     public PlayerOperations player;
     public GameObject Bubble;
     public talkingBehavior dialogue;
+    
 
     GameObject curObject;
    
@@ -65,6 +68,7 @@ public class DialogueSystem : MonoBehaviour
         Start,
         Clue,
         NPC,
+        Progress,
         Null
     }
 
@@ -72,6 +76,7 @@ public class DialogueSystem : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+        
     }
 
 
@@ -83,9 +88,12 @@ public class DialogueSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        sceneManager = MySceneManager.Instance;
         
         t = myText.text;
         player = PlayerOperations.instance;
+        
         myActors = JsonUtility.FromJson<ActorCollection>(t);
         //Debug.Log(myActors.actors[0].dialogue[0]);
         dialogue = gameObject.AddComponent<talkingBehavior>();
@@ -95,14 +103,46 @@ public class DialogueSystem : MonoBehaviour
 
     }
 
-    private void Update()
+    public void ProgressAll(ref int[] startPoint)
     {
+        int temp = 0;
+        foreach(Actor actor in myActors.actors)
+        {
+            
+            while (dialogue.checkDialogueType(actor.dialogue[startPoint[temp]]) != DialogueType.End)
+            {
+                startPoint[temp]++;
+                
+            }
+            startPoint[temp]++;
+            temp++;
+        }
+    }
+
+  
+
+   
+    
+       
+  
+
+    void Update()
+    {
+        if(sceneManager.hasTransitioned)
+        {
+            Debug.Log("has transitioned dialogueManager");
+            player.talk.RemoveAllListeners();
+            player.talk.AddListener(onTalk);
+            sceneManager.hasTransitioned = false;
+        }
         
+      
     }
 
 
 
-    public string getText()
+
+public string getText()
     {
         return t;
     }
@@ -130,7 +170,7 @@ public class DialogueSystem : MonoBehaviour
 
             if (curObject != g )
             {
-                dialogue.onEnter(myActors.actors[ID]);
+                dialogue.onEnter(myActors.actors[ID],ID);
                
                    
                 
@@ -192,5 +232,6 @@ public class DialogueSystem : MonoBehaviour
     }
 
    
+
 
 }

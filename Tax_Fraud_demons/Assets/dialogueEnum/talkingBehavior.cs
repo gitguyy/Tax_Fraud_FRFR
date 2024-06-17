@@ -20,13 +20,17 @@ public class talkingBehavior : dialogueEnumerator
     public UnityEvent<int> sendID = new();
     InitializeAnswers init;
     talkingBehavior[] behaviors;
-    int startID;
+    int []startID = { 0,0};
+    int startInt;
     EventManager manager;
     DialogueSystem system;
+    progressionManager progress;
+    int NPC;
 
 
     private void Start()
     {
+        progress = progressionManager.Instance;
         manager = EventManager.Instance;
         system = DialogueSystem.Instance;
     }
@@ -60,15 +64,17 @@ public class talkingBehavior : dialogueEnumerator
 
 
 
-    public  override void onEnter(Actor _actor)
+    public void onEnter(Actor _actor, int ID)
     {
-        Debug.Log("onEnter");
-        startID = 0;
+        //Debug.Log("onEnter");
+        NPC = ID;
         actor = _actor;
-        curText = actor.dialogue[0];
+        startInt = startID[NPC];
+        Debug.Log("start ID: "+ startInt);
+        curText = actor.dialogue[startInt];
         iterator = 0;
         spelledString = "";
-        stringID = 0;
+        stringID = startInt;
        
 
 
@@ -80,12 +86,7 @@ public class talkingBehavior : dialogueEnumerator
         
        
     }
-    public override void onEnter()
-    {
-        //get the currentLine
-        //spell the line that is given
-
-    }
+    
 
     public override void talkUpdate(ref string text)
     {
@@ -104,7 +105,7 @@ public class talkingBehavior : dialogueEnumerator
         }
         if (checkDialogueType(curText) == DialogueType.NPC)
         {
-            Debug.Log("NPC is talking");
+            
             showPlayerSprite listener = FindObjectOfType<showPlayerSprite>();
             ShowNPCSprite listenerNPC = FindObjectOfType<ShowNPCSprite>();
             manager.EventInt.AddListener(listenerNPC.showNPC);
@@ -206,9 +207,12 @@ public class talkingBehavior : dialogueEnumerator
     public override void onExit()
     {
 
-        curText = null;
+       
+        startInt = startID[NPC];
+        stringID = startInt;
         iterator = 0;
-        stringID = 0;
+        stringID = startInt;
+        Debug.Log ("start after exit: " + startInt);
         Debug.Log("exited dialogue");
 
         //resetting everything
@@ -218,17 +222,18 @@ public class talkingBehavior : dialogueEnumerator
     {
 
         s = null;
-       
-        stringID = 0;
-        startID = 0;
+        startInt = startID[NPC];
+        stringID = startInt;
+        
         curText = "";
        
         iterator = 0;
         spelledString = "";
-        stringID = 0;
+      
         sendID.RemoveAllListeners();
+        Debug.Log("start after exit: " + startInt);
 
-       
+
 
 
         //resetting everything
@@ -237,7 +242,7 @@ public class talkingBehavior : dialogueEnumerator
 
     public DialogueType checkDialogueType(string type)
     {
-
+       
         switch (type[0])
         {
             case 'N':return DialogueType.NPC;
@@ -249,46 +254,47 @@ public class talkingBehavior : dialogueEnumerator
 
 
         }
+       
 
     }
+    public DialogueType checkDialogueProgress(string type)
+    {
+        switch (type[1])
+        {
+            case 'P': return DialogueType.Progress;
+            case 'C': return DialogueType.Clue;
+            default: return DialogueType.Null;
+        }
+    }
 
-    public int getAnswerAmount()
-    {
-        int temp;
-        temp = stringID;
-        while (checkDialogueType(actor.dialogue[temp]) != DialogueType.Start)
-        {
-            temp++;
-        }
-        return temp;
-    }
-    public int getAnswerAmount(int _stringID)
-    {
-        int temp = 0;
-        
-        while (checkDialogueType(actor.dialogue[_stringID + temp]) != DialogueType.Start)
-        {
-            temp++;
-        }
-        return temp -1;
-    }
+
 
     public int getNextText(ref int dialogueID)
     {
         //Debug.Log("dialogue: " + actor.dialogue[dialogueID]);
         string checkText = actor.dialogue[dialogueID];
         int temp = dialogueID;
-        if (checkDialogueType(checkText) == DialogueType.Player)
+        if (checkDialogueProgress(checkText) == DialogueType.Progress)
         {
+            progress.progress();
+            system.ProgressAll(ref startID);
+            Debug.Log("start 1:" + startID[0] + "start 2: " + startID[1]);
+            
+            
+        }
+
+            if (checkDialogueType(checkText) == DialogueType.Player)
+            {
 
           
                 dialogueID++;
+            
             
 
 
 
             return temp++;
-        }
+            }
         if (checkDialogueType(checkText) == DialogueType.NPC)
         {
 
@@ -301,16 +307,19 @@ public class talkingBehavior : dialogueEnumerator
 
             return temp++;
         }
+        
+        
 
 
       
         if (checkDialogueType(checkText) == DialogueType.End)
         {
             // do question logic
-            dialogueID = startID;
+            dialogueID = startInt;
 
-           
+            onExit();
             return dialogueID;
+            
         }
        
         return temp;
