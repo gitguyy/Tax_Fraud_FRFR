@@ -6,7 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="a57fc650-d301-43a3-b2a7-b79b875ba63e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tax_Fraud_demons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tax_Fraud_demons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/dialogueEnum/talkingBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/dialogueEnum/talkingBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/Envi_office_tile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/Envi_office_tile.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/FaceCardMitch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/FaceCardMitch.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/FaceCardNPC1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/FaceCardNPC1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/FaceCardNPC2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/FaceCardNPC2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/elevator.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/elevator.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/l1_indoors_midterm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/l1_indoors_midterm.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/l1_indoors_tile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/l1_indoors_tile.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/prop_table_pc_chair.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/prop_table_pc_chair.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +128,7 @@
       <workItem from="1716974812230" duration="9545000" />
       <workItem from="1717593963363" duration="36000" />
       <workItem from="1718178567772" duration="1961000" />
+      <workItem from="1718640016903" duration="1332000" />
     </task>
     <servers />
   </component>
