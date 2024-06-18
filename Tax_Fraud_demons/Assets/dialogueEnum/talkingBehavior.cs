@@ -6,6 +6,7 @@ using static DialogueSystem;
 using UnityEngine.Events;
 using Unity.VisualScripting;
 using System.Numerics;
+using UnityEditor;
 
 public class talkingBehavior : dialogueEnumerator
 {
@@ -66,11 +67,16 @@ public class talkingBehavior : dialogueEnumerator
 
     public void onEnter(Actor _actor, int ID)
     {
-        //Debug.Log("onEnter");
+      
         NPC = ID;
         actor = _actor;
-        startInt = startID[NPC];
+        
+        
+        //progress.giveCharacterProgress(startID);
+
+        startInt = progress.characterDialogue[ID];
         Debug.Log("start ID: "+ startInt);
+        startID = progress.characterDialogue;
         curText = actor.dialogue[startInt];
         iterator = 0;
         spelledString = "";
@@ -78,11 +84,7 @@ public class talkingBehavior : dialogueEnumerator
        
 
 
-        //init = FindObjectOfType<InitializeAnswers>();
-       
-            //Debug.Log("initializing answer");
-        
-        //sendID.AddListener(init.setID);
+      
         
        
     }
@@ -223,6 +225,7 @@ public class talkingBehavior : dialogueEnumerator
 
         s = null;
         startInt = startID[NPC];
+        startID = progress.characterDialogue;
         stringID = startInt;
         
         curText = "";
@@ -278,6 +281,7 @@ public class talkingBehavior : dialogueEnumerator
         {
             progress.progress();
             system.ProgressAll(ref startID);
+            progress.giveCharacterProgress(startID);
             Debug.Log("start 1:" + startID[0] + "start 2: " + startID[1]);
             
             

@@ -99,7 +99,7 @@ public class PlayerOperations : MonoBehaviour
                 if (InteractObject != null)
                 {
                     dialogueBox.SetActive(false);
-
+                    
                     system.dialogue.onExit(ref system.t);
                     system.show.setText("");
 

@@ -7,6 +7,7 @@ public class InterrogationInteraction : MonoBehaviour
 {
     #region Variables
     InterrogationLogic system = new();
+    
     talkingBehavior t = new();
     string text = "";
     string originalText = "";
@@ -32,9 +33,8 @@ public class InterrogationInteraction : MonoBehaviour
         
         if (Input.GetMouseButtonDown(0)&& doneSpelling)
         {
-          
-            originalText = system.getText();
-            doneSpelling = false;
+
+            //spellNextText();
         }
         
         if (!doneSpelling )
@@ -52,6 +52,24 @@ public class InterrogationInteraction : MonoBehaviour
             }
         }
 
+
+    }
+
+    public void spellNextText()
+    {
+        Debug.Log("trying to spell...");
+        if (doneSpelling)
+        {
+            originalText = system.getText();
+            doneSpelling = false;
+           
+            //spellNextText();
+        }
+        
+    }
+
+    void spellPrevioustext()
+    {
 
     }
     
