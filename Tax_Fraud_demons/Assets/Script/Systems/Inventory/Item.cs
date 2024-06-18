@@ -19,7 +19,7 @@ public class Item : MonoBehaviour
     
     void Start()
     {
-        inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
+        inventoryManager = InventoryManager.Instance;
     }
     
     /*
