@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a57fc650-d301-43a3-b2a7-b79b875ba63e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tax_Fraud_demons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tax_Fraud_demons/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Interrogation.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Interrogation.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/Final_Background/Phone_table.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/visualAssets/Final_Background/Phone_table.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/visualAssets/Final_Background/Plant.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/visualAssets/Final_Background/Plant.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Systems/Anger_Bar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Systems/Int_Table/InterigationTable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Systems/Inventory/Item.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Systems/ParallaxEffect.cs" root0="FORCE_HIGHLIGHTING" />
@@ -114,7 +114,7 @@
       <workItem from="1716974812230" duration="9545000" />
       <workItem from="1717593963363" duration="36000" />
       <workItem from="1718178567772" duration="1961000" />
-      <workItem from="1718640016903" duration="1932000" />
+      <workItem from="1718640016903" duration="3313000" />
     </task>
     <servers />
   </component>
