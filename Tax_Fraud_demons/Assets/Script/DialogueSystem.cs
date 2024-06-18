@@ -203,6 +203,11 @@ public string getText()
 
         
     }
+
+    public void resetText()
+    {
+        show.resetText(); 
+    } 
     //takes the starting id of where in the dialogue we currently are
    
 

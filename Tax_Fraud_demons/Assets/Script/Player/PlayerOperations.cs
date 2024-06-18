@@ -68,6 +68,7 @@ public class PlayerOperations : MonoBehaviour
         {
             if (canTalkWith && Input.GetMouseButtonDown(0))
             {
+                Debug.Log("talking initiated");
                 talking = true;
                
                 dialogueBox.SetActive(true);
@@ -98,10 +99,12 @@ public class PlayerOperations : MonoBehaviour
             {
                 if (InteractObject != null)
                 {
+                    talking = false;
                     dialogueBox.SetActive(false);
                     
                     system.dialogue.onExit(ref system.t);
-                    system.show.setText("");
+                    system.resetText();
+               
 
                     system.onTalk(InteractObject);
                 }

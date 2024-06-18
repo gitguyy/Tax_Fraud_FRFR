@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 //using TMPro;
 
 public class ItemSlot : MonoBehaviour, IPointerClickHandler
@@ -15,6 +17,10 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
  public bool isFull;
  public string itemDescription;
  public Sprite emptySprite;
+ GameObject selectedItemMenu;
+ public UnityEvent sendId;
+
+    
  public int itemID; // Add itemID
  
  //======ITEM SLOT======//
@@ -33,24 +39,31 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
  private void Start()//ref
  {
-  inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
- }
 
- public void AddItem(int itemID, string itemName, Sprite itemSprite, string itemDescription)
- {
+        inventoryManager = InventoryManager.Instance;
+       
+ }
+    
+
+    public void AddItem(int itemID, string itemName, Sprite itemSprite, string itemDescription)
+    {
   this.itemName = itemName;
   this.itemSprite = itemSprite;
   this.itemDescription = itemDescription;
   
   itemImage.sprite = itemSprite;
   isFull = true;
- }
+    }
 
  public void OnPointerClick(PointerEventData eventData)
  {
   if (eventData.button == PointerEventData.InputButton.Left)
   {
    OnLeftClick();
+            if(isFull)
+            {
+                inventoryManager.clicked(this);
+            }
   }
 
   if (eventData.button == PointerEventData.InputButton.Right)
