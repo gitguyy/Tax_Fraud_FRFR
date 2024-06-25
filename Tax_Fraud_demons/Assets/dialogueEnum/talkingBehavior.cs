@@ -21,7 +21,7 @@ public class talkingBehavior : dialogueEnumerator
     public UnityEvent<int> sendID = new();
     InitializeAnswers init;
     talkingBehavior[] behaviors;
-    int []startID = { 0,0};
+    int []startIDs = { 0,0};
     int startInt;
     EventManager manager;
     DialogueSystem system;
@@ -31,6 +31,7 @@ public class talkingBehavior : dialogueEnumerator
 
     private void Start()
     {
+        startIDs = new int[2];
         progress = progressionManager.Instance;
         manager = EventManager.Instance;
         system = DialogueSystem.Instance;
@@ -70,17 +71,18 @@ public class talkingBehavior : dialogueEnumerator
       
         NPC = ID;
         actor = _actor;
-        
-        
-        //progress.giveCharacterProgress(startID);
 
+
+        //progress.giveCharacterProgress(startID);
+        Debug.Log("start ID: " + startInt);
         startInt = progress.characterDialogue[ID];
-        Debug.Log("start ID: "+ startInt);
-        startID = progress.characterDialogue;
+      
+        startIDs = progress.characterDialogue;
         curText = actor.dialogue[startInt];
+        stringID = startInt;
         iterator = 0;
         spelledString = "";
-        stringID = startInt;
+        
        
 
 
@@ -209,8 +211,12 @@ public class talkingBehavior : dialogueEnumerator
     public override void onExit()
     {
 
-       
-        startInt = startID[NPC];
+        startInt = progress.characterDialogue[NPC];
+
+        startIDs = progress.characterDialogue;
+        curText = actor.dialogue[startInt];
+        stringID = startInt;
+        startInt = startIDs[NPC];
         stringID = startInt;
         iterator = 0;
         stringID = startInt;
@@ -224,10 +230,12 @@ public class talkingBehavior : dialogueEnumerator
     {
 
         s = null;
-        startInt = startID[NPC];
-        startID = progress.characterDialogue;
+        startInt = progress.characterDialogue[NPC];
+
+        startIDs = progress.characterDialogue;
+        curText = actor.dialogue[startInt];
         stringID = startInt;
-        
+
         curText = "";
        
         iterator = 0;
@@ -280,9 +288,9 @@ public class talkingBehavior : dialogueEnumerator
         if (checkDialogueProgress(checkText) == DialogueType.Progress)
         {
             progress.progress();
-            system.ProgressAll(ref startID);
-            progress.giveCharacterProgress(startID);
-            Debug.Log("start 1:" + startID[0] + "start 2: " + startID[1]);
+            //system.ProgressAll(ref startID);
+            //progress.giveCharacterProgress(startID);
+            Debug.Log("start 1:" + startIDs[0] + "start 2: " + startIDs[1]);
             
             
         }

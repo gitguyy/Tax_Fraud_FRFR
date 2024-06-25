@@ -1,3 +1,4 @@
+using GameCreator.Runtime.Common;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -20,6 +21,10 @@ public class InterrogationLogic : MonoBehaviour
     private string curText;
     private int curTextID;
     private int curBlock;
+    
+    private bool isCorrectClue;
+    public bool isAngry;
+   
     InventoryManager inventoryManager;
     SceneLoader loader;
 
@@ -38,6 +43,7 @@ public class InterrogationLogic : MonoBehaviour
         Null
 
     }
+    [SerializeField]
     int curPhase;
     
     #endregion
@@ -115,20 +121,29 @@ public class InterrogationLogic : MonoBehaviour
     }
     #endregion
     #region thirdPartyUsedMethods
-    public bool checkForClueID(int ID)
+    public void checkForClueID(int ID)
     {
         if (mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.clue == ID)
         {
-            return true;
+            Debug.Log("currect clue");
+            isAngry = false;
+            isCorrectClue = true;
+            curTextID = 0;
+            curBlock = 0;
+            goToNextPhase();
+            return;
+            
         }
-        return false;
+        Debug.Log("wrong clue");
+        isAngry = true;
+        isCorrectClue = false;
         
 
     }
 
     public void goToNextPhase()
     {
-        if(mySuspect.phases.Length > curPhase)
+        if(mySuspect.phases.Length >= curPhase)
         {
             curPhase++;
         }else
@@ -180,6 +195,12 @@ public class InterrogationLogic : MonoBehaviour
 
     public string getText()
     {
+        if (isAngry == true)
+        {
+          
+            return mySuspect.phases[curPhase].phase.angryAnswer[0].Remove(0, 2);
+            
+        }
         Debug.Log("id to length ratio: " + mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue.Length + "/" + curTextID);
         return mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue[curTextID].Remove(0,2);
     }

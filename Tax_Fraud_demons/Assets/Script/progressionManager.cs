@@ -7,9 +7,10 @@ public class progressionManager : MonoBehaviour
 {
     #region Variables
     public static progressionManager Instance;
-    public int[] characterDialogue = {0,0};
-    public int[] characterProgress = {0,0};
+    public int[] characterDialogue;
+    public int[] characterProgress;
     public int progressionLevel;
+    private DialogueSystem dialogue;
     #endregion;
     #region Singleton
 
@@ -28,6 +29,7 @@ public class progressionManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        dialogue = DialogueSystem.Instance;
         characterDialogue = new int[2];
         characterProgress = new int[2];
     }
@@ -65,6 +67,9 @@ public class progressionManager : MonoBehaviour
         {
             characterProgress[i]++;
         }
+        dialogue.ProgressAll(ref characterDialogue);
         progressionLevel++;
     }
+
+    
 }

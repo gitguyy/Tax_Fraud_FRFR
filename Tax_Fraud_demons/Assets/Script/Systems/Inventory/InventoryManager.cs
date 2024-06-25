@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -10,7 +11,11 @@ public class InventoryManager : MonoBehaviour
     public ItemSlot[] itemSlot; // use to deselect other things
     public GameObject useItemMenu;
     MySceneManager sceneLoader;
+    InterrogationLogic interrogation;
+
     bool isInterrogation;
+    int itemID;
+    
 
     #region Singleton
     public static InventoryManager Instance;
@@ -26,7 +31,26 @@ public class InventoryManager : MonoBehaviour
     {
         sceneLoader = MySceneManager.Instance;
         menuActivated = InventoryMenu.activeSelf;
+        InitializeUseMenu();
+
     }
+
+    void InitializeUseMenu()
+    {
+        useItemMenu.SetActive(true);
+        Transform secondChildTransform = useItemMenu.transform.GetChild(2);
+        Button noButton;
+        noButton = secondChildTransform.GetComponent<Button>();
+        noButton.onClick.AddListener(this.DeactivateMenu);
+        useItemMenu.SetActive(false);
+    }
+
+    void DeactivateMenu()
+    {
+        useItemMenu.SetActive(false);
+    }
+
+
 
     void Update()
     {
@@ -34,7 +58,17 @@ public class InventoryManager : MonoBehaviour
         {
             if(FindObjectOfType<InterrogationLogic>()!= null)
             {
+                interrogation = InterrogationLogic.Instance;
                 isInterrogation = true;
+                useItemMenu.SetActive(true);
+                
+               
+                Transform secondChildTransform = useItemMenu.transform.GetChild(1);
+                Button yesButton;
+                yesButton = secondChildTransform.GetComponent<Button>();
+                yesButton.onClick.RemoveAllListeners();
+                yesButton.onClick.AddListener(checkItemId);
+                useItemMenu.SetActive(false);
             }
             else
             {
@@ -77,10 +111,24 @@ public class InventoryManager : MonoBehaviour
 
     public void clicked(ItemSlot Item)
     {
+        itemID = Item.itemID;
         if (isInterrogation)
         {
            
             useItemMenu.SetActive(true);
+
         }
     }
+
+    public void checkItemId()
+    {
+        interrogation.checkForClueID(itemID);
+        InterrogationInteraction getNextText = GameObject.FindAnyObjectByType<InterrogationInteraction>();
+        DeactivateMenu();
+        getNextText.spellNextText();
+        
+        InventoryMenu.SetActive(false);
+    }
+
+    
 }

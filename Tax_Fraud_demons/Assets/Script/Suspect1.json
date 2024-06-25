@@ -65,7 +65,7 @@
                 "block": {
 
 
-                  "dialogue": [ "C so... umm what am I doing here exactly?", "P I've got a few Questions for you" ],
+                  "dialogue": [ "C well umm I can explain", "P humor me" ],
                   "clue": 0
 
                 }
@@ -76,7 +76,7 @@
                 "block": {
 
 
-                  "dialogue": [ "N Yes...?", "P do you know anything about  package that came in?" ],
+                  "dialogue": [ "N soo well i umm", "P ....." ],
                   "clue": 1
 
                 }
@@ -87,7 +87,7 @@
                 "block": {
 
 
-                  "dialogue": [ "", "" ],
+                  "dialogue": [ "  ", "  " ],
                   "clue": 0
 
                 }

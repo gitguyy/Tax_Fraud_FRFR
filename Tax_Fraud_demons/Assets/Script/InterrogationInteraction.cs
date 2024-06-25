@@ -6,9 +6,9 @@ using UnityEngine.Events;
 public class InterrogationInteraction : MonoBehaviour
 {
     #region Variables
-    InterrogationLogic system = new();
+    InterrogationLogic system;
     
-    talkingBehavior t = new();
+    talkingBehavior t;
     string text = "";
     string originalText = "";
     [SerializeField]
@@ -31,13 +31,9 @@ public class InterrogationInteraction : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetMouseButtonDown(0)&& doneSpelling)
-        {
-
-            //spellNextText();
-        }
         
-        if (!doneSpelling )
+        
+        if (!doneSpelling && !system.isAngry)
         {
            
 
@@ -46,10 +42,24 @@ public class InterrogationInteraction : MonoBehaviour
             
             if (doneSpelling)
             {
-                Debug.Log("got in....somehow");
+                
                 system.NextDialogue();
 
             }
+        }
+
+        if(!doneSpelling && system.isAngry)
+        {
+            t.spellLineUpdate(ref text, ref doneSpelling, originalText);
+            s.setText(text);
+            if (doneSpelling)
+            {
+              
+                system.isAngry = false;
+               
+
+            }
+
         }
 
 
@@ -57,7 +67,7 @@ public class InterrogationInteraction : MonoBehaviour
 
     public void spellNextText()
     {
-        Debug.Log("trying to spell...");
+       
         if (doneSpelling)
         {
             originalText = system.getText();
@@ -67,6 +77,8 @@ public class InterrogationInteraction : MonoBehaviour
         }
         
     }
+
+    
 
     void spellPrevioustext()
     {

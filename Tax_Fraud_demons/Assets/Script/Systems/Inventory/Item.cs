@@ -10,6 +10,9 @@ public class Item : MonoBehaviour
     [SerializeField] private string itemName;
     [SerializeField] private Sprite sprite;
     [SerializeField] private int itemID;
+    [SerializeField]
+    private ItemProgress IsProgress;
+    
     
     [TextArea]
     [SerializeField] private string itemDescription;
@@ -19,7 +22,9 @@ public class Item : MonoBehaviour
     
     void Start()
     {
+        
         inventoryManager = InventoryManager.Instance;
+        
     }
     
     /*
@@ -35,8 +40,13 @@ public class Item : MonoBehaviour
     {
         if(Input.GetMouseButton(0) && other.tag == "Mouse")
         {
+            if(IsProgress != null)
+            {
+                IsProgress.onCLick();
+            }
             inventoryManager.AddItem(itemID,itemName, sprite, itemDescription);
             Destroy(gameObject);
+          
         }
         
     }

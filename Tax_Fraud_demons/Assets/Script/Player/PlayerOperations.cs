@@ -88,10 +88,11 @@ public class PlayerOperations : MonoBehaviour
               
             }
 
-            if (canInteractWith && !canTalkWith && Input.GetKeyDown(KeyCode.E))
+            if (canInteractWith && !canTalkWith && Input.GetMouseButtonDown(0))
             {
-                dialogueBox.SetActive(false);
 
+                dialogueBox.SetActive(false);
+                system.dialogue.onExit(ref system.t);
 
 
             }

@@ -3233,7 +3233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &574312868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6153,7 +6153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Devil Toe
   sprite: {fileID: 21300000, guid: a6829a45c82100048803370f48698b07, type: 3}
-  itemID: 0
+  itemID: 1
+  IsProgress: {fileID: 0}
   itemDescription: Ewwwww! It's a toe of a devil, does this even have value?
 --- !u!50 &1172076297
 Rigidbody2D:
@@ -9537,6 +9538,7 @@ GameObject:
   - component: {fileID: 2059758999}
   - component: {fileID: 2059758998}
   - component: {fileID: 2059758997}
+  - component: {fileID: 2059759001}
   m_Layer: 6
   m_Name: Item_1
   m_TagString: DOOR
@@ -9559,6 +9561,7 @@ MonoBehaviour:
   itemName: Paper Note
   sprite: {fileID: 21300000, guid: 7d5f9f0960fb9f546bae30ececb68558, type: 3}
   itemID: 0
+  IsProgress: {fileID: 2059759001}
   itemDescription: "This note says \" HAHAHA I just did a tax evasion tactic called
     360 MLG trick-shot-noscope on them plebs, lets gooo!!! I'll be finnalyy able
     to buy a Lambo, p\u0101r\u0101k vienk\u0101r\u0161i! \""
@@ -9650,6 +9653,18 @@ Transform:
   - {fileID: 417131042}
   m_Father: {fileID: 1642449041}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2059759001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059758996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717ef0345597b4b4fb1a8778109d3011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2060024925
 GameObject:
   m_ObjectHideFlags: 0
