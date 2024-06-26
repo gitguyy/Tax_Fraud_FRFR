@@ -11,6 +11,7 @@ public class ParallaxForeground : MonoBehaviour
     void Start()
     {
         startPos = transform.position;
+        //player = Camera.main.transform;
     }
 
     void Update()

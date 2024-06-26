@@ -6192,7 +6192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2085004894}
-  parallaxStrength: -0.01
+  parallaxStrength: 2
 --- !u!212 &1122504875
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7001,7 +7001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2085004894}
-  parallaxStrength: -0.01
+  parallaxStrength: 2
 --- !u!1 &1274497323
 GameObject:
   m_ObjectHideFlags: 0
@@ -8071,7 +8071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2085004894}
-  parallaxStrength: -0.01
+  parallaxStrength: 2
 --- !u!1 &1592230814
 GameObject:
   m_ObjectHideFlags: 0

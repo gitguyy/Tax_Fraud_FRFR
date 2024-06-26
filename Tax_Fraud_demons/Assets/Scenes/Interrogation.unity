@@ -1167,7 +1167,7 @@ GameObject:
   - component: {fileID: 1065287306}
   - component: {fileID: 1065287308}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Suspect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1736,6 +1736,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   won: 0
+  isAngry: 0
+  curPhase: 0
 --- !u!4 &1481099577
 Transform:
   m_ObjectHideFlags: 0
