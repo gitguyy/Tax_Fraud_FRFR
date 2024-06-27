@@ -24,6 +24,8 @@ public class InterrogationLogic : MonoBehaviour
     
     private bool isCorrectClue;
     public bool isAngry;
+
+    private int curClueID;
    
     InventoryManager inventoryManager;
     SceneLoader loader;
@@ -123,8 +125,12 @@ public class InterrogationLogic : MonoBehaviour
     #region thirdPartyUsedMethods
     public void checkForClueID(int ID)
     {
+        Debug.Log("ID: " + ID);
+        Debug.Log("ID in file: " + mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.clue);
+        Debug.Log("block: " + curBlock);
         if (mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.clue == ID)
         {
+            curClueID = ID;
             Debug.Log("currect clue");
             isAngry = false;
             isCorrectClue = true;
@@ -137,6 +143,7 @@ public class InterrogationLogic : MonoBehaviour
         Debug.Log("wrong clue");
         isAngry = true;
         isCorrectClue = false;
+        curClueID = ID;
         
 
     }
@@ -198,7 +205,7 @@ public class InterrogationLogic : MonoBehaviour
         if (isAngry == true)
         {
           
-            return mySuspect.phases[curPhase].phase.angryAnswer[0].Remove(0, 2);
+            return mySuspect.phases[curPhase].phase.angryAnswer[curClueID -1].Remove(0, 2);
             
         }
         Debug.Log("id to length ratio: " + mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue.Length + "/" + curTextID);

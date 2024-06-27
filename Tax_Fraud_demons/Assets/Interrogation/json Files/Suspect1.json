@@ -10,7 +10,7 @@
         {
           "phase": {
 
-            "angryAnswer": [ "m why are you showing me this gross finger", "m I have never seen this piece of paper", "F You Are Utterly WRONG", "M HELL YOU ARE STUPID" ],
+            "angryAnswer": [ "m I have never seen this piece of paper", "m that could belong to anyone in the office", "m ... Ehm, ew. Who would like something like that.", "m a magazine...? " ],
             "textBlocks": [
 
               {
@@ -28,8 +28,8 @@
                 "block": {
 
 
-                  "dialogue": [ "N Yes...?", "P do you know anything about a package that came in?", "N No i dont know anything about a package", "P are you sure..?" ],
-                  "clue": 1
+                  "dialogue": [ "N Yes...?", "P do you know anything about a package that came in?","N No i dont know anything about a package", "P Okay" ],
+                  "clue": 4
 
                 }
 
@@ -58,7 +58,7 @@
         },
         {
           "phase": {
-            "angryAnswer": [ "M what", "m1 how do you even get to this conclusion?", "F You Are Utterly WRONG", "M HELL YOU ARE STUPID" ],
+            "angryAnswer": [ "m I have never seen this piece of paper", "m that could belong to anyone in the office", "m ... Ehm, ew. Who would like something like that.", "m a magazine...? you already showed me this " ],
             "textBlocks": [
 
               {

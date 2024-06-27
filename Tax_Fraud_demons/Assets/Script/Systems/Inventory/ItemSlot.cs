@@ -47,11 +47,12 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
     public void AddItem(int itemID, string itemName, Sprite itemSprite, string itemDescription)
     {
-  this.itemName = itemName;
-  this.itemSprite = itemSprite;
-  this.itemDescription = itemDescription;
+        this.itemName = itemName;
+        this.itemSprite = itemSprite;
+        this.itemDescription = itemDescription;
+        this.itemID = itemID;
   
-  itemImage.sprite = itemSprite;
+        itemImage.sprite = itemSprite;
   isFull = true;
     }
 
