@@ -10,7 +10,7 @@
         {
           "phase": {
 
-            "angryAnswer": [ "m I have never seen this piece of paper", "m that could belong to anyone in the office", "m ... Ehm, ew. Who would like something like that.", "m a magazine...? " ],
+            "angryAnswer": [ "T I have never seen this piece of paper", "T that could belong to anyone in the office", "C ... Ehm, ew. Who would like something like that.", "C a magazine...? " ],
             "textBlocks": [
 
               {
@@ -76,8 +76,8 @@
                 "block": {
 
 
-                  "dialogue": [ "N soo well i umm", "P ....." ],
-                  "clue": 1
+                  "dialogue": [ "A soo well i umm", "P ....." ],
+                  "clue": 0
 
                 }
 

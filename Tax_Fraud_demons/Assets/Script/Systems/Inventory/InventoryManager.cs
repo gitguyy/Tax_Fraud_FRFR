@@ -58,6 +58,8 @@ public class InventoryManager : MonoBehaviour
         {
             if(FindObjectOfType<InterrogationLogic>()!= null)
             {
+                SuspectAnimator anim = FindAnyObjectByType<SuspectAnimator>();
+                
                 interrogation = InterrogationLogic.Instance;
                 isInterrogation = true;
                 useItemMenu.SetActive(true);
@@ -68,6 +70,7 @@ public class InventoryManager : MonoBehaviour
                 yesButton = secondChildTransform.GetComponent<Button>();
                 yesButton.onClick.RemoveAllListeners();
                 yesButton.onClick.AddListener(checkItemId);
+                anim.LoadAnimator();
                 useItemMenu.SetActive(false);
             }
             else

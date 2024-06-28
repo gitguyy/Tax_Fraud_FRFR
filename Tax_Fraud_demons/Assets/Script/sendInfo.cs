@@ -29,6 +29,8 @@ public class sendInfo : MonoBehaviour
         
     }
 
+
+
     public void receiveInfo(InterrogationInformation info)
     {
         interrogationInfo = info;

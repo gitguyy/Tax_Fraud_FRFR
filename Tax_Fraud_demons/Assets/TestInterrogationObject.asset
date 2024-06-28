@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3786bf42ddebc4745b1ebdae22f37390, type: 3}
   m_Name: TestInterrogationObject
   m_EditorClassIdentifier: 
-  npcSprites: []
+  sprites: {fileID: 9100000, guid: a4313bb1e811123498457393dc00dabb, type: 2}
   text: {fileID: 4900000, guid: 73b9ac0ba7dda4c41a45634c965dc329, type: 3}
