@@ -74,7 +74,7 @@ public class InterrogationInteraction : MonoBehaviour
         {
             originalText = system.getText();
             anim.SetTrigger();
-            Debug.Log("checking trigger");
+            
             doneSpelling = false;
            
             //spellNextText();

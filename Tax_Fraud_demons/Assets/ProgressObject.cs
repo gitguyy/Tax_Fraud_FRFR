@@ -5,11 +5,12 @@ using UnityEngine;
 
 public interface IProgressObject 
 {
-    protected virtual void onClick()
+    
+    protected void onClick()
     {
 
     }
-    protected virtual void SetShow()
+    protected void SetShow()
     {
 
     }

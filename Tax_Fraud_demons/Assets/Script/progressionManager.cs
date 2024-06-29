@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEngine;
 
@@ -11,6 +12,8 @@ public class progressionManager : MonoBehaviour
     public int[] characterProgress;
     public int progressionLevel;
     private DialogueSystem dialogue;
+    [SerializeField]
+    ProgressBaseObjects[] objects;
     #endregion;
     #region Singleton
 
@@ -32,6 +35,15 @@ public class progressionManager : MonoBehaviour
         dialogue = DialogueSystem.Instance;
         characterDialogue = new int[2];
         characterProgress = new int[2];
+        objects = FindObjectsOfType<ProgressBaseObjects>();
+        for (int i = 0; i < objects.Length; i++)
+        {
+
+            objects[i].Initialize();
+        }
+
+
+
     }
 
     // Update is called once per frame
@@ -39,6 +51,7 @@ public class progressionManager : MonoBehaviour
     {
         
     }
+   
 
     public void progress(int[] charactersToProgress)
     {
@@ -69,7 +82,14 @@ public class progressionManager : MonoBehaviour
         }
         dialogue.ProgressAll(ref characterDialogue);
         progressionLevel++;
+        for(int i = 0; i< objects.Length; i++)
+        {
+            objects[i].SetShow(progressionLevel);
+
+        }
     }
+
+
 
     
 }
