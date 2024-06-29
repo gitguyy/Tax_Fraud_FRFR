@@ -9,7 +9,7 @@ public class InterrogationLogic : MonoBehaviour
 {
     #region Variables
     
-    private InterrogationInformation info;
+    public InterrogationInformation info {  get; private set; }
     private Sprite[] npcSprites;
     private TextAsset text;
     private sendInfo getInfo;
@@ -101,9 +101,13 @@ public class InterrogationLogic : MonoBehaviour
     #region Initializing
     private void OnEnable()
     {
+        Debug.Log("got called");
+       
         if (sendInfo.Instance != null)
         {
+            
             getInfo = sendInfo.Instance;
+            info = getInfo.interrogationInfo;
             text = getInfo.interrogationInfo.GetText();
         }else
         {
@@ -134,8 +138,7 @@ public class InterrogationLogic : MonoBehaviour
             Debug.Log("currect clue");
             isAngry = false;
             isCorrectClue = true;
-            curTextID = 0;
-            curBlock = 0;
+            QuickReset();
             goToNextPhase();
             return;
             
@@ -198,6 +201,15 @@ public class InterrogationLogic : MonoBehaviour
         curTextID = 0;
         loader.loadScene("Level_1");
         
+    }
+
+    private void QuickReset()
+    {
+        Debug.Log("resetting block");
+        curBlock = 0;
+        curTextID = 0;
+      
+
     }
 
     public string getText()

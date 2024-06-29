@@ -5,9 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "InterrogationInfo")]
 public class InterrogationInformation : ScriptableObject
 {
+
+
     [SerializeField]
-   
-    Sprite[] npcSprites;
+    public RuntimeAnimatorController sprites;
     [SerializeField]
     private TextAsset text;
 
@@ -17,10 +18,7 @@ public class InterrogationInformation : ScriptableObject
         return text;
     }
 
-    public Sprite[] getSprites()
-    {
-        return npcSprites;
-    }
+    
 
 
 
