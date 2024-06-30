@@ -233,10 +233,10 @@ public class talkingBehavior : dialogueEnumerator
         startInt = progress.characterDialogue[NPC];
 
         startIDs = progress.characterDialogue;
-        if(NPC !>= 0)
-        {
-            curText = actor.dialogue[startInt];
-        }
+     
+        
+            //curText = actor.dialogue[startInt];
+        
        
         
         

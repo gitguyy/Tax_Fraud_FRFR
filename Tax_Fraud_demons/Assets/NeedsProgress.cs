@@ -15,6 +15,8 @@ public class NeedsProgress : ProgressBaseObjects
         SetShow(0);
     }
 
+    
+
 
     public override void SetShow(int tryAt)
     {

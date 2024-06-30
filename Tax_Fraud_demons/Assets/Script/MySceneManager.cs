@@ -35,6 +35,7 @@ public class MySceneManager : MonoBehaviour
         Scene newScene = SceneManager.GetActiveScene();
         if (newScene != currentScene)
         {
+            transitioned.Invoke();
             Debug.Log("Scene transitioned from " + currentScene.name + " to " + newScene.name);
             currentScene = newScene;
             hasTransitioned = true;

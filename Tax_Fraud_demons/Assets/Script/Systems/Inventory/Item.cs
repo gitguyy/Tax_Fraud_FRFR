@@ -16,17 +16,33 @@ public class Item : MonoBehaviour
     
     [TextArea]
     [SerializeField] private string itemDescription;
+    progressionManager manager;
     
     //[SerializeField] private int quantity; if needed quantitfy prob not
     private InventoryManager inventoryManager;
     
     void Start()
     {
+
         
         inventoryManager = InventoryManager.Instance;
         
     }
-    
+    //check if item has been picked up before
+    private void OnEnable()
+    {
+        manager = progressionManager.Instance;
+        if (manager != null)
+        {
+           
+            if (manager.itemsPickedUp[itemID-1] == true)
+            {
+               
+                Destroy(this.gameObject);
+            }
+        }
+    }
+
     /*
     private void OnMouseDown()
     {
@@ -34,12 +50,13 @@ public class Item : MonoBehaviour
         Destroy(gameObject);
     }
     */
-    
-     //TO COLLIDE WITH ITEMS
+
+    //TO COLLIDE WITH ITEMS
     private void OnTriggerStay2D(Collider2D other)
     {
         if(Input.GetMouseButton(0) && other.tag == "Mouse")
         {
+            manager.setItemPickUp(itemID-1);
             if(IsProgress != null)
             {
                 IsProgress.onCLick();

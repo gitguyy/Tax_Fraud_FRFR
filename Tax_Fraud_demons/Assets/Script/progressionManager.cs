@@ -13,7 +13,13 @@ public class progressionManager : MonoBehaviour
     public int progressionLevel;
     private DialogueSystem dialogue;
     [SerializeField]
+   
     ProgressBaseObjects[] objects;
+    [SerializeField]
+    GameObject[] items;
+    [SerializeField]
+    MySceneManager sceneManager;
+    public bool[] itemsPickedUp { private set; get; }
     #endregion;
     #region Singleton
 
@@ -32,9 +38,11 @@ public class progressionManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        sceneManager = MySceneManager.Instance;
         dialogue = DialogueSystem.Instance;
         characterDialogue = new int[2];
         characterProgress = new int[2];
+      
         objects = FindObjectsOfType<ProgressBaseObjects>();
         for (int i = 0; i < objects.Length; i++)
         {
@@ -46,10 +54,23 @@ public class progressionManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
         
+        itemsPickedUp = new bool[items.Length];
+       
+    }
+
+    public void setItemPickUp(int ID)
+    {
+        itemsPickedUp[ID] = true;
+      
+    }
+
+    // Update is called once per frame
+   public void onTransition()
+    {
+        objects = FindObjectsOfType<ProgressBaseObjects>();
     }
    
 
@@ -84,7 +105,11 @@ public class progressionManager : MonoBehaviour
         progressionLevel++;
         for(int i = 0; i< objects.Length; i++)
         {
-            objects[i].SetShow(progressionLevel);
+            if (objects[i] != null)
+            {
+                objects[i].SetShow(progressionLevel);
+            }
+           
 
         }
     }

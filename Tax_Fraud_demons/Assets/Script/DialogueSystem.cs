@@ -49,6 +49,7 @@ public class DialogueSystem : MonoBehaviour
     public PlayerOperations player;
     public GameObject Bubble;
     public talkingBehavior dialogue;
+    public UnityEvent onTransition;
     
 
     GameObject curObject;
@@ -76,6 +77,7 @@ public class DialogueSystem : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+        
         
     }
 
