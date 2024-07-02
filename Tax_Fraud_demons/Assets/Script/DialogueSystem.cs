@@ -81,6 +81,14 @@ public class DialogueSystem : MonoBehaviour
         
     }
 
+    private void OnEnable()
+    {
+        show = FindAnyObjectByType<ShowDialogue>();
+        Debug.Log("name of show dialogue object: " + show.gameObject.name);
+    }
+
+
+
 
 
 
@@ -90,18 +98,13 @@ public class DialogueSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         sceneManager = MySceneManager.Instance;
-        
         t = myText.text;
         player = PlayerOperations.instance;
-        
         myActors = JsonUtility.FromJson<ActorCollection>(t);
         //Debug.Log(myActors.actors[0].dialogue[0]);
         dialogue = gameObject.AddComponent<talkingBehavior>();
         ((talkingBehavior)dialogue).player = player;
-       
-        
 
     }
 
@@ -110,7 +113,6 @@ public class DialogueSystem : MonoBehaviour
         int temp = 0;
         foreach(Actor actor in myActors.actors)
         {
-            
             while (dialogue.checkDialogueType(actor.dialogue[startPoint[temp]]) != DialogueType.End)
             {
                 startPoint[temp]++;
@@ -140,7 +142,7 @@ public class DialogueSystem : MonoBehaviour
         
       
     }
-
+    
 
 
 
@@ -152,63 +154,33 @@ public string getText()
     public void onTalk(GameObject g)
     {
 
-        
-
-
-      
         if(g.GetComponent<NpcInformations>() != null)
         {
             ((talkingBehavior)dialogue).setTimer(letterTimer);
-
             //update the text
-
-
             int temp = g.GetComponent<NpcInformations>().getID();
             ID = temp;
-            
-            
-           
-
-
             if (curObject != g )
             {
                 dialogue.onEnter(myActors.actors[ID],ID);
-               
-                   
-                
                 curObject = g;
 
-            }
-            
-            
-            
-
-                
-                dialogue.talkUpdate(ref t);
+            }                          
+            dialogue.talkUpdate(ref t);
                 //Debug.Log("spelling");
-               
                 if(t.Length != 0)
-                letters.Invoke(t.Length);
-            
-                
-                
-               
+                    {
+                    letters.Invoke(t.Length);
+                    }  
                 show.setText(t);
-                
-            
-            
-
-            
-           
-            
         }
-
-        
     }
 
     public void resetText()
     {
-        show.resetText(); 
+        if(show == null)
+            show = FindAnyObjectByType<ShowDialogue>();
+        show.resetText();      
     } 
     //takes the starting id of where in the dialogue we currently are
    

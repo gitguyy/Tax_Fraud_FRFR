@@ -20,7 +20,7 @@ public class NeedsProgress : ProgressBaseObjects
 
     public override void SetShow(int tryAt)
     {
-        Debug.Log("tied show at: " + tryAt);
+       
         if(tryAt == changeAt)
         {
             sendInfo.onCall();

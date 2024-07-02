@@ -56,32 +56,39 @@ public class InventoryManager : MonoBehaviour
     {
         if(sceneLoader.hasTransitioned == true)
         {
-            if(FindObjectOfType<InterrogationLogic>()!= null)
-            {
-                SuspectAnimator anim = FindAnyObjectByType<SuspectAnimator>();
-                
-                interrogation = InterrogationLogic.Instance;
-                isInterrogation = true;
-                useItemMenu.SetActive(true);
-                
-               
-                Transform secondChildTransform = useItemMenu.transform.GetChild(1);
-                Button yesButton;
-                yesButton = secondChildTransform.GetComponent<Button>();
-                yesButton.onClick.RemoveAllListeners();
-                yesButton.onClick.AddListener(checkItemId);
-                anim.LoadAnimator();
-                useItemMenu.SetActive(false);
-            }
-            else
-            {
-                isInterrogation = false;
-            }
+            
             sceneLoader.hasTransitioned = false;
         }
         if (Input.GetButtonDown("Inventory"))
         {
             ToggleInventory();
+        }
+    }
+
+    public void onTransition()
+    {
+        if (FindObjectOfType<InterrogationLogic>() != null)
+        {
+            SuspectAnimator anim = FindAnyObjectByType<SuspectAnimator>();
+
+            interrogation = InterrogationLogic.Instance;
+            isInterrogation = true;
+            useItemMenu.SetActive(true);
+
+
+            Transform secondChildTransform = useItemMenu.transform.GetChild(1);
+            Button yesButton;
+            yesButton = secondChildTransform.GetComponent<Button>();
+            yesButton.onClick.RemoveAllListeners();
+            yesButton.onClick.AddListener(checkItemId);
+            anim.LoadAnimator();
+            useItemMenu.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("transitioned to 2d sidescroll");
+            isInterrogation = false;
+            useItemMenu.SetActive(false);
         }
     }
 
