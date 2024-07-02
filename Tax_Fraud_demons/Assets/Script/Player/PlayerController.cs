@@ -6,6 +6,8 @@ public class PlayerController : CharacterController
 {
     public AudioClip[] footstepSounds; // Array to hold footstep sounds
     private AudioSource audioSource;
+    [SerializeField]
+    private float audioVolume;
     
       protected override void Start()
     {
@@ -38,6 +40,7 @@ public class PlayerController : CharacterController
         {
             int randomIndex = Random.Range(0, footstepSounds.Length);
             audioSource.clip = footstepSounds[randomIndex];
+            audioSource.volume = audioVolume;
             audioSource.Play();
         }
     }
