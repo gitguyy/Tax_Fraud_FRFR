@@ -8,10 +8,12 @@ public class CameraManager : MonoBehaviour
     public CinemachineVirtualCamera room1Camera;
     public CinemachineVirtualCamera room2Camera;
     public CinemachineVirtualCamera room3Camera;
+    public CinemachineVirtualCamera view;
 
     public GameObject room1GameObject;
     public GameObject room2GameObject;
     public GameObject room3GameObject;
+    public GameObject viewObject;
 
     private CinemachineVirtualCamera _currentCamera;
     private GameObject _currentGameObject;
