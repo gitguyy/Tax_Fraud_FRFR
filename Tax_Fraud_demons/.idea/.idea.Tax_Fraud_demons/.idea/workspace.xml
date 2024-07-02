@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a57fc650-d301-43a3-b2a7-b79b875ba63e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Systems/Camera.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Systems/Camera/CameraManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Systems/Camera/CameraManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Systems/Camera/RoomTrigger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Systems/Camera/RoomTrigger.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tax_Fraud_demons/.idea/indexLayout.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tax_Fraud_demons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tax_Fraud_demons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Final_Background/Room.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Final_Background/Room.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +50,9 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\gilmo\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\gilmo\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\gilmo\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\erihs\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\erihs\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\erihs\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
@@ -128,6 +122,7 @@
       <workItem from="1719320769931" duration="2751000" />
       <workItem from="1719573821662" duration="7825000" />
       <workItem from="1719689095746" duration="14000" />
+      <workItem from="1719919121337" duration="668000" />
     </task>
     <servers />
   </component>
