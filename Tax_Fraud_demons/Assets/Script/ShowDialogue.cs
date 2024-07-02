@@ -13,10 +13,14 @@ public class ShowDialogue : MonoBehaviour
     Transform curTransform;
     public Action destroy;
     [SerializeField]
-    Vector3 offSet; 
+    Vector3 offSet;
     [SerializeField]
- 
-    
+    private void OnEnable()
+    {
+        Debug.Log("gameobject is back " + gameObject.name);
+    }
+
+
     void Start()
     {
         t = "";
@@ -40,14 +44,22 @@ public class ShowDialogue : MonoBehaviour
     public void setText(string _text)
     {
         t = _text;
-        //Debug.Log("set Dialogue");
+       
         
       
     }
     public void resetText()
     {
+       
         t = "";
-        Debug.Log("reset text");
+        
+     
+
+    }
+
+    private void OnDestroy()
+    {
+        Debug.LogWarning("destroyed: " + gameObject.name);
     }
 
     //gets the transform of the object the player is talking to

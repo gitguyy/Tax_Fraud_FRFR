@@ -26,6 +26,7 @@ public class ProgressBaseObjects : MonoBehaviour,IProgressObject
     {
 
     }
+    
 
     // Update is called once per frame
     void Update()

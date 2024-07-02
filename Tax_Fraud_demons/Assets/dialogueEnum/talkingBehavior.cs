@@ -74,7 +74,7 @@ public class talkingBehavior : dialogueEnumerator
 
 
         //progress.giveCharacterProgress(startID);
-        Debug.Log("start ID: " + startInt);
+        //Debug.Log("start ID: " + startInt);
         startInt = progress.characterDialogue[ID];
       
         startIDs = progress.characterDialogue;

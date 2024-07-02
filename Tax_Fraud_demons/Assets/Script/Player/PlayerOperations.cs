@@ -61,6 +61,7 @@ public class PlayerOperations : MonoBehaviour
                
                 dialogueBox = GameObject.FindAnyObjectByType<DialogueBox>().gameObject;
                 dialogueBox.gameObject.SetActive(false);
+                
             }
             
         }
@@ -68,7 +69,7 @@ public class PlayerOperations : MonoBehaviour
         {
             if (canTalkWith && Input.GetMouseButtonDown(0))
             {
-                Debug.Log("talking initiated");
+                //Debug.Log("talking initiated");
                 talking = true;
                
                 dialogueBox.SetActive(true);
