@@ -12978,6 +12978,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 778ddb4469983274ba263a073034474b, type: 3}
   - {fileID: 8300000, guid: 506b1e10ebfddda46975d08d20f6c09a, type: 3}
   - {fileID: 8300000, guid: 1072ac0e061cc6d46a1bc4ebf80b48a5, type: 3}
+  audioVolume: 0.2
 --- !u!4 &2085004894
 Transform:
   m_ObjectHideFlags: 0
@@ -13197,6 +13198,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1857710559}
         m_TargetAssemblyTypeName: progressionManager, Assembly-CSharp
+        m_MethodName: onTransition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1181357553}
+        m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
         m_MethodName: onTransition
         m_Mode: 1
         m_Arguments:

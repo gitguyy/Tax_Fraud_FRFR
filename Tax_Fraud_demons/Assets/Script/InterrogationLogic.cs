@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class InterrogationLogic : MonoBehaviour
 {
@@ -29,6 +30,8 @@ public class InterrogationLogic : MonoBehaviour
    
     InventoryManager inventoryManager;
     SceneLoader loader;
+
+    public Slider angerSlider;
 
     
     
@@ -144,13 +147,22 @@ public class InterrogationLogic : MonoBehaviour
             
         }
         Debug.Log("wrong clue");
+        AngerFilled();
         isAngry = true;
         isCorrectClue = false;
         curClueID = ID;
         
+        
 
     }
 
+
+    void AngerFilled()
+    {
+        angerSlider.value = angerSlider.value + 1;
+    }
+
+    
     public void goToNextPhase()
     {
         if(mySuspect.phases.Length >= curPhase)
