@@ -7729,8 +7729,8 @@ GameObject:
   - component: {fileID: 1172076298}
   - component: {fileID: 1172076297}
   - component: {fileID: 1172076296}
-  - component: {fileID: 1172076301}
   - component: {fileID: 1172076300}
+  - component: {fileID: 1172076301}
   m_Layer: 6
   m_Name: Item_1
   m_TagString: DOOR
@@ -7753,7 +7753,7 @@ MonoBehaviour:
   itemName: Import Tax Clue
   sprite: {fileID: 21300000, guid: 7d5f9f0960fb9f546bae30ececb68558, type: 3}
   itemID: 1
-  IsProgress: {fileID: 0}
+  IsProgress: {fileID: 1172076301}
   itemDescription: It's a crumbled up receipt from the interdimensional customs.
     It says that a very high import tax is still due. There are several red warnings
     on it saying "Urgent!".
@@ -7867,10 +7867,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1172076295}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d5310a0c00efe140a14eb071ae7a689, type: 3}
+  m_Script: {fileID: 11500000, guid: 717ef0345597b4b4fb1a8778109d3011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeAt: 1
+  changeAt: 0
   sendInfo: {fileID: 1172076300}
 --- !u!1 &1175608554
 GameObject:
@@ -9138,7 +9138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d5310a0c00efe140a14eb071ae7a689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeAt: 3
+  changeAt: 5
   sendInfo: {fileID: 1398874611}
 --- !u!1 &1407130649
 GameObject:
@@ -9619,7 +9619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d5310a0c00efe140a14eb071ae7a689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeAt: 2
+  changeAt: 3
   sendInfo: {fileID: 1460595991}
 --- !u!224 &1503655760 stripped
 RectTransform:
@@ -10810,6 +10810,7 @@ MonoBehaviour:
   npcSprites:
   - {fileID: -1785505631, guid: 7bac3c0d5d61e4644b10f86f4b65e350, type: 3}
   - {fileID: 723457669, guid: b4ddd531989a1354ca8f2c572734ee7f, type: 3}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
 --- !u!1001 &1739810835
@@ -12635,6 +12636,8 @@ GameObject:
   - component: {fileID: 2015009879}
   - component: {fileID: 2015009878}
   - component: {fileID: 2015009877}
+  - component: {fileID: 2015009881}
+  - component: {fileID: 2015009880}
   m_Layer: 6
   m_Name: Item_2
   m_TagString: DOOR
@@ -12673,7 +12676,7 @@ MonoBehaviour:
   itemName: Big Box
   sprite: {fileID: 21300000, guid: d1bc921a0bad1a14eaaf777bfd99b6d1, type: 3}
   itemID: 2
-  IsProgress: {fileID: 0}
+  IsProgress: {fileID: 2015009881}
   itemDescription: It's a big cardboard box which was used to ship something in.
     The adress of the office is written on it, but not who it should be delivered
     too.
@@ -12749,6 +12752,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5127945, y: 1.3477523}
   m_EdgeRadius: 0
+--- !u!114 &2015009880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015009875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b69987ba2830b884097a4028ae35ca33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2015009881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015009875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717ef0345597b4b4fb1a8778109d3011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeAt: 0
+  sendInfo: {fileID: 2015009880}
 --- !u!1 &2039357098
 GameObject:
   m_ObjectHideFlags: 0
@@ -13735,6 +13764,8 @@ GameObject:
   - component: {fileID: 2118219681}
   - component: {fileID: 2118219680}
   - component: {fileID: 2118219679}
+  - component: {fileID: 2118219683}
+  - component: {fileID: 2118219682}
   m_Layer: 6
   m_Name: Item_3
   m_TagString: DOOR
@@ -13773,7 +13804,7 @@ MonoBehaviour:
   itemName: Angel Statue
   sprite: {fileID: 21300000, guid: 86307ea2255b2734c90be32cdde8b2ab, type: 3}
   itemID: 3
-  IsProgress: {fileID: 0}
+  IsProgress: {fileID: 2118219683}
   itemDescription: It's a life sized figurine of an angel, with some unfortunate
     modifications. I'd rather not look at it longer.
 --- !u!50 &2118219680
@@ -13848,6 +13879,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.1470413, y: 5.549451}
   m_EdgeRadius: 0
+--- !u!114 &2118219682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118219677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b69987ba2830b884097a4028ae35ca33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2118219683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118219677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717ef0345597b4b4fb1a8778109d3011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeAt: 0
+  sendInfo: {fileID: 2118219682}
 --- !u!1 &2119615443
 GameObject:
   m_ObjectHideFlags: 3
