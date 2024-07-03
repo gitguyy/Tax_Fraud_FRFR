@@ -12874,8 +12874,8 @@ GameObject:
   - component: {fileID: 2059758999}
   - component: {fileID: 2059758998}
   - component: {fileID: 2059758997}
-  - component: {fileID: 2059759001}
   - component: {fileID: 2059759002}
+  - component: {fileID: 2059759003}
   m_Layer: 6
   m_Name: Cupboard
   m_TagString: DOOR
@@ -12898,7 +12898,7 @@ MonoBehaviour:
   itemName: Magazine
   sprite: {fileID: 21300000, guid: ece646e3121c1604f9e15e1cd707db4b, type: 3}
   itemID: 4
-  IsProgress: {fileID: 2059759001}
+  IsProgress: {fileID: 0}
   itemDescription: It's a magazine, open on the page advertising the figurine I found.
     The price for it is steep, and it says you can only order it from heaven.
 --- !u!50 &2059758998
@@ -12989,20 +12989,6 @@ Transform:
   - {fileID: 1189759770}
   m_Father: {fileID: 1991499573}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2059759001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2059758996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 717ef0345597b4b4fb1a8778109d3011, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  changeAt: 4
-  sendInfo: {fileID: 2059759002}
 --- !u!114 &2059759002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13015,6 +13001,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b69987ba2830b884097a4028ae35ca33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2059759003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059758996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d5310a0c00efe140a14eb071ae7a689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeAt: 4
+  sendInfo: {fileID: 2059759002}
 --- !u!1 &2060024925
 GameObject:
   m_ObjectHideFlags: 0
