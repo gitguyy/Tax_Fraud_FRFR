@@ -40,8 +40,8 @@ public class progressionManager : MonoBehaviour
     {
         sceneManager = MySceneManager.Instance;
         dialogue = DialogueSystem.Instance;
-        characterDialogue = new int[2];
-        characterProgress = new int[2];
+        characterDialogue = new int[5];
+        characterProgress = new int[5];
       
         objects = FindObjectsOfType<ProgressBaseObjects>();
         for (int i = 0; i < objects.Length; i++)

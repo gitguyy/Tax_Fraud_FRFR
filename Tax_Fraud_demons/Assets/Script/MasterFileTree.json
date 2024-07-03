@@ -5,13 +5,14 @@
 
     {
       "dialogue": [
-        "P sooooo how are ya?",
-        "N Quite good i'd say...",
-        "P Well i would say you are lying!",
-        "N What makes you suspect that???",
+        "P Hello Ma'am, I am MItch Mitchell Junior, with the Infernal Revenue  Service. I've come to investigate your office for possible tax fr-",
+        "N JENNY! ANOTHER CALLER FOR YOU. AND BE FUCKING POLITE THIS TIME!",
+        "P Ahem, could you please -",
+        "N I have no time to talk to low-salary employees.",
         "E ",
-        "P hah i have proof now!!!!",
-        "N oh no you found my doctors notice that says I have triple cancer",
+        "P Do you have any idea who this receipt belong's to? It was laying in the trash.",
+        "N Yes, because I pay very close attention to every crumbled up piece of paper that people put in the garbage around here.",
+        "P  A 'No' would have sufficed.",
         "E "
 
 

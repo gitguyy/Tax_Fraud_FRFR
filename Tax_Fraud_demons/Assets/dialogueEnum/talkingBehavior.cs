@@ -21,7 +21,7 @@ public class talkingBehavior : dialogueEnumerator
     public UnityEvent<int> sendID = new();
     InitializeAnswers init;
     talkingBehavior[] behaviors;
-    int []startIDs = { 0,0};
+    int[] startIDs;
     int startInt;
     EventManager manager;
     DialogueSystem system;
@@ -31,7 +31,7 @@ public class talkingBehavior : dialogueEnumerator
 
     private void Start()
     {
-        startIDs = new int[2];
+        startIDs = new int[5];
         progress = progressionManager.Instance;
         manager = EventManager.Instance;
         system = DialogueSystem.Instance;
