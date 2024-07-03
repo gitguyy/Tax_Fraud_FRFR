@@ -1774,6 +1774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   won: 0
   isAngry: 0
+  angerSlider: {fileID: 1128685198}
   curPhase: 0
 --- !u!4 &1481099577
 Transform:
