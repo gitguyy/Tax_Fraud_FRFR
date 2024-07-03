@@ -21,7 +21,7 @@
         "P The box would be a pretty big thing, and I don't see it anywhere.",
         "P Is there any other place it could be?",
         "N There is the storage room, on the left side of the elevator.",
-        "N You will find the door buried in all the trash, right next to my hopes and dreams.",
+        "NPYou will find the door buried in all the trash, right next to my hopes and dreams.",
         
         "E ",
         
@@ -152,11 +152,11 @@
         
         "E ",
         
-        "P I found this import tax receipt in the trash nearby, and it doesen't seem to have been paid yet.",
+        "P I found this import tax receipt in the trash nearby, and it doesn't seem to have been paid yet.",
         "P Do you know who this could belong to?",
         "N I do not brother, I apologize.",
         "P Has anyone ordered anything into the office?",
-        "N I did see Jadis carrying a big box through the elevator. You might want to inquire about that.",
+        "NPI did see Jadis carrying a big box through the elevator. You might want to inquire about that.",
 
         "E ",
         
@@ -167,7 +167,7 @@
         
         "P Please, can you tell me if there is any extra space where people might put their things?",
         "N .....",
-        "N Such a place doesen't exist, and I also woulnd't try to find it my brother.",
+        "N Such a place doesn't exist, and I also woulnd't try to find it my brother.",
         
         "E ",
         
@@ -187,10 +187,10 @@
         "P Hello?",
         "N ...",
         "N Don't worry, it's catnip.",
-        "P Have you noticed any suspicious acitivty around the office pertaining to tax fraud?",
+        "P Have you noticed any suspicious activity around the office pertaining to tax fraud?",
         "N ...",
         "N ...",
-        "N No I have not been frauding any faxes, I usually send stuff per mail. (Badum-psh This is a bad joke and I will probably replace it.)",
+        "N No I have not been frauding any faxes, I usually send stuff per mail.",
         "P ... Alright.",
         
         "E ",

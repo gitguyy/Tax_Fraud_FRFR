@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a57fc650-d301-43a3-b2a7-b79b875ba63e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tax_Fraud_demons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tax_Fraud_demons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/MasterFileTree.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/MasterFileTree.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +122,7 @@
       <workItem from="1719573821662" duration="7825000" />
       <workItem from="1719689095746" duration="14000" />
       <workItem from="1719919121337" duration="1184000" />
-      <workItem from="1720003909263" duration="3661000" />
+      <workItem from="1720003909263" duration="4704000" />
     </task>
     <servers />
   </component>
