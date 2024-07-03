@@ -114,6 +114,27 @@ public class progressionManager : MonoBehaviour
         }
     }
 
+    public void progressPlusExit()
+    {
+        int temp = characterProgress.Length;
+        for (int i = 0; i < temp; i++)
+        {
+            characterProgress[i]++;
+        }
+        dialogue.ProgressAll(ref characterDialogue);
+        progressionLevel++;
+        for (int i = 0; i < objects.Length; i++)
+        {
+            if (objects[i] != null)
+            {
+                objects[i].SetShow(progressionLevel);
+            }
+
+
+        }
+        dialogue.dialogue.onExit();
+    }
+
 
 
     

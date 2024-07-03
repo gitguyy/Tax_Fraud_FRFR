@@ -105,6 +105,7 @@ public class DialogueSystem : MonoBehaviour
         //Debug.Log(myActors.actors[0].dialogue[0]);
         dialogue = gameObject.AddComponent<talkingBehavior>();
         ((talkingBehavior)dialogue).player = player;
+        dialogue.onEnter(myActors.actors[0],ID) ;
 
     }
 

@@ -22,7 +22,7 @@ public class ItemProgress : ProgressBaseObjects
 
     public override void onCLick()
     {
-        p.progress();
+        p.progressPlusExit();
     }
     public override void SetShow(int tryAt)
     {
