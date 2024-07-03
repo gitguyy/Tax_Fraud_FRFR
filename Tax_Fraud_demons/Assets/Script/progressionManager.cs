@@ -19,6 +19,8 @@ public class progressionManager : MonoBehaviour
     GameObject[] items;
     [SerializeField]
     MySceneManager sceneManager;
+    [SerializeField]
+    public bool[] wallsDeactivated;
     public bool[] itemsPickedUp { private set; get; }
     #endregion;
     #region Singleton
@@ -38,6 +40,7 @@ public class progressionManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        wallsDeactivated = new bool[2];
         sceneManager = MySceneManager.Instance;
         dialogue = DialogueSystem.Instance;
         characterDialogue = new int[5];
