@@ -7,14 +7,18 @@
             "angryAnswer": [ "m Artificial debt created by artificial borders. In the grand scheme of things, heaven and hell are one and the same.",
               "m This is the box I saw Jadis carry, you finally found it!",
               "m Our heavenly brethren. We should not shun them and instead bridge the gap of artificial morality.",
-              "m My preferred literature would be Sun Tzu's 'The Art of No War'." ],
+              "m My preferred literature would be Sun Tzu's 'The Art of No War'."
+               
+            ],
             "textBlocks": [
               {
                 "block": {
                   "dialogue": [ "P Are you the one responsible for tax fraud?",
                     "N My brother in Satan, I have always been at your disposal for any help or questions.",
                     "P Which is exactly what someone trying to misled me would do.",
-                    "N I would never do that to you, but I understand, you are doing your job."],
+                    "N I would never do that to you, but I understand, you are doing your job.",
+                     "  "
+                  ],
                   "clue": 0
                 }
               }

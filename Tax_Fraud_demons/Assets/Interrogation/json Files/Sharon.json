@@ -14,7 +14,9 @@
                 "dialogue": [ "P I suspect you might be the person responsible for tax fraud.",
                   "N Enlighten me.",
                   "P You oversee this department, if anyone should know what is going on here, it would be you.",
-                  "N Brilliant deduction."],
+                  "N Brilliant deduction.",
+                  "  "
+                ],
                 "clue": 0
               }
             }

@@ -4,17 +4,21 @@
       "phases": [
         {
           "phase": {
-            "angryAnswer": [ "m Why are you showing me a random piece of paper that has nothing to do with me.",
+            "angryAnswer": [
+              "m Why are you showing me a random piece of paper that has nothing to do with me.",
               "m That could belong to anyone in the office.",
-              "m You Are Utterly WRONG",
-              "m ...Ehm, ew. Who would like something like that." ],
+              "m ...Ehm, ew. Who would like something like that",
+              "m ...Ehm, ew. Who would like something like that."
+            ],
             "textBlocks": [
               {
                 "block": {
                   "dialogue": [ "P  I think you did the tax fraud.", 
                     "N Nnnngh I've done nothing.",
-                    "P Exactly, you have been the personification of a white piece of bread. Which means you are hiding something.", 
-                    "N No I'm not."],
+                    "P Exactly, you have been the personification of a white piece of bread. Which means you are hiding something.",
+                    "N No I'm not.",
+                     "  "
+                  ],
                   "clue": 4
                 }
               }
@@ -31,11 +35,13 @@
             "textBlocks": [
               {
                 "block": {
-                  "dialogue": [ "N so... umm what am I doing here exactly?",
+                  "dialogue": [ "N Where did you get this??",
                     "P You know where, from your cupboard. Why were you trying to hide this?",
                     "N This is an invasion of privacy!",
                     "P In the name of uncovering tax fraud, anything goes. Tell me, why were you hiding this?",
-                    "N ... Because I was embarrassed? This does proves nothing!"],
+                    "N ... Because I was embarrassed? This does proves nothing!",
+                    "  "
+                  ],
                   "clue": 3
                 }
               }
@@ -53,7 +59,9 @@
               {
                 "block": {
                   "dialogue": [ "P It proves that you are the most likely owner of this thing.",
-                    "N NNNNNnnnngh. That was already here before I was hired."],
+                    "N NNNNNnnnngh. That was already here before I was hired.",
+                    "  "
+                  ],
                   "clue": 2
                 }
               }
@@ -73,7 +81,9 @@
                   "dialogue": [ "P When why is there a big cardboard box that was recently ordered into the office. The only item around that matches the size of that box is the statue.",
                     "N NNnnngh, nnngh I ordered that, is that a crime?",
                     "P It was shipped over from heaven, which means that it would have had an import tax.",
-                    "N  I paid that!"],
+                    "N  I paid that!",
+                    "  "
+                  ],
                   "clue": 1
                 }
               }
@@ -85,7 +95,7 @@
           "phase": {
             "angryAnswer": [ "m Where did you find this random piece of paper?",
               "m Some cardboard, and?",
-              "m You Are Utterly WRONG",
+              "m Again??",
               "m Yes, keep reminding me I have this, very funny." ],
             "textBlocks": [
               {
@@ -97,7 +107,9 @@
                     "N I AM?!?",
                     "P No, but you're going to have to pay what you owe plus a hefty fine.",
                     "N (sobs)",
-                    "P And this is why you always pay your taxes on time."],
+                    "P And this is why you always pay your taxes on time.",
+                    "  "
+                  ],
                   "clue": 0
                 }
               }

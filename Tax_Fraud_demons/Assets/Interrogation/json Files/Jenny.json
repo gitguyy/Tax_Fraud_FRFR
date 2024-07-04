@@ -14,7 +14,9 @@
                 "dialogue": [ "P I think you might be the one responsible for tax fr-",
                   "N Oh please, please, let me get back to work, I don't have the time -",
                   "P Which is exactly what you would be saying if you were trying to hide something.",
-                  "N Aaaaaaah!"],
+                  "N Aaaaaaah!",
+                  "  "
+                ],
                 "clue": 0
               }
             }
