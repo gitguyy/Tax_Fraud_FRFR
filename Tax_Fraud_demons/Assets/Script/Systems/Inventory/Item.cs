@@ -13,58 +13,52 @@ public class Item : MonoBehaviour
     [SerializeField]
     private ItemProgress IsProgress;
     
-    
     [TextArea]
     [SerializeField] private string itemDescription;
     progressionManager manager;
     
-    //[SerializeField] private int quantity; if needed quantitfy prob not
     private InventoryManager inventoryManager;
+    [SerializeField] private Animator animator;
+    private bool isClicked = false;
     
     void Start()
     {
-
-        
         inventoryManager = InventoryManager.Instance;
-        
+        animator = GetComponent<Animator>();
     }
-    //check if item has been picked up before
+    
+    // Check if item has been picked up before
     private void OnEnable()
     {
         manager = progressionManager.Instance;
         if (manager != null)
         {
-           
             if (manager.itemsPickedUp[itemID-1] == true)
             {
-               
                 Destroy(this.gameObject);
             }
         }
     }
 
-    /*
-    private void OnMouseDown()
-    {
-        inventoryManager.AddItem(itemName, sprite, itemDescription);
-        Destroy(gameObject);
-    }
-    */
-
-    //TO COLLIDE WITH ITEMS
+    // TO COLLIDE WITH ITEMS
     private void OnTriggerStay2D(Collider2D other)
     {
-        if(Input.GetMouseButton(0) && other.tag == "Mouse")
+        if(Input.GetMouseButton(0) && other.tag == "Mouse" && !isClicked)
         {
-            manager.setItemPickUp(itemID-1);
-            if(IsProgress != null)
-            {
-                IsProgress.onCLick();
-            }
-            inventoryManager.AddItem(itemID,itemName, sprite, itemDescription);
-            Destroy(gameObject);
-          
+            isClicked = true;
+            animator.SetTrigger("Clicked");
         }
-        
+    }
+
+    public void OnAnimationComplete()
+    {
+        Debug.Log("Animation complete, adding item to inventory.");
+        manager.setItemPickUp(itemID-1);
+        if(IsProgress != null)
+        {
+            IsProgress.onCLick();
+        }
+        inventoryManager.AddItem(itemID, itemName, sprite, itemDescription);
+        Destroy(gameObject);
     }
 }

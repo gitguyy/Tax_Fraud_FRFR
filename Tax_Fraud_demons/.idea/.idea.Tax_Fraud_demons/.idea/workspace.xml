@@ -6,7 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="a57fc650-d301-43a3-b2a7-b79b875ba63e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tax_Fraud_demons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tax_Fraud_demons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/MasterFileTree.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/MasterFileTree.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Clues/Angel-Sheet_fix_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Clues/Angel-Sheet_fix_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Clues/Box.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Clues/Box.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Clues/Cardboard_Box-Sheet_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Clues/Cardboard_Box-Sheet_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Clues/Magazine.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Clues/Magazine.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Clues/Magazine_Cupboard-Sheet_0 (1).controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Clues/Magazine_Cupboard-Sheet_0 (1).controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Clues/Tax.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Clues/Tax.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Clues/import_tax-Sheet_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Clues/import_tax-Sheet_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Systems/Inventory/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Systems/Inventory/Item.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +26,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Foreground_Elements/ParallaxForeground.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OnAnimationComplete.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Systems/Anger_Bar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Systems/Camera/CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Systems/Int_Table/InterigationTable.cs" root0="FORCE_HIGHLIGHTING" />
