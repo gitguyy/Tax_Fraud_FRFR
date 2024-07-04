@@ -21,7 +21,7 @@
         "P The box would be a pretty big thing, and I don't see it anywhere.",
         "P Is there any other place it could be?",
         "N There's a storage room, on the left side of the elevator.",
-        "NP You will find the door buried behind all the trash, right next to my hopes and dreams.",
+        "NPYou will find the door buried behind all the trash, right next to my hopes and dreams.",
 
         "E ",
 
@@ -104,7 +104,7 @@
         "N WAIT I DON'T HAVE ANY CALLERS RIGHT NOW, WHAT DO I DO, I'M NOT USED TO THIS -",
         "P You could tell me who in this office has an interest in collecting angel figurines.",
         "N I don't know...this is the first time in a long time I'm actually seeing my environment...",
-        "NP But I did see Stephen try to covertly put something in his cupboard several times.",
+        "NPBut I did see Stephen try to covertly put something in his cupboard several times.",
         "N He thinks that if he hides it under his shirt and whistles loudly it will be less suspicous.",
         "P Thank you for your asisstance.",
         "N ... What do I do with myself now? Who am I?",
@@ -220,7 +220,7 @@
         "P Do you know who this could belong to?",
         "N I do not brother, I apologize.",
         "P Do you know anyone who may have ordered something into the office?",
-        "NP I did see Jadis carrying a big box from the elevator. You might want to inquire about that.",
+        "NPI did see Jadis carrying a big box from the elevator. You might want to inquire about that.",
 
         "E ",
 
@@ -281,7 +281,7 @@
         "P ... Alright.",
         "N ...",
         "N ...",
-        "N Don't look in the trash behind me."
+        "N Don't look in the trash behind me.",
         "E ",
 
         "P Is this import tax receipt yours?",
@@ -331,7 +331,7 @@
         "N So nobody will be able to find it.",
         "N ...",
         "N ...",
-        "NP Whoops.",
+        "NPWhoops.",
         "E ",
         "P The address on this package has been scratched off, do you know who it might belong to?",
         "N ...",
