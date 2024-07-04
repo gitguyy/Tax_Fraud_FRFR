@@ -45,8 +45,24 @@ public class Item : MonoBehaviour
     {
         if(Input.GetMouseButton(0) && other.tag == "Mouse" && !isClicked)
         {
-            isClicked = true;
-            animator.SetTrigger("Clicked");
+            if(animator != null)
+            {
+                animator.SetTrigger("Clicked");
+            }
+            if(animator == null)
+            {
+                isClicked = true;
+                manager.setItemPickUp(itemID - 1);
+                if (IsProgress != null)
+                {
+                    IsProgress.onCLick();
+                }
+                Destroy(gameObject);
+                inventoryManager.AddItem(itemID, itemName, sprite, itemDescription);
+            }
+                
+            
+
         }
     }
 

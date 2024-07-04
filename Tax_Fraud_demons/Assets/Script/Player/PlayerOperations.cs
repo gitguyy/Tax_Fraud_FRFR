@@ -77,6 +77,11 @@ public class PlayerOperations : MonoBehaviour
             }
             if (canTalkWith && Input.GetMouseButtonDown(0) &&!talking)
             {
+                if(system == null)
+                {
+                    system = DialogueSystem.Instance;
+                }
+                Debug.Log("normal talk");
                 col.getObjectInfo();
                 //Debug.Log("talking initiated");
                 system.dialogue.backToDialogue();

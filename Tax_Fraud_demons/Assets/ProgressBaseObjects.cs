@@ -5,7 +5,7 @@ using UnityEngine;
 public class ProgressBaseObjects : MonoBehaviour,IProgressObject
 {
     [SerializeField]
-    protected int changeAt;
+    public int changeAt;
     // Start is called before the first frame update
     void Start()
     {
