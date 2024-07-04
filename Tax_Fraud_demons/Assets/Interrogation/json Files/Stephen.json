@@ -5,16 +5,16 @@
         {
           "phase": {
             "angryAnswer": [
-              "m Why are you showing me a random piece of paper that has nothing to do with me.",
-              "m That could belong to anyone in the office.",
-              "m ...Ehm, ew. Who would like something like that",
-              "m ...Ehm, ew. Who would like something like that."
+              "C Why are you showing me a random piece of paper that has nothing to do with me.",
+              "C That could belong to anyone in the office.",
+              "T ...Ehm, ew. Who would like something like that",
+              "M ...Ehm, ew. Who would like something like that."
             ],
             "textBlocks": [
               {
                 "block": {
                   "dialogue": [ "P  I think you did the tax fraud.", 
-                    "N Nnnngh I've done nothing.",
+                    "M Nnnngh I've done nothing.",
                     "P Exactly, you have been the personification of a white piece of bread. Which means you are hiding something.",
                     "N No I'm not.",
                      "  "
@@ -28,18 +28,18 @@
         
         {
           "phase": {
-            "angryAnswer": [ "m Where did you find this random piece of paper?",
-              "m Some cardboard, and?",
-              "m You Are Utterly WRONG",
-              "m Yes, keep reminding me I have this, very funny." ],
+            "angryAnswer": [ "M Where did you find this random piece of paper?",
+              "T Some cardboard, and?",
+              "M You Are Utterly WRONG",
+              "M Yes, keep reminding me I have this, very funny." ],
             "textBlocks": [
               {
                 "block": {
-                  "dialogue": [ "N Where did you get this??",
+                  "dialogue": [ "A Where did you get this??",
                     "P You know where, from your cupboard. Why were you trying to hide this?",
-                    "N This is an invasion of privacy!",
+                    "M This is an invasion of privacy!",
                     "P In the name of uncovering tax fraud, anything goes. Tell me, why were you hiding this?",
-                    "N ... Because I was embarrassed? This does proves nothing!",
+                    "M ... Because I was embarrassed? This does proves nothing!",
                     "  "
                   ],
                   "clue": 3
@@ -51,10 +51,10 @@
 
         {
           "phase": {
-            "angryAnswer": [ "m You're starting to annoy me with this.",
-              "m Some cardboard, and?",
-              "m (drools)",
-              "m LET IT REST!"],
+            "angryAnswer": [ "M You're starting to annoy me with this.",
+              "T Some cardboard, and?",
+              "T (drools)",
+              "M LET IT REST!"],
             "textBlocks": [
               {
                 "block": {
@@ -71,15 +71,15 @@
 
         {
           "phase": {
-            "angryAnswer": [ "m You're starting to annoy me with this.",
-              "m Just send me to heaven with this.",
-              "m This wasn't worth it I think.",
-              "m Nnnnnnngh!" ],
+            "angryAnswer": [ "M You're starting to annoy me with this.",
+              "T Just send me to heaven with this.",
+              "T This wasn't worth it I think.",
+              "M Nnnnnnngh!" ],
             "textBlocks": [
               {
                 "block": {
                   "dialogue": [ "P When why is there a big cardboard box that was recently ordered into the office. The only item around that matches the size of that box is the statue.",
-                    "N NNnnngh, nnngh I ordered that, is that a crime?",
+                    "T NNnnngh, nnngh I ordered that, is that a crime?",
                     "P It was shipped over from heaven, which means that it would have had an import tax.",
                     "N  I paid that!",
                     "  "
@@ -102,11 +102,11 @@
                 "block": {
                   "dialogue": [ "P Then why was this receipt with an unpaid import tax and several warnings on it thrown away in the trash can?",
                     "N ...",
-                    "N I  DID IT, I DID IT, OH LORD IN HELL FORGIVE ME. I JUST REALLY WANTED ONE OF THOSE STATUES, BUT THEY ARE SO EXPENSIVE I ALREADY LOST ALL MY MONEY ON IT. AND THE IMPORT TAX WAS SO ASTRONOMICALLY HIGH, I COULDN'T PAY IT, AND WHEN I DID HAVE THE MONEY, I DIDN'T WANT TO, BECAUSE HOW DARE THEY TAKE THIS MUCH MONEY. I THOUGHT IF I AVOIDED IT, IT WOULD JUST GO AWAY!",
+                    "M I  DID IT, I DID IT, OH LORD IN HELL FORGIVE ME. I JUST REALLY WANTED ONE OF THOSE STATUES, BUT THEY ARE SO EXPENSIVE I ALREADY LOST ALL MY MONEY ON IT. AND THE IMPORT TAX WAS SO ASTRONOMICALLY HIGH, I COULDN'T PAY IT, AND WHEN I DID HAVE THE MONEY, I DIDN'T WANT TO, BECAUSE HOW DARE THEY TAKE THIS MUCH MONEY. I THOUGHT IF I AVOIDED IT, IT WOULD JUST GO AWAY!",
                     "P You thought wrong, in the end, the IRS always catches you. You're going away for a long time.",
-                    "N I AM?!?",
+                    "A I AM?!?",
                     "P No, but you're going to have to pay what you owe plus a hefty fine.",
-                    "N (sobs)",
+                    "A (sobs)",
                     "P And this is why you always pay your taxes on time.",
                     "  "
                   ],

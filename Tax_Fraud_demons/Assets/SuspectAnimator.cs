@@ -33,6 +33,7 @@ public class SuspectAnimator : MonoBehaviour
        
         if (data.returnState() == InterrogationLogic.suspectState.Nervous) { animator.SetTrigger("anxious"); Debug.Log("anxious"); return; }
         if (data.returnState() == InterrogationLogic.suspectState.Anxious) { animator.SetTrigger("stressed"); Debug.Log("nervous"); return; }
+        if(data.returnState() == InterrogationLogic.suspectState.Mad){ animator.SetTrigger("mad"); Debug.Log("mad"); return; }
     }
 
     public void LoadAnimator()

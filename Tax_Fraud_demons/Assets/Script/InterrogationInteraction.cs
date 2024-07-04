@@ -15,7 +15,7 @@ public class InterrogationInteraction : MonoBehaviour
     bool doneSpelling = true;
     ShowDialogue s;
     [SerializeField]
-    private SuspectAnimator anim;
+    public SuspectAnimator anim;
     
     #endregion
     // Start is called before the first frame update

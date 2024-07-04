@@ -4,10 +4,10 @@
     "phases": [
       {
         "phase": {
-          "angryAnswer": [ "m I have as much respect for customs as I have for you.",
-            "m Ah yes, my future house.",
-            "m Get that filth away from me.",
-            "m I'd rather read 'Fifty Shades of Red' then this trash."],
+          "angryAnswer": [ "T I have as much respect for customs as I have for you.",
+            "T Ah yes, my future house.",
+            "T Get that filth away from me.",
+            "T I'd rather read 'Fifty Shades of Red' then this trash."],
           "textBlocks": [
             {
               "block": {

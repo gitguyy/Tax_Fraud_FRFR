@@ -136,9 +136,11 @@ public class InventoryManager : MonoBehaviour
         
         interrogation.checkForClueID(itemID);
         InterrogationInteraction getNextText = GameObject.FindAnyObjectByType<InterrogationInteraction>();
+        
         DeactivateMenu();
         getNextText.spellNextText();
         
+
         InventoryMenu.SetActive(false);
     }
 
