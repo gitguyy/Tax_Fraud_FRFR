@@ -74,6 +74,8 @@ public class PlayerOperations : MonoBehaviour
                
                 dialogueBox.SetActive(true);
 
+                system.dialogue.setBox(dialogueBox);
+
 
 
             }

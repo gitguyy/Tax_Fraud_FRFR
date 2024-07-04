@@ -26,6 +26,8 @@ public class talkingBehavior : dialogueEnumerator
     EventManager manager;
     DialogueSystem system;
     progressionManager progress;
+    bool hasExited;
+    GameObject box;
     int NPC;
 
 
@@ -68,7 +70,7 @@ public class talkingBehavior : dialogueEnumerator
 
     public void onEnter(Actor _actor, int ID)
     {
-      
+        hasExited = false;
         NPC = ID;
         actor = _actor;
 
@@ -101,7 +103,7 @@ public class talkingBehavior : dialogueEnumerator
     {
         
             curText = actor.dialogue[stringID];
-        if (checkDialogueType(curText) == DialogueType.Player)
+        if (checkDialogueType(curText) == DialogueType.Player && hasExited == false)
         {
             //Debug.Log("player is talking");
             showPlayerSprite listener = FindObjectOfType<showPlayerSprite>();
@@ -109,10 +111,11 @@ public class talkingBehavior : dialogueEnumerator
             manager.Event.AddListener(listenerNPC.hideNPC);
             manager.Event.AddListener(listener.showSprite);
             manager.RaiseEvent();
+            manager.Event.RemoveAllListeners();
             
             
         }
-        if (checkDialogueType(curText) == DialogueType.NPC)
+        if (checkDialogueType(curText) == DialogueType.NPC && hasExited == false)
         {
             
             showPlayerSprite listener = FindObjectOfType<showPlayerSprite>();
@@ -121,7 +124,8 @@ public class talkingBehavior : dialogueEnumerator
             manager.Event.AddListener(listener.hideSprite);
             manager.RaiseEvent();
             manager.RaiseEvent(system.ID);
-            
+            manager.Event.RemoveAllListeners();
+
         }
         if (iterator < getText().Length)
         {
@@ -215,6 +219,14 @@ public class talkingBehavior : dialogueEnumerator
 
     public override void onExit()
     {
+        hasExited = true;
+        showPlayerSprite listener = FindObjectOfType<showPlayerSprite>();
+        Debug.Log("listener" + listener.gameObject.name);
+        ShowNPCSprite listenerNPC = FindObjectOfType<ShowNPCSprite>();
+        manager.Event.AddListener(listenerNPC.hideNPC);
+        manager.Event.AddListener(listener.hideSprite);
+        manager.RaiseEvent();
+        manager.Event.RemoveAllListeners();
 
         startInt = progress.characterDialogue[NPC];
 
@@ -227,25 +239,39 @@ public class talkingBehavior : dialogueEnumerator
         stringID = startInt;
         Debug.Log ("start after exit: " + startInt);
         Debug.Log("exited dialogue");
+        hasExited = false;
 
         //resetting everything
     }
 
+    public void setBox(GameObject g)
+    {
+        box = g;
+        
+    }
+        
+
     public  void onExit(ref string s)
     {
-
+        hasExited = true;
         s = null;
         startInt = progress.characterDialogue[NPC];
 
         startIDs = progress.characterDialogue;
-     
+
+
+        //curText = actor.dialogue[startInt];
+
+        showPlayerSprite listener = FindObjectOfType<showPlayerSprite>();
+        ShowNPCSprite listenerNPC = FindObjectOfType<ShowNPCSprite>();
+        Debug.Log("listener" + listener.gameObject.name);
+        manager.Event.AddListener(listenerNPC.hideNPC);
+        manager.Event.AddListener(listener.hideSprite);
+        manager.RaiseEvent();
+        manager.Event.RemoveAllListeners();
         
-            //curText = actor.dialogue[startInt];
-        
-       
-        
-        
-        
+
+
         stringID = startInt;
 
         curText = "";
@@ -255,6 +281,7 @@ public class talkingBehavior : dialogueEnumerator
       
         sendID.RemoveAllListeners();
         Debug.Log("start after exit: " + startInt);
+        hasExited = false;
 
 
 
@@ -340,7 +367,17 @@ public class talkingBehavior : dialogueEnumerator
         {
             // do question logic
             dialogueID = startInt;
-
+            showPlayerSprite listener = FindObjectOfType<showPlayerSprite>();
+            ShowNPCSprite listenerNPC = FindObjectOfType<ShowNPCSprite>();
+            manager.Event.AddListener(listenerNPC.hideNPC);
+            manager.Event.AddListener(listener.hideSprite);
+            manager.RaiseEvent();
+            manager.Event.RemoveAllListeners();
+            if (box != null)
+            {
+                box.SetActive(false);
+            }
+           
             onExit();
             return dialogueID;
             
