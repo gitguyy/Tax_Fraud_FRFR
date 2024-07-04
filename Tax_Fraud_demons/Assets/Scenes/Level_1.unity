@@ -142,7 +142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &12499753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,9 +398,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1648206029}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 900, y: -354.56207}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 250, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &52744372
@@ -416,7 +416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 52744373}
-  info: {fileID: 11400000, guid: abf8bf0712c94ad46af81eea73fa951f, type: 2}
+  info: {fileID: 11400000, guid: 00bc90713de0aa048aba263f5b7e1399, type: 2}
   giveInfo:
     m_PersistentCalls:
       m_Calls: []
@@ -3860,9 +3860,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1648206029}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 550, y: -354.56207}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 250, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &568214080
@@ -3878,7 +3878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 568214081}
-  info: {fileID: 11400000, guid: d292eb17eecbb3f41b7630bf33f990f9, type: 2}
+  info: {fileID: 11400000, guid: 80b50dc0a9e505e41ae1c2fc0e010799, type: 2}
   giveInfo:
     m_PersistentCalls:
       m_Calls: []
@@ -4404,9 +4404,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1648206029}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1600, y: -354.56207}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 250, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &658652951
@@ -4422,7 +4422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 658652952}
-  info: {fileID: 11400000, guid: abf8bf0712c94ad46af81eea73fa951f, type: 2}
+  info: {fileID: 11400000, guid: e315b6292c503344b8cc006325319e88, type: 2}
   giveInfo:
     m_PersistentCalls:
       m_Calls: []
@@ -4542,9 +4542,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1648206029}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -354.56207}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 250, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &688549940
@@ -4560,7 +4560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 688549941}
-  info: {fileID: 11400000, guid: abf8bf0712c94ad46af81eea73fa951f, type: 2}
+  info: {fileID: 11400000, guid: 2581cc249d9c8184ba8fda97ccd9ec41, type: 2}
   giveInfo:
     m_PersistentCalls:
       m_Calls: []
@@ -6450,9 +6450,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1648206029}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1250, y: -354.56207}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 250, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &939813138
@@ -6468,7 +6468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 939813139}
-  info: {fileID: 11400000, guid: d292eb17eecbb3f41b7630bf33f990f9, type: 2}
+  info: {fileID: 11400000, guid: 4d2292b1aa1a34d44aebbe503d9dacfe, type: 2}
   giveInfo:
     m_PersistentCalls:
       m_Calls: []
@@ -10987,6 +10987,7 @@ MonoBehaviour:
   talking: 0
   bubble: {fileID: 3711577606038012193, guid: f2e307418bb5c504db048308ceb1e990, type: 3}
   dialogueBox: {fileID: 0}
+  col: {fileID: 734790240}
 --- !u!4 &1760545351
 Transform:
   m_ObjectHideFlags: 0
@@ -11498,6 +11499,7 @@ MonoBehaviour:
   - {fileID: 2015009875}
   - {fileID: 2118219677}
   sceneManager: {fileID: 0}
+  wallsDeactivated: 
 --- !u!1 &1880940114
 GameObject:
   m_ObjectHideFlags: 0
