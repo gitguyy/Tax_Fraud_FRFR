@@ -1,119 +1,31 @@
 {
-  "suspect": 
-
-   
+  "suspect":
     {
-
-
-
       "phases": [
         {
           "phase": {
-
-            "angryAnswer": [ "m I mean i smoke aloota shit, but this??", "m A piece of paper... and?", "m You Are Utterly WRONG", "m HELL YOU ARE STUPID" ],
+            "angryAnswer": [ "m I can't read.",
+              "m Oh yeah, I carried this. But I told you, I don't remember for whom.",
+              "m ... Can I keep it?",
+              "m I think I suddenly learned how to read, can I borrow this?" ],
             "textBlocks": [
-
               {
                 "block": {
-
-
-                  "dialogue": [ "C OI my guy whaaats upppp ", "P well, lets  ignore the fact youre stoned at work....","P I got a few questions for you" ],
+                  "dialogue": [ "P I think you're are the one who committed tax fraud.",
+                    "N ....",
+                    "N ....",
+                    "N Nah I would never.",
+                    "P You have been barely responsive since I first spoke to you, I think this is your way of hiding something.",
+                    "N ...",
+                    "N ...",
+                    "N This might surprise you but I'm actually just really high."],
                   "clue": 0
-
                 }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "C what ya want?", "P do you know anything about a package that came in?","N I only know where the best catnip comes from höhö" ],
-                  "clue": 0
-
-                }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "P Okay", "T Is that all then?","P Yes, thank you" ],
-                  "clue": 0
-
-                }
-
-
               }
-
-
-
-
-
-
             ]
           }
-
-        },
-        {
-          "phase": {
-            "angryAnswer": [ "M what", "m1 how do you even get to this conclusion?", "F You Are Utterly WRONG", "M HELL YOU ARE STUPID" ],
-            "textBlocks": [
-
-              {
-                "block": {
-
-
-                  "dialogue": [ "C so... umm what am I doing here exactly?", "P I've got a few Questions for you" ],
-                  "clue": 0
-
-                }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "N Yes...?", "P do you know anything about  package that came in?" ],
-                  "clue": 1
-
-                }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "", "" ],
-                  "clue": 0
-
-                }
-
-
-              }
-
-
-
-
-
-
-            ]
-
-
-
-          }
-
         }
-
       ]
-
-
-
-
     }
-  
  }   
     

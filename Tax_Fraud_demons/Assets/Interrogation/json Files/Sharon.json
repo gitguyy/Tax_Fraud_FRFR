@@ -1,119 +1,28 @@
 {
-  "suspect": 
-
-   
-    {
-
-
-
-      "phases": [
-        {
-          "phase": {
-
-            "angryAnswer": [ "T I have never seen this piece of paper", "T that could belong to anyone in the office", "C ... Ehm, ew. Who would like something like that.", "C a magazine...? " ],
-            "textBlocks": [
-
-              {
-                "block": {
-
-
-                  "dialogue": [ "C so... umm what am I doing here exactly?", "P I've got a few Questions for you" ],
-                  "clue": 0
-
-                }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "N Yes...?", "P do you know anything about a package that came in?","N No i dont know anything about a package", "P Okay" ],
-                  "clue": 4
-
-                }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "C Is that all then?","P Yes, thank you" ],
-                  "clue": 0
-
-                }
-
-
+  "suspect":
+  {
+    "phases": [
+      {
+        "phase": {
+          "angryAnswer": [ "m I have as much respect for customs as I have for you.",
+            "m Ah yes, my future house.",
+            "m Get that filth away from me.",
+            "m I'd rather read 'Fifty Shades of Red' then this trash."],
+          "textBlocks": [
+            {
+              "block": {
+                "dialogue": [ "P I suspect you might be the person responsible for tax fraud.",
+                  "N Enlighten me.",
+                  "P You oversee this department, if anyone should know what is going on here, it would be you.",
+                  "N Brilliant deduction."],
+                "clue": 0
               }
-
-
-
-
-
-
-            ]
-          }
-
-        },
-        {
-          "phase": {
-            "angryAnswer": [ "m I have never seen this piece of paper", "m that could belong to anyone in the office", "m ... Ehm, ew. Who would like something like that.", "m a magazine...? you already showed me this " ],
-            "textBlocks": [
-
-              {
-                "block": {
-
-
-                  "dialogue": [ "C well umm I can explain", "P humor me" ],
-                  "clue": 0
-
-                }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "A soo well i umm", "P ....." ],
-                  "clue": 0
-
-                }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "  ", "  " ],
-                  "clue": 0
-
-                }
-
-
-              }
-
-
-
-
-
-
-            ]
-
-
-
-          }
-
+            }
+          ]
         }
-
-      ]
-
-
-
-
-    }
-  
- }   
+      }
+    ]
+  }
+}   
+    
     

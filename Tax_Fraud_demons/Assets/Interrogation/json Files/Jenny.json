@@ -1,119 +1,27 @@
 {
-  "suspect": 
-
-   
-    {
-
-
-
-      "phases": [
-        {
-          "phase": {
-
-            "angryAnswer": [ "m I mean i smoke aloota shit, but this??", "m A piece of paper... and?", "m You Are Utterly WRONG", "m HELL YOU ARE STUPID" ],
-            "textBlocks": [
-
-              {
-                "block": {
-
-
-                  "dialogue": [ "C OI my guy whaaats upppp ", "P well, lets  ignore the fact youre stoned at work....","P I got a few questions for you" ],
-                  "clue": 0
-
-                }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "C what ya want?", "P do you know anything about a package that came in?","N I only know where the best catnip comes from höhö" ],
-                  "clue": 0
-
-                }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "P Okay", "T Is that all then?","P Yes, thank you" ],
-                  "clue": 0
-
-                }
-
-
+  "suspect":
+  {
+    "phases": [
+      {
+        "phase": {
+          "angryAnswer": [ "m I always pay my taxes, I swear.",
+            "m I don't order things, I'm scared of postdemons.",
+            "m Ew! Ew! Ew! What is that.?",
+            "m I really don't want to see what is in there." ],
+          "textBlocks": [
+            {
+              "block": {
+                "dialogue": [ "P I think you might be the one responsible for tax fr-",
+                  "N Oh please, please, let me get back to work, I don't have the time -",
+                  "P Which is exactly what you would be saying if you were trying to hide something.",
+                  "N Aaaaaaah!"],
+                "clue": 0
               }
-
-
-
-
-
-
-            ]
-          }
-
-        },
-        {
-          "phase": {
-            "angryAnswer": [ "M what", "m1 how do you even get to this conclusion?", "F You Are Utterly WRONG", "M HELL YOU ARE STUPID" ],
-            "textBlocks": [
-
-              {
-                "block": {
-
-
-                  "dialogue": [ "C so... umm what am I doing here exactly?", "P I've got a few Questions for you" ],
-                  "clue": 0
-
-                }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "N Yes...?", "P do you know anything about  package that came in?" ],
-                  "clue": 1
-
-                }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "", "" ],
-                  "clue": 0
-
-                }
-
-
-              }
-
-
-
-
-
-
-            ]
-
-
-
-          }
-
+            }
+          ]
         }
-
-      ]
-
-
-
-
-    }
-  
- }   
+      }
+    ]
+  }
+}
     

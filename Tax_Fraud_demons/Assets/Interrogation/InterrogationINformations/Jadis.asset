@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Jadis
   m_EditorClassIdentifier: 
   sprites: {fileID: 0}
-  text: {fileID: 0}
+  text: {fileID: 4900000, guid: 101067319b08dc145b0d820bf753ea89, type: 3}
