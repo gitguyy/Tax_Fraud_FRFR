@@ -240,18 +240,34 @@ public class InterrogationLogic : MonoBehaviour
     #region AnimationInformation
     public suspectState returnState()
     {
-        switch ((mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue[curTextID][0]))
+        if(isAngry != true)
         {
-            case 'T': return suspectState.Talking;
-            case 'C':return suspectState.Contemplating;
-            case 'N':return suspectState.Nervous;
-            case 'A':return suspectState.Anxious;
-            case 'B':return suspectState.Breakdown;
-            case 'M': return suspectState.Mad;
-            case 'F': return suspectState.Furious;
-            default: return suspectState.Null;
+            switch ((mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue[curTextID][0]))
+            {
+                case 'T': return suspectState.Talking;
+                case 'C': return suspectState.Contemplating;
+                case 'N': return suspectState.Nervous;
+                case 'A': return suspectState.Anxious;
+                case 'B': return suspectState.Breakdown;
+                case 'M': return suspectState.Mad;
+                case 'F': return suspectState.Furious;
+                default: return suspectState.Null;
+            }
         }
-           
+        else
+            switch ((mySuspect.phases[curPhase].phase.angryAnswer[curClueID - 1][0]))
+            {
+                case 'T': return suspectState.Talking;
+                case 'C': return suspectState.Contemplating;
+                case 'N': return suspectState.Nervous;
+                case 'A': return suspectState.Anxious;
+                case 'B': return suspectState.Breakdown;
+                case 'M': return suspectState.Mad;
+                case 'F': return suspectState.Furious;
+                default: return suspectState.Null;
+            }
+
+
     }
 
     #endregion;
