@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Damien
   m_EditorClassIdentifier: 
   sprites: {fileID: 0}
-  text: {fileID: 0}
+  text: {fileID: 4900000, guid: 7b16ba1f8e345e44f92a5676fd8d3080, type: 3}

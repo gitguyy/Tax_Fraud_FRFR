@@ -1,119 +1,111 @@
 {
-  "suspect": 
-
-   
+  "suspect":
     {
-
-
-
       "phases": [
         {
           "phase": {
-
-            "angryAnswer": [ "m I mean i smoke aloota shit, but this??", "m A piece of paper... and?", "m You Are Utterly WRONG", "m HELL YOU ARE STUPID" ],
+            "angryAnswer": [ "m Why are you showing me a random piece of paper that has nothing to do with me.",
+              "m That could belong to anyone in the office.",
+              "m You Are Utterly WRONG",
+              "m ...Ehm, ew. Who would like something like that." ],
             "textBlocks": [
-
               {
                 "block": {
-
-
-                  "dialogue": [ "C OI my guy whaaats upppp ", "P well, lets  ignore the fact youre stoned at work....","P I got a few questions for you" ],
-                  "clue": 0
-
+                  "dialogue": [ "P  I think you did the tax fraud.", 
+                    "N Nnnngh I've done nothing.",
+                    "P Exactly, you have been the personification of a white piece of bread. Which means you are hiding something.", 
+                    "N No I'm not."],
+                  "clue": 4
                 }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "C what ya want?", "P do you know anything about a package that came in?","N I only know where the best catnip comes from höhö" ],
-                  "clue": 0
-
-                }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "P Okay", "T Is that all then?","P Yes, thank you" ],
-                  "clue": 0
-
-                }
-
-
               }
-
-
-
-
-
-
             ]
           }
-
         },
+        
         {
           "phase": {
-            "angryAnswer": [ "M what", "m1 how do you even get to this conclusion?", "F You Are Utterly WRONG", "M HELL YOU ARE STUPID" ],
+            "angryAnswer": [ "m Where did you find this random piece of paper?",
+              "m Some cardboard, and?",
+              "m You Are Utterly WRONG",
+              "m Yes, keep reminding me I have this, very funny." ],
             "textBlocks": [
-
               {
                 "block": {
-
-
-                  "dialogue": [ "C so... umm what am I doing here exactly?", "P I've got a few Questions for you" ],
-                  "clue": 0
-
+                  "dialogue": [ "N so... umm what am I doing here exactly?",
+                    "P You know where, from your cupboard. Why were you trying to hide this?",
+                    "N This is an invasion of privacy!",
+                    "P In the name of uncovering tax fraud, anything goes. Tell me, why were you hiding this?",
+                    "N ... Because I was embarrassed? This does proves nothing!"],
+                  "clue": 3
                 }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "N Yes...?", "P do you know anything about  package that came in?" ],
-                  "clue": 1
-
-                }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "", "" ],
-                  "clue": 0
-
-                }
-
-
               }
-
-
-
-
-
-
             ]
-
-
-
           }
+        },
 
+        {
+          "phase": {
+            "angryAnswer": [ "m You're starting to annoy me with this.",
+              "m Some cardboard, and?",
+              "m (drools)",
+              "m LET IT REST!"],
+            "textBlocks": [
+              {
+                "block": {
+                  "dialogue": [ "P It proves that you are the most likely owner of this thing.",
+                    "N NNNNNnnnngh. That was already here before I was hired."],
+                  "clue": 2
+                }
+              }
+            ]
+          }
+        },
+
+        {
+          "phase": {
+            "angryAnswer": [ "m You're starting to annoy me with this.",
+              "m Just send me to heaven with this.",
+              "m This wasn't worth it I think.",
+              "m Nnnnnnngh!" ],
+            "textBlocks": [
+              {
+                "block": {
+                  "dialogue": [ "P When why is there a big cardboard box that was recently ordered into the office. The only item around that matches the size of that box is the statue.",
+                    "N NNnnngh, nnngh I ordered that, is that a crime?",
+                    "P It was shipped over from heaven, which means that it would have had an import tax.",
+                    "N  I paid that!"],
+                  "clue": 1
+                }
+              }
+            ]
+          }
+        },
+
+        {
+          "phase": {
+            "angryAnswer": [ "m Where did you find this random piece of paper?",
+              "m Some cardboard, and?",
+              "m You Are Utterly WRONG",
+              "m Yes, keep reminding me I have this, very funny." ],
+            "textBlocks": [
+              {
+                "block": {
+                  "dialogue": [ "P Then why was this receipt with an unpaid import tax and several warnings on it thrown away in the trash can?",
+                    "N ...",
+                    "N I  DID IT, I DID IT, OH LORD IN HELL FORGIVE ME. I JUST REALLY WANTED ONE OF THOSE STATUES, BUT THEY ARE SO EXPENSIVE I ALREADY LOST ALL MY MONEY ON IT. AND THE IMPORT TAX WAS SO ASTRONOMICALLY HIGH, I COULDN'T PAY IT, AND WHEN I DID HAVE THE MONEY, I DIDN'T WANT TO, BECAUSE HOW DARE THEY TAKE THIS MUCH MONEY. I THOUGHT IF I AVOIDED IT, IT WOULD JUST GO AWAY!",
+                    "P You thought wrong, in the end, the IRS always catches you. You're going away for a long time.",
+                    "N I AM?!?",
+                    "P No, but you're going to have to pay what you owe plus a hefty fine.",
+                    "N (sobs)",
+                    "P And this is why you always pay your taxes on time."],
+                  "clue": 0
+                }
+              }
+            ]
+          }
         }
-
+        
       ]
-
-
-
-
     }
-  
  }   
     

@@ -1,119 +1,27 @@
 {
-  "suspect": 
-
-   
+  "suspect":
     {
-
-
-
       "phases": [
         {
           "phase": {
-
-            "angryAnswer": [ "m I mean i smoke aloota shit, but this??", "m A piece of paper... and?", "m You Are Utterly WRONG", "m HELL YOU ARE STUPID" ],
+            "angryAnswer": [ "m Artificial debt created by artificial borders. In the grand scheme of things, heaven and hell are one and the same.",
+              "m This is the box I saw Jadis carry, you finally found it!",
+              "m Our heavenly brethren. We should not shun them and instead bridge the gap of artificial morality.",
+              "m My preferred literature would be Sun Tzu's 'The Art of No War'." ],
             "textBlocks": [
-
               {
                 "block": {
-
-
-                  "dialogue": [ "C OI my guy whaaats upppp ", "P well, lets  ignore the fact youre stoned at work....","P I got a few questions for you" ],
+                  "dialogue": [ "P Are you the one responsible for tax fraud?",
+                    "N My brother in Satan, I have always been at your disposal for any help or questions.",
+                    "P Which is exactly what someone trying to misled me would do.",
+                    "N I would never do that to you, but I understand, you are doing your job."],
                   "clue": 0
-
                 }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "C what ya want?", "P do you know anything about a package that came in?","N I only know where the best catnip comes from höhö" ],
-                  "clue": 0
-
-                }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "P Okay", "T Is that all then?","P Yes, thank you" ],
-                  "clue": 0
-
-                }
-
-
               }
-
-
-
-
-
-
             ]
           }
-
-        },
-        {
-          "phase": {
-            "angryAnswer": [ "M what", "m1 how do you even get to this conclusion?", "F You Are Utterly WRONG", "M HELL YOU ARE STUPID" ],
-            "textBlocks": [
-
-              {
-                "block": {
-
-
-                  "dialogue": [ "C so... umm what am I doing here exactly?", "P I've got a few Questions for you" ],
-                  "clue": 0
-
-                }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "N Yes...?", "P do you know anything about  package that came in?" ],
-                  "clue": 1
-
-                }
-
-
-              },
-              {
-                "block": {
-
-
-                  "dialogue": [ "", "" ],
-                  "clue": 0
-
-                }
-
-
-              }
-
-
-
-
-
-
-            ]
-
-
-
-          }
-
         }
-
       ]
-
-
-
-
     }
-  
  }   
     
