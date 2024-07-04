@@ -19,6 +19,7 @@ public class PlayerOperations : MonoBehaviour
     public static PlayerOperations instance;
     [SerializeField]
     private GameObject dialogueBox;
+    public ColissionManager col;
     DialogueSystem system;
 
     private void Awake() // To make this class a singleton, there is only a single static instance in your scene
@@ -69,6 +70,7 @@ public class PlayerOperations : MonoBehaviour
         {
             if (canTalkWith && Input.GetMouseButtonDown(0))
             {
+                col.getObjectInfo();
                 //Debug.Log("talking initiated");
                 system.dialogue.backToDialogue();
                 talking = true;
@@ -111,7 +113,7 @@ public class PlayerOperations : MonoBehaviour
                     system.resetText();
                
 
-                    system.onTalk(InteractObject);
+                    //system.onTalk(InteractObject);
                 }
 
 

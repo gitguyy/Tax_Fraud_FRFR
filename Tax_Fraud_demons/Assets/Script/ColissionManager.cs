@@ -29,12 +29,13 @@ public class ColissionManager : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        player.talking = false;
-
-        
        
+
+        transformToSend = other.transform;
+        gameObjectToSend = other.gameObject;
+
         checkTag(other.tag);
-        getObjectInfo(other);
+        
         
 
 
@@ -51,7 +52,7 @@ public class ColissionManager : MonoBehaviour
     }
 
 
-    void checkTag(string tag)
+    public void checkTag(string tag)
     {
       
         switch (tag)
@@ -77,10 +78,9 @@ public class ColissionManager : MonoBehaviour
         
     }
 
-    void getObjectInfo(Collider2D other)
+    public void getObjectInfo()
     {
-        transformToSend = other.transform;
-        gameObjectToSend = other.gameObject;
+       
         setObject.Invoke(gameObjectToSend);
         setTransform.Invoke(transformToSend);
     }

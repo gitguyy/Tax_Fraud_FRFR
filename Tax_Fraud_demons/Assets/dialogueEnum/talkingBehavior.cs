@@ -131,11 +131,11 @@ public class talkingBehavior : dialogueEnumerator
             manager.Event.RemoveAllListeners();
 
         }
-        if (iterator < getText().Length)
+        if (iterator < getText().Length && !hasExited)
         {
             text = spellLine(ref curTime, ref iterator, ref spelledString);
         }
-        else
+        else if(iterator >= getText().Length && !hasExited)
         {
             text = getText();
             getNextText(ref stringID);
