@@ -13569,7 +13569,8 @@ MonoBehaviour:
   onTransition:
     m_PersistentCalls:
       m_Calls: []
-  letterTimer: 0.02
+  letterTimer: 0.05
+  textSpeedAfterClick: 0.005
   offSet: {x: 0, y: 2, z: 0}
 --- !u!4 &2105643349
 Transform:

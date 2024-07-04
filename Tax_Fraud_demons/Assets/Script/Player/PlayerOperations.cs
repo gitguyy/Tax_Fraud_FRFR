@@ -21,6 +21,8 @@ public class PlayerOperations : MonoBehaviour
     private GameObject dialogueBox;
     public ColissionManager col;
     DialogueSystem system;
+    
+    
 
     private void Awake() // To make this class a singleton, there is only a single static instance in your scene
     {
@@ -68,12 +70,18 @@ public class PlayerOperations : MonoBehaviour
         }
         if(dialogueBox != null)
         {
-            if (canTalkWith && Input.GetMouseButtonDown(0))
+            if (talking && Input.GetMouseButtonDown(0) && canTalkWith)
+            {
+                Debug.Log("set timer_PLayerOperations");
+                system.dialogue.setTimer(system.textSpeedAfterClick);
+            }
+            if (canTalkWith && Input.GetMouseButtonDown(0) &&!talking)
             {
                 col.getObjectInfo();
                 //Debug.Log("talking initiated");
                 system.dialogue.backToDialogue();
                 talking = true;
+                system.dialogue.setTimer(system.letterTimer);
                
                 dialogueBox.SetActive(true);
 
@@ -89,6 +97,7 @@ public class PlayerOperations : MonoBehaviour
               
 
             }
+            
             if (Input.GetMouseButtonDown(0))
             {
               

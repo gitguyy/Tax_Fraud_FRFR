@@ -218,7 +218,9 @@ public class talkingBehavior : dialogueEnumerator
 
     public void setTimer(float timer)
     {
+        
         spellTimer = timer;
+        Debug.Log("timer set: " + spellTimer);
     }
 
     public override void onExit()

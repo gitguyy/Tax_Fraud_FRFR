@@ -56,7 +56,8 @@ public class DialogueSystem : MonoBehaviour
    
 
     [SerializeField]
-    private float letterTimer;
+    public float letterTimer;
+    public float textSpeedAfterClick;
 
     [SerializeField]
     Vector3 offSet;
@@ -157,7 +158,7 @@ public string getText()
 
         if(g.GetComponent<NpcInformations>() != null)
         {
-            ((talkingBehavior)dialogue).setTimer(letterTimer);
+           
             //update the text
             int temp = g.GetComponent<NpcInformations>().getID();
             ID = temp;
