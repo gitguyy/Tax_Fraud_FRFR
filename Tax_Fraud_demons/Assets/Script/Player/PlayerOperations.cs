@@ -70,6 +70,7 @@ public class PlayerOperations : MonoBehaviour
             if (canTalkWith && Input.GetMouseButtonDown(0))
             {
                 //Debug.Log("talking initiated");
+                system.dialogue.backToDialogue();
                 talking = true;
                
                 dialogueBox.SetActive(true);

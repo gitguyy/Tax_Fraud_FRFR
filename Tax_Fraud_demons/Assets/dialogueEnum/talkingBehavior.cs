@@ -97,6 +97,10 @@ public class talkingBehavior : dialogueEnumerator
         
        
     }
+    public void backToDialogue()
+    {
+        hasExited = false;
+    }
     
 
     public override void talkUpdate(ref string text)
@@ -239,7 +243,7 @@ public class talkingBehavior : dialogueEnumerator
         stringID = startInt;
         Debug.Log ("start after exit: " + startInt);
         Debug.Log("exited dialogue");
-        hasExited = false;
+        
 
         //resetting everything
     }
@@ -281,7 +285,7 @@ public class talkingBehavior : dialogueEnumerator
       
         sendID.RemoveAllListeners();
         Debug.Log("start after exit: " + startInt);
-        hasExited = false;
+        
 
 
 
