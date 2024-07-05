@@ -74,6 +74,11 @@ public class progressionManager : MonoBehaviour
    public void onTransition()
     {
         objects = FindObjectsOfType<ProgressBaseObjects>();
+        for (int i = 0; i < objects.Length; i++)
+        {
+
+            objects[i].Initialize();
+        }
     }
    
 

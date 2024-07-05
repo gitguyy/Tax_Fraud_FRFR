@@ -23,6 +23,7 @@ public class NeedsProgress : ProgressBaseObjects
        
         if(tryAt == changeAt)
         {
+            Debug.Log("change: " + gameObject.name);
             sendInfo.onCall();
         }
     }

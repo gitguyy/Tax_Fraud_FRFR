@@ -32,6 +32,10 @@ public class InterrogationLogic : MonoBehaviour
     SceneLoader loader;
 
     public Slider angerSlider;
+    public int curAnger;
+    public int startAnger;
+    progressionManager progManager;
+    private int suspectID;
 
     
     
@@ -104,25 +108,33 @@ public class InterrogationLogic : MonoBehaviour
     #region Initializing
     private void OnEnable()
     {
+        
         Debug.Log("got called");
-       
+
+        progManager = progressionManager.Instance;
         if (sendInfo.Instance != null)
         {
-            
+            Debug.Log("Anger doesnt get set");
             getInfo = sendInfo.Instance;
             info = getInfo.interrogationInfo;
             text = getInfo.interrogationInfo.GetText();
-        }else
+            suspectID = info.ID;
+            startAnger = progManager.angerLevels[suspectID];
+            curAnger = startAnger;
+            GetAnger();
+
+        }
+        else
         {
             text = info.GetText();
         }
        
-        
+
     }
 
     private void Start()
     {
-        
+       
         mySuspectContainer = JsonUtility.FromJson<suspectContainer>(text.ToString());
         mySuspect = mySuspectContainer.suspect;
         inventoryManager = InventoryManager.Instance;
@@ -159,10 +171,26 @@ public class InterrogationLogic : MonoBehaviour
 
     void AngerFilled()
     {
-        angerSlider.value = angerSlider.value + 1;
+        curAnger++;
+        angerSlider.value = curAnger;
+        progManager.angerLevels[suspectID] += 1;
+        if(curAnger == 10)
+        {
+            loader.loadScene("Lost");
+        }
+    }
+    void GetAnger()
+    {
+        Debug.Log("curAnger " + curAnger);
+        if(angerSlider == null)
+        {
+            Debug.Log("angerslider not set...");
+        }
+        angerSlider.value = curAnger;
+        
     }
 
-    
+
     public void goToNextPhase()
     {
         if(mySuspect.phases.Length >= curPhase)
@@ -174,8 +202,16 @@ public class InterrogationLogic : MonoBehaviour
         }
         
     }
+    public void Update()
+    {
+        if(angerSlider.value != curAnger)
+        {
+            angerSlider.value = curAnger;
+        }
+        
+    }
 
-    
+
     public void NextDialogue()
     {
         if(curTextID < mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue.Length)

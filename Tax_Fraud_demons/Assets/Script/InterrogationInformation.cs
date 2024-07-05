@@ -11,6 +11,8 @@ public class InterrogationInformation : ScriptableObject
     public RuntimeAnimatorController sprites;
     [SerializeField]
     private TextAsset text;
+    [SerializeField]
+    public int ID;
 
 
     public TextAsset GetText()
