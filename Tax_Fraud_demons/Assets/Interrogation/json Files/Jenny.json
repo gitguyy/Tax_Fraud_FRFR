@@ -1,20 +1,22 @@
 {
-  "suspect":
-  {
+  "suspect": {
     "phases": [
       {
         "phase": {
-          "angryAnswer": [ "M I always pay my taxes, I swear.",
-            "M I don't order things, I'm scared of postdemons.",
-            "M Ew! Ew! Ew! What is that.?",
-            "M I really don't want to see what is in there." ],
+          "angryAnswer": [
+            "M Jenny: I always pay my taxes, I swear.",
+            "M Jenny: I don't order things, I'm scared of postdemons.",
+            "M Jenny: Ew! Ew! Ew! What is that.?",
+            "M Jenny: I really don't want to see what is in there."
+          ],
           "textBlocks": [
             {
               "block": {
-                "dialogue": [ "P I think you might be the one responsible for tax fr-",
-                  "T Oh please, please, let me get back to work, I don't have the time -",
-                  "P Which is exactly what you would be saying if you were trying to hide something.",
-                  "T Aaaaaaah!",
+                "dialogue": [
+                  "P Mitch: I think you might be the one responsible for tax fr-",
+                  "T Jenny: Oh please, please, let me get back to work, I don't have the time -",
+                  "P Mitch: Which is exactly what you would be saying if you were trying to hide something.",
+                  "T Jenny: Aaaaaaah!",
                   "  "
                 ],
                 "clue": 0

@@ -1,33 +1,35 @@
 {
-  "suspect":
-    {
-      "phases": [
-        {
-          "phase": {
-            "angryAnswer": [ "m I can't read.",
-              "m Oh yeah, I carried this. But I told you, I don't remember for whom.",
-              "m ... Can I keep it?",
-              "m I think I suddenly learned how to read, can I borrow this?" ],
-            "textBlocks": [
-              {
-                "block": {
-                  "dialogue": [ "P I think you're are the one who committed tax fraud.",
-                    "N ....",
-                    "N ....",
-                    "T Nah I would never.",
-                    "P You have been barely responsive since I first spoke to you, I think this is your way of hiding something.",
-                    "N ...",
-                    "N ...",
-                    "T This might surprise you but I'm actually just really high.",
-                    "  "
-                  ],
-                  "clue": 0
-                }
+  "suspect": {
+    "phases": [
+      {
+        "phase": {
+          "angryAnswer": [
+            "T Jadis: I can't read.",
+            "T Jadis: Oh yeah, I carried this. But I told you, I don't remember for whom.",
+            "T Jadis: ... Can I keep it?",
+            "T Jadis: I think I suddenly learned how to read, can I borrow this?"
+          ],
+          "textBlocks": [
+            {
+              "block": {
+                "dialogue": [
+                  "P Mitch: I think you're are the one who committed tax fraud.",
+                  "N Jadis: ....",
+                  "N Jadis: ....",
+                  "T Jadis: Nah I would never.",
+                  "P Mitch: You have been barely responsive since I first spoke to you, I think this is your way of hiding something.",
+                  "N Jadis: ...",
+                  "N Jadis: ...",
+                  "T Jadis: This might surprise you but I'm actually just really high.",
+                  "  "
+                ],
+                "clue": 0
               }
-            ]
-          }
+            }
+          ]
         }
-      ]
-    }
- }   
+      }
+    ]
+  }
+}   
     
