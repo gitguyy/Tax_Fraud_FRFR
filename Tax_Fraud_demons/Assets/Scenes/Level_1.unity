@@ -401,7 +401,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 900, y: -355}
-  m_SizeDelta: {x: 250, y: 400}
+  m_SizeDelta: {x: 266, y: 340}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &52744372
 MonoBehaviour:
@@ -484,7 +484,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 723457669, guid: b4ddd531989a1354ca8f2c572734ee7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b09500c5f652ff4d83e063c516d878a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1432,8 +1432,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -333, y: -148.9}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -327.48532, y: -152.41533}
+  m_SizeDelta: {x: 145, y: 145}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &178911852
 MonoBehaviour:
@@ -1455,7 +1455,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 314599581, guid: bd32976c1f730914aba08fe405a37acd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8bb9def9e8748b4dbaca306eba50fab, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3863,7 +3863,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 576, y: -355}
-  m_SizeDelta: {x: 250, y: 400}
+  m_SizeDelta: {x: 266, y: 340}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &568214080
 MonoBehaviour:
@@ -3946,7 +3946,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 314599581, guid: bd32976c1f730914aba08fe405a37acd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74babc2230e1c0845b9c0848a9f3b1fa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4535,7 +4535,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 1548, y: -355}
-  m_SizeDelta: {x: 250, y: 400}
+  m_SizeDelta: {x: 266, y: 340}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &658652951
 MonoBehaviour:
@@ -4618,7 +4618,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 723457669, guid: b4ddd531989a1354ca8f2c572734ee7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e2afbfb6969601a418a017c110aeb383, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4673,7 +4673,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 252, y: -355}
-  m_SizeDelta: {x: 250, y: 400}
+  m_SizeDelta: {x: 266, y: 340}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &688549940
 MonoBehaviour:
@@ -4756,7 +4756,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1785505631, guid: 7bac3c0d5d61e4644b10f86f4b65e350, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c76a867034a352448d7964b52229ddc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6476,7 +6476,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 1224, y: -355}
-  m_SizeDelta: {x: 250, y: 400}
+  m_SizeDelta: {x: 266, y: 340}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &939813138
 MonoBehaviour:
@@ -6559,7 +6559,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 723457669, guid: b4ddd531989a1354ca8f2c572734ee7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 40cf2aac8c3490f4eaf1ff8854740b1f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7782,8 +7782,7 @@ MonoBehaviour:
   itemDescription: It's a crumbled up receipt from the interdimensional customs.
     It says that a very high import tax is still due. There are several red warnings
     on it saying "Urgent!".
-  pickUpSound: {fileID: 8300000, guid: 2ec63811398e46a45be68e0905b73ba0, type: 3}
-  pickUpVolume: 0.6
+  animator: {fileID: 0}
 --- !u!50 &1172076297
 Rigidbody2D:
   serializedVersion: 4
@@ -10476,12 +10475,12 @@ MonoBehaviour:
   m_Padding:
     m_Left: 90
     m_Right: 90
-    m_Top: 50
-    m_Bottom: 50
+    m_Top: 60
+    m_Bottom: 60
   m_ChildAlignment: 4
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_Spacing: 58
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
@@ -10864,8 +10863,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 335, y: -148.9}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 327.49994, y: -152.49998}
+  m_SizeDelta: {x: 145, y: 145}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1727153540
 MonoBehaviour:
@@ -10918,11 +10917,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcSprites:
-  - {fileID: -1785505631, guid: 7bac3c0d5d61e4644b10f86f4b65e350, type: 3}
-  - {fileID: 723457669, guid: b4ddd531989a1354ca8f2c572734ee7f, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 6c76a867034a352448d7964b52229ddc, type: 3}
+  - {fileID: 21300000, guid: 74babc2230e1c0845b9c0848a9f3b1fa, type: 3}
+  - {fileID: 21300000, guid: 3b09500c5f652ff4d83e063c516d878a, type: 3}
+  - {fileID: 21300000, guid: 40cf2aac8c3490f4eaf1ff8854740b1f, type: 3}
+  - {fileID: 21300000, guid: e2afbfb6969601a418a017c110aeb383, type: 3}
 --- !u!1001 &1739810835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12580,8 +12579,7 @@ MonoBehaviour:
   itemDescription: It's a big cardboard box which was used to ship something in.
     The adress of the office is written on it, but not who it should be delivered
     too.
-  pickUpSound: {fileID: 8300000, guid: 0fb137867abd3dd4b9bbcd31b10b6d32, type: 3}
-  pickUpVolume: 0.6
+  animator: {fileID: 0}
 --- !u!50 &2015009878
 Rigidbody2D:
   serializedVersion: 4
@@ -12878,8 +12876,7 @@ MonoBehaviour:
   IsProgress: {fileID: 0}
   itemDescription: It's a magazine, open on the page advertising the figurine I found.
     The price for it is steep, and it says you can only order it from heaven.
-  pickUpSound: {fileID: 8300000, guid: 0fb137867abd3dd4b9bbcd31b10b6d32, type: 3}
-  pickUpVolume: 0.6
+  animator: {fileID: 0}
 --- !u!50 &2059758998
 Rigidbody2D:
   serializedVersion: 4
@@ -13859,8 +13856,7 @@ MonoBehaviour:
   IsProgress: {fileID: 2118219683}
   itemDescription: It's a life sized figurine of an angel, with some unfortunate
     modifications. I'd rather not look at it longer.
-  pickUpSound: {fileID: 8300000, guid: 5f2515b5cd558784fb20542f189f619c, type: 3}
-  pickUpVolume: 0.6
+  animator: {fileID: 0}
 --- !u!50 &2118219680
 Rigidbody2D:
   serializedVersion: 4
