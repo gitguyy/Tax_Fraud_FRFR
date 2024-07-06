@@ -243,8 +243,7 @@ public class talkingBehavior : dialogueEnumerator
         stringID = startInt;
         iterator = 0;
         stringID = startInt;
-        Debug.Log ("start after exit: " + startInt);
-        Debug.Log("exited dialogue");
+       
         
 
         //resetting everything
