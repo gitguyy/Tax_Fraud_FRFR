@@ -7779,6 +7779,8 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 07e709e50de50b040a6fc258afebad31, type: 3}
   itemID: 1
   IsProgress: {fileID: 1172076301}
+  pickUpSound: {fileID: 8300000, guid: 2ec63811398e46a45be68e0905b73ba0, type: 3}
+  pickUpVolume: 0.3
   itemDescription: It's a crumbled up receipt from the interdimensional customs.
     It says that a very high import tax is still due. There are several red warnings
     on it saying "Urgent!".
@@ -12576,6 +12578,8 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 11801b4f5edbb8f4e931991c90ea64dd, type: 3}
   itemID: 2
   IsProgress: {fileID: 2015009881}
+  pickUpSound: {fileID: 8300000, guid: 0fb137867abd3dd4b9bbcd31b10b6d32, type: 3}
+  pickUpVolume: 0.3
   itemDescription: It's a big cardboard box which was used to ship something in.
     The adress of the office is written on it, but not who it should be delivered
     too.
@@ -12874,6 +12878,8 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: c98c436d73edd7049a96b91686372320, type: 3}
   itemID: 4
   IsProgress: {fileID: 0}
+  pickUpSound: {fileID: 0}
+  pickUpVolume: 0.3
   itemDescription: It's a magazine, open on the page advertising the figurine I found.
     The price for it is steep, and it says you can only order it from heaven.
   animator: {fileID: 0}
@@ -13854,6 +13860,8 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: d5a6f2c303867aa45b63e9b98d122372, type: 3}
   itemID: 3
   IsProgress: {fileID: 2118219683}
+  pickUpSound: {fileID: 8300000, guid: 5f2515b5cd558784fb20542f189f619c, type: 3}
+  pickUpVolume: 0.3
   itemDescription: It's a life sized figurine of an angel, with some unfortunate
     modifications. I'd rather not look at it longer.
   animator: {fileID: 0}
