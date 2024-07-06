@@ -63,42 +63,42 @@
         "N Hello Sir, what seems to be the problem?",
         "P Well, I -",
         "N Pssst I'm on the phone",
-        "N You think you may have been wrongfully placed in hell?",
-        "N What? You think that you're only down here because you're gay?",
-        "N Sir, it says on your file that you murdered ten people in cold blood.",
-        "N No, we're not homophobic, YOU'RE JUST HOMOCIDAL.",
+        "N (On the phone) You think you may have been wrongfully placed in hell?",
+        "N (On the phone) What? You think that you're only down here because you're gay?",
+        "N (On the phone) Sir, it says on your file that you murdered ten people in cold blood.",
+        "N (On the phone) No, we're not homophobic, YOU'RE JUST HOMOCIDAL.",
         "P Excuse me -",
         "N AAAAAAAaaaaaah!",
 
         "E ",
 
         "P Do you know -",
-        "N No, you can't use a 'Get Out of Jail Free' card to get out of hell, because that is from a board game-",
-        "N -AND THIS IS ETERNAL DAMNATION YOU CAN'T ESCAPE FROM!",
+        "N (On the phone) No, you can't use a 'Get Out of Jail Free' card to get out of hell, because that is from a board game-",
+        "N (On the phone) -AND THIS IS ETERNAL DAMNATION YOU CAN'T ESCAPE FROM!",
         "P (I don't think I'll get a response out of her.)",
 
         "E ",
 
         "P ...",
-        "N No Sir, you do indeed deserve to suffer the tortures of tartarus. Yes. BECAUSE YOU TRIED TO SCALP THE NINTENDO SWITCH 2 FOR TRIPLE IT'S VALUE.",
+        "N (On the phone) No Sir, you do indeed deserve to suffer the tortures of tartarus. Yes. BECAUSE YOU TRIED TO SCALP THE NINTENDO SWITCH 2 FOR TRIPLE IT'S VALUE.",
         "P That is indeed deserved.",
         "E ",
         "P ...",
-        "N No Sir, you do indeed deserve to suffer the tortures of tartarus. Yes. BECAUSE YOU TRIED TO SCALP THE NINTENDO SWITCH 2 FOR TRIPLE IT'S VALUE.",
+        "N (On the phone) No Sir, you do indeed deserve to suffer the tortures of tartarus. Yes. BECAUSE YOU TRIED TO SCALP THE NINTENDO SWITCH 2 FOR TRIPLE IT'S VALUE.",
         "P That is indeed deserved.",
 
         "E ",
 
-        "N Yes ma'am, drawing Sonic x Shadow erotic fanart is indeed one of the gravest of sins...",
-        "N ...AND IT DOESN'T MATTER THAT YOU WERE ELEVEN YEARS OLD WHEN YOU DID IT.",
+        "N (On the phone) Yes ma'am, drawing Sonic x Shadow erotic fanart is indeed one of the gravest of sins...",
+        "N (On the phone) ...AND IT DOESN'T MATTER THAT YOU WERE ELEVEN YEARS OLD WHEN YOU DID IT.",
         "E ",
-        "N Yes ma'am, drawing Sonic x Shadow erotic fanart is indeed one of the gravest of sins...",
-        "N ...AND IT DOESN'T MATTER THAT YOU WERE ELEVEN YEARS OLD WHEN YOU DID IT.",
+        "N (On the phone) Yes ma'am, drawing Sonic x Shadow erotic fanart is indeed one of the gravest of sins...",
+        "N (On the phone) ...AND IT DOESN'T MATTER THAT YOU WERE ELEVEN YEARS OLD WHEN YOU DID IT.",
 
         "E ",
 
-        "N Yes, unironically liking 'Rise of Skywalker' will get you send straight to hell... ",
-        "N ...AND YOU DESERVE IT BECAUSE THE WRITING OF THAT MOVIE IS GARBAGE AND -",
+        "N (On the phone) Yes, unironically liking 'Rise of Skywalker' will get you send straight to hell... ",
+        "N (On the phone) ...AND YOU DESERVE IT BECAUSE THE WRITING OF THAT MOVIE IS GARBAGE AND -",
         "N ...",
         "N They hung up.",
         "N WAIT I DON'T HAVE ANY CALLERS RIGHT NOW, WHAT DO I DO, I'M NOT USED TO THIS -",
@@ -106,13 +106,13 @@
         "N I don't know...this is the first time in a long time I'm actually seeing my environment...",
         "NPBut I did see Stephen try to covertly put something in his cupboard several times.",
         "N He thinks that if he hides it under his shirt and whistles loudly it will be less suspicous.",
-        "P Thank you for your asisstance.",
+        "P Thank you for your assistance.",
         "N ... What do I do with myself now? Who am I?",
 
         "E ",
 
-        "N Yes, unironically liking 'Rise of Skywalker' will get you send straight to hell... ",
-        "N ...AND YOU DESERVE IT BECAUSE THE WRITING OF THAT MOVIE IS GARBAGE AND -",
+        "N (On the phone) Yes, unironically liking 'Rise of Skywalker' will get you send straight to hell... ",
+        "N (On the phone) ...AND YOU DESERVE IT BECAUSE THE WRITING OF THAT MOVIE IS GARBAGE AND -",
         "N ...",
         "N They hung up.",
         "N WAIT I DON'T HAVE ANY CALLERS RIGHT NOW, WHAT DO I DO, I'M NOT USED TO THIS -",
@@ -120,7 +120,7 @@
         "N I don't know...this is the first time in a long time I'm actually seeing my environment...",
         "N But I did see Stephen try to covertly put something in his cupboard several times.",
         "N He thinks that if he hides it under his shirt and whistles loudly it will be less suspicous.",
-        "P Thank you for your asisstance.",
+        "P Thank you for your assistance.",
         "N ... What do I do with myself now? Who am I?",
 
         "E "
@@ -170,7 +170,7 @@
         "P Do you know any place other than the storage room where people might put their stuff?",
         "N Urgh! Ngggh! Gggghh!",
         "P Great talk.",
-        
+
         "E ",
 
         "P Do you, or does anyone else here, have an interest in angel figurines.",
