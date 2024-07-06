@@ -1,31 +1,32 @@
 {
-  "suspect":
-    {
-      "phases": [
-        {
-          "phase": {
-            "angryAnswer": [ "m Artificial debt created by artificial borders. In the grand scheme of things, heaven and hell are one and the same.",
-              "m This is the box I saw Jadis carry, you finally found it!",
-              "m Our heavenly brethren. We should not shun them and instead bridge the gap of artificial morality.",
-              "m My preferred literature would be Sun Tzu's 'The Art of No War'."
-               
-            ],
-            "textBlocks": [
-              {
-                "block": {
-                  "dialogue": [ "P Are you the one responsible for tax fraud?",
-                    "T My brother in Satan, I have always been at your disposal for any help or questions.",
-                    "P Which is exactly what someone trying to misled me would do.",
-                    "T I would never do that to you, but I understand, you are doing your job.",
-                     "  "
-                  ],
-                  "clue": 0
-                }
+  "suspect": {
+    "phases": [
+      {
+        "phase": {
+          "angryAnswer": [
+            "M Damian: Artificial debt created by artificial borders. In the grand scheme of things, heaven and hell are one and the same.",
+            "M Damian: This is the box I saw Jadis carry, you finally found it!",
+            "M Damian: Our heavenly brethren. We should not shun them and instead bridge the gap of artificial morality.",
+            "M Damian: My preferred literature would be Sun Tzu's 'The Art of No War'."
+
+          ],
+          "textBlocks": [
+            {
+              "block": {
+                "dialogue": [
+                  "P Mitch: Are you the one responsible for tax fraud?",
+                  "T Damian: My brother in Satan, I have always been at your disposal for any help or questions.",
+                  "P Mitch: Which is exactly what someone trying to misled me would do.",
+                  "T Damian: I would never do that to you, but I understand, you are doing your job.",
+                  "  "
+                ],
+                "clue": 0
               }
-            ]
-          }
+            }
+          ]
         }
-      ]
-    }
- }   
+      }
+    ]
+  }
+}   
     

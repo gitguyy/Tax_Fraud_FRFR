@@ -1,123 +1,137 @@
 {
-  "suspect":
-    {
-      "phases": [
-        {
-          "phase": {
-            "angryAnswer": [
-              "M Why are you showing me a random piece of paper that has nothing to do with me.",
-              "C That could belong to anyone in the office.",
-              "T ...Ehm, ew. Who would like something like that",
-              "M ...Ehm, ew. Who would like something like that."
-            ],
-            "textBlocks": [
-              {
-                "block": {
-                  "dialogue": [ "P  I think you did the tax fraud.", 
-                    "M Nnnngh I've done nothing.",
-                    "P Exactly, you have been the personification of a white piece of bread. Which means you are hiding something.",
-                    "N No I'm not.",
-                     "  "
-                  ],
-                  "clue": 4
-                }
+  "suspect": {
+    "phases": [
+      {
+        "phase": {
+          "angryAnswer": [
+            "M Stephen: Why are you showing me a random piece of paper that has nothing to do with me.",
+            "C Stephen: That could belong to anyone in the office.",
+            "T Stephen: ...Ehm, ew. Who would like something like that",
+            "M Stephen: ...Ehm, ew. Who would like something like that."
+          ],
+          "textBlocks": [
+            {
+              "block": {
+                "dialogue": [
+                  "P Mitch: I think you did the tax fraud.",
+                  "M Stephen: Nnnngh I've done nothing.",
+                  "P Mitch: Exactly, you have been the personification of a white piece of bread. Which means you are hiding something.",
+                  "N Stephen: No I'm not.",
+                  "  "
+                ],
+                "clue": 4
               }
-            ]
-          }
-        },
-        
-        {
-          "phase": {
-            "angryAnswer": [ "M Where did you find this random piece of paper?",
-              "T Some cardboard, and?",
-              "M You Are Utterly WRONG",
-              "M Yes, keep reminding me I have this, very funny." ],
-            "textBlocks": [
-              {
-                "block": {
-                  "dialogue": [ "A Where did you get this??",
-                    "P You know where, from your cupboard. Why were you trying to hide this?",
-                    "M This is an invasion of privacy!",
-                    "P In the name of uncovering tax fraud, anything goes. Tell me, why were you hiding this?",
-                    "M ... Because I was embarrassed? This does proves nothing!",
-                    "  "
-                  ],
-                  "clue": 3
-                }
-              }
-            ]
-          }
-        },
-
-        {
-          "phase": {
-            "angryAnswer": [ "M You're starting to annoy me with this.",
-              "T Some cardboard, and?",
-              "T (drools)",
-              "M LET IT REST!"],
-            "textBlocks": [
-              {
-                "block": {
-                  "dialogue": [ "P It proves that you are the most likely owner of this thing.",
-                    "N NNNNNnnnngh. That was already here before I was hired.",
-                    "  "
-                  ],
-                  "clue": 2
-                }
-              }
-            ]
-          }
-        },
-
-        {
-          "phase": {
-            "angryAnswer": [ "M You're starting to annoy me with this.",
-              "T Just send me to heaven with this.",
-              "T This wasn't worth it I think.",
-              "M Nnnnnnngh!" ],
-            "textBlocks": [
-              {
-                "block": {
-                  "dialogue": [ "P When why is there a big cardboard box that was recently ordered into the office. The only item around that matches the size of that box is the statue.",
-                    "T NNnnngh, nnngh I ordered that, is that a crime?",
-                    "P It was shipped over from heaven, which means that it would have had an import tax.",
-                    "N  I paid that!",
-                    "  "
-                  ],
-                  "clue": 1
-                }
-              }
-            ]
-          }
-        },
-
-        {
-          "phase": {
-            "angryAnswer": [ "m Where did you find this random piece of paper?",
-              "m Some cardboard, and?",
-              "m Again??",
-              "m Yes, keep reminding me I have this, very funny." ],
-            "textBlocks": [
-              {
-                "block": {
-                  "dialogue": [ "P Then why was this receipt with an unpaid import tax and several warnings on it thrown away in the trash can?",
-                    "N ...",
-                    "M I  DID IT, I DID IT, OH LORD IN HELL FORGIVE ME. I JUST REALLY WANTED ONE OF THOSE STATUES, BUT THEY ARE SO EXPENSIVE I ALREADY LOST ALL MY MONEY ON IT. AND THE IMPORT TAX WAS SO ASTRONOMICALLY HIGH, I COULDN'T PAY IT, AND WHEN I DID HAVE THE MONEY, I DIDN'T WANT TO, BECAUSE HOW DARE THEY TAKE THIS MUCH MONEY. I THOUGHT IF I AVOIDED IT, IT WOULD JUST GO AWAY!",
-                    "P You thought wrong, in the end, the IRS always catches you. You're going away for a long time.",
-                    "A I AM?!?",
-                    "P No, but you're going to have to pay what you owe plus a hefty fine.",
-                    "A (sobs)",
-                    "P And this is why you always pay your taxes on time.",
-                    "  "
-                  ],
-                  "clue": 0
-                }
-              }
-            ]
-          }
+            }
+          ]
         }
-        
-      ]
-    }
- }   
+      },
+
+      {
+        "phase": {
+          "angryAnswer": [
+            "M Stephen: Where did you find this random piece of paper?",
+            "T Stephen: Some cardboard, and?",
+            "M Stephen: You Are Utterly WRONG",
+            "M Stephen: Yes, keep reminding me I have this, very funny."
+          ],
+          "textBlocks": [
+            {
+              "block": {
+                "dialogue": [
+                  "A Stephen: Where did you get this??",
+                  "P Mitch: You know where, from your cupboard. Why were you trying to hide this?",
+                  "M Stephen: This is an invasion of privacy!",
+                  "P Mitch: In the name of uncovering tax fraud, anything goes. Tell me, why were you hiding this?",
+                  "M Stephen: ... Because I was embarrassed? This does proves nothing!",
+                  "  "
+                ],
+                "clue": 3
+              }
+            }
+          ]
+        }
+      },
+
+      {
+        "phase": {
+          "angryAnswer": [
+            "M Stephen: You're starting to annoy me with this.",
+            "T Stephen: Some cardboard, and?",
+            "T Stephen: (drools)",
+            "M Stephen: LET IT REST!"
+          ],
+          "textBlocks": [
+            {
+              "block": {
+                "dialogue": [
+                  "P Mitch: It proves that you are the most likely owner of this thing.",
+                  "N Stephen: NNNNNnnnngh. That was already here before I was hired.",
+                  "  "
+                ],
+                "clue": 2
+              }
+            }
+          ]
+        }
+      },
+
+      {
+        "phase": {
+          "angryAnswer": [
+            "M Stephen: You're starting to annoy me with this.",
+            "T Stephen: Just send me to heaven with this.",
+            "T Stephen: This wasn't worth it I think.",
+            "M Stephen: Nnnnnnngh!"
+          ],
+          "textBlocks": [
+            {
+              "block": {
+                "dialogue": [
+                  "P Mitch: Then why is there a big cardboard box that was recently ordered into the office. The only item around that matches the size of that box is the statue.",
+                  "T Stephen: NNnnngh, nnngh I ordered that, is that a crime?",
+                  "P Mitch: It was shipped over from heaven, which means that it would have had an import tax.",
+                  "N Stephen: I paid that!",
+                  "  "
+                ],
+                "clue": 1
+              }
+            }
+          ]
+        }
+      },
+
+      {
+        "phase": {
+          "angryAnswer": [
+            "m Stephen: Where did you find this random piece of paper?",
+            "m Stephen: Some cardboard, and?",
+            "m Stephen: Again??",
+            "m Stephen: Yes, keep reminding me I have this, very funny."
+          ],
+          "textBlocks": [
+            {
+              "block": {
+                "dialogue": [
+                  "P Mitch: Then why was this receipt with an unpaid import tax and several warnings on it thrown away in the trash can?",
+                  "N Stephen: ...",
+                  "M Stephen: I  DID IT, I DID IT, OH LORD IN HELL FORGIVE ME. I JUST REALLY WANTED ONE OF THOSE STATUES, BUT THEY ARE SO EXPENSIVE I ALREADY LOST ALL MY MONEY ON IT. ",
+                  "M Stephen: AND THE IMPORT TAX WAS SO ASTRONOMICALLY HIGH, I COULDN'T PAY IT, AND WHEN I DID HAVE THE MONEY, I DIDN'T WANT TO, BECAUSE HOW DARE THEY TAKE THIS MUCH MONEY. I THOUGHT IF I AVOIDED IT, IT WOULD JUST GO AWAY!",
+                  "P Mitch: You thought wrong, in the end, the IRS always catches you. You're going away for a long time.",
+                  "A Stephen: I AM?!?",
+                  "P Mitch: No, but you're going to have to pay what you owe, plus a hefty fine.",
+                  "A Stephen: (sobs)",
+                  "P Mitch: And this is why you always pay your taxes on time.",
+                  "  "
+                ],
+                "clue": 0
+              }
+            }
+          ]
+        }
+      }
+
+    ]
+  }
+}   
     
+

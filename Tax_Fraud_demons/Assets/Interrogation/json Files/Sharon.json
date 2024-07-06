@@ -1,20 +1,22 @@
 {
-  "suspect":
-  {
+  "suspect": {
     "phases": [
       {
         "phase": {
-          "angryAnswer": [ "T I have as much respect for customs as I have for you.",
-            "T Ah yes, my future house.",
-            "T Get that filth away from me.",
-            "T I'd rather read 'Fifty Shades of Red' then this trash."],
+          "angryAnswer": [
+            "T Sharon: I have as much respect for customs as I have for you.",
+            "T Sharon: Ah yes, my future house.",
+            "T Sharon: Get that filth away from me.",
+            "T Sharon: I'd rather read 'Fifty Shades of Red' then this trash."
+          ],
           "textBlocks": [
             {
               "block": {
-                "dialogue": [ "P I suspect you might be the person responsible for tax fraud.",
-                  "T Enlighten me.",
-                  "P You oversee this department, if anyone should know what is going on here, it would be you.",
-                  "T Brilliant deduction.",
+                "dialogue": [
+                  "P Mitch: I suspect you might be the person responsible for tax fraud.",
+                  "T Sharon: Enlighten me.",
+                  "P Mitch: You oversee this department, if anyone should know what is going on here, it would be you.",
+                  "T Sharon: Brilliant deduction.",
                   "  "
                 ],
                 "clue": 0
