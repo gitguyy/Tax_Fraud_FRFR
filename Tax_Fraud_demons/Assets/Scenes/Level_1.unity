@@ -5584,7 +5584,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 17
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -7175,8 +7175,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7776,13 +7776,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Import Tax Clue
-  sprite: {fileID: 21300000, guid: 7d5f9f0960fb9f546bae30ececb68558, type: 3}
+  sprite: {fileID: 21300000, guid: 07e709e50de50b040a6fc258afebad31, type: 3}
   itemID: 1
   IsProgress: {fileID: 1172076301}
   itemDescription: It's a crumbled up receipt from the interdimensional customs.
     It says that a very high import tax is still due. There are several red warnings
     on it saying "Urgent!".
-  animator: {fileID: 1172076302}
+  pickUpSound: {fileID: 8300000, guid: 2ec63811398e46a45be68e0905b73ba0, type: 3}
+  pickUpVolume: 0.6
 --- !u!50 &1172076297
 Rigidbody2D:
   serializedVersion: 4
@@ -12573,13 +12574,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Big Box
-  sprite: {fileID: 21300000, guid: d1bc921a0bad1a14eaaf777bfd99b6d1, type: 3}
+  sprite: {fileID: 21300000, guid: 11801b4f5edbb8f4e931991c90ea64dd, type: 3}
   itemID: 2
   IsProgress: {fileID: 2015009881}
   itemDescription: It's a big cardboard box which was used to ship something in.
     The adress of the office is written on it, but not who it should be delivered
     too.
-  animator: {fileID: 2015009882}
+  pickUpSound: {fileID: 8300000, guid: 0fb137867abd3dd4b9bbcd31b10b6d32, type: 3}
+  pickUpVolume: 0.6
 --- !u!50 &2015009878
 Rigidbody2D:
   serializedVersion: 4
@@ -12871,12 +12873,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Magazine
-  sprite: {fileID: 21300000, guid: ece646e3121c1604f9e15e1cd707db4b, type: 3}
+  sprite: {fileID: 21300000, guid: c98c436d73edd7049a96b91686372320, type: 3}
   itemID: 4
   IsProgress: {fileID: 0}
   itemDescription: It's a magazine, open on the page advertising the figurine I found.
     The price for it is steep, and it says you can only order it from heaven.
-  animator: {fileID: 2059759004}
+  pickUpSound: {fileID: 8300000, guid: 0fb137867abd3dd4b9bbcd31b10b6d32, type: 3}
+  pickUpVolume: 0.6
 --- !u!50 &2059758998
 Rigidbody2D:
   serializedVersion: 4
@@ -12988,7 +12991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d5310a0c00efe140a14eb071ae7a689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeAt: 0
+  changeAt: 7
   sendInfo: {fileID: 2059759002}
 --- !u!95 &2059759004
 Animator:
@@ -13851,12 +13854,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Angel Statue
-  sprite: {fileID: 21300000, guid: 86307ea2255b2734c90be32cdde8b2ab, type: 3}
+  sprite: {fileID: 21300000, guid: d5a6f2c303867aa45b63e9b98d122372, type: 3}
   itemID: 3
   IsProgress: {fileID: 2118219683}
   itemDescription: It's a life sized figurine of an angel, with some unfortunate
     modifications. I'd rather not look at it longer.
-  animator: {fileID: 0}
+  pickUpSound: {fileID: 8300000, guid: 5f2515b5cd558784fb20542f189f619c, type: 3}
+  pickUpVolume: 0.6
 --- !u!50 &2118219680
 Rigidbody2D:
   serializedVersion: 4
