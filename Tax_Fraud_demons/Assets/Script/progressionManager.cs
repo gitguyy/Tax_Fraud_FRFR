@@ -78,6 +78,7 @@ public class progressionManager : MonoBehaviour
         {
 
             objects[i].Initialize();
+            objects[i].SetShow(progressionLevel);
         }
     }
    
