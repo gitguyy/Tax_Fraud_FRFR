@@ -12,7 +12,12 @@ public class Item : MonoBehaviour
     [SerializeField] private int itemID;
     [SerializeField]
     private ItemProgress IsProgress;
-    
+
+    [SerializeField] private AudioClip pickUpSound; // Add this line to specify the pick-up sound
+    [SerializeField][Range(0f, 1f)] private float pickUpVolume = 1f; // Add this line to control the volume
+
+    private AudioSource audioSource; // Add this line to manage the audio source
+
     [TextArea]
     [SerializeField] private string itemDescription;
     progressionManager manager;
@@ -25,11 +30,14 @@ public class Item : MonoBehaviour
     {
         inventoryManager = InventoryManager.Instance;
         animator = GetComponent<Animator>();
+        audioSource = gameObject.GetComponent<AudioSource>(); // Add this line to add an audio source component
+        audioSource.loop = false;
     }
     
     // Check if item has been picked up before
     private void OnEnable()
     {
+        
         manager = progressionManager.Instance;
         if (manager != null)
         {
@@ -38,6 +46,13 @@ public class Item : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
+
+        if (audioSource == null)
+        {
+            audioSource = gameObject.GetComponent<AudioSource>(); // Add this line to add an audio source component
+        }
+
+        audioSource.loop = false;
     }
 
     // TO COLLIDE WITH ITEMS
@@ -51,18 +66,19 @@ public class Item : MonoBehaviour
             }
             if(animator == null)
             {
+               
                 isClicked = true;
                 manager.setItemPickUp(itemID - 1);
                 if (IsProgress != null)
                 {
                     IsProgress.onCLick();
                 }
+                PlayPickUpSound();
                 Destroy(gameObject);
                 inventoryManager.AddItem(itemID, itemName, sprite, itemDescription);
+               
             }
-                
-            
-
+         
         }
     }
 
@@ -77,4 +93,15 @@ public class Item : MonoBehaviour
         inventoryManager.AddItem(itemID, itemName, sprite, itemDescription);
         Destroy(gameObject);
     }
+
+    private void PlayPickUpSound()
+    {
+        Debug.Log("sound played");
+        if (pickUpSound != null)
+        {
+            audioSource.PlayOneShot(pickUpSound, pickUpVolume);
+        }
+    }
+
+
 }
