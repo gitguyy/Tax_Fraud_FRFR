@@ -10,23 +10,21 @@ public class Item : MonoBehaviour
     [SerializeField] private string itemName;
     [SerializeField] private Sprite sprite;
     [SerializeField] private int itemID;
-    [SerializeField] private ItemProgress IsProgress;
+    [SerializeField]
+    private ItemProgress IsProgress;
+    
     [TextArea]
     [SerializeField] private string itemDescription;
-    [SerializeField] private AudioClip pickUpSound; // Add this line to specify the pick-up sound
-    [SerializeField] [Range(0f, 1f)] private float pickUpVolume = 1f; // Add this line to control the volume
+    progressionManager manager;
     
-    private progressionManager manager;
     private InventoryManager inventoryManager;
-    private Animator animator;
-    private AudioSource audioSource; // Add this line to manage the audio source
+    [SerializeField] private Animator animator;
     private bool isClicked = false;
     
     void Start()
     {
         inventoryManager = InventoryManager.Instance;
         animator = GetComponent<Animator>();
-        audioSource = gameObject.AddComponent<AudioSource>(); // Add this line to add an audio source component
     }
     
     // Check if item has been picked up before
@@ -35,7 +33,7 @@ public class Item : MonoBehaviour
         manager = progressionManager.Instance;
         if (manager != null)
         {
-            if (manager.itemsPickedUp[itemID - 1] == true)
+            if (manager.itemsPickedUp[itemID-1] == true)
             {
                 Destroy(this.gameObject);
             }
@@ -49,39 +47,34 @@ public class Item : MonoBehaviour
         {
             if(animator != null)
             {
-                isClicked = true;
-                PlayPickUpSound(); // Play sound when animation starts
                 animator.SetTrigger("Clicked");
             }
-            else
+            if(animator == null)
             {
-                PickUpItem();
+                isClicked = true;
+                manager.setItemPickUp(itemID - 1);
+                if (IsProgress != null)
+                {
+                    IsProgress.onCLick();
+                }
+                Destroy(gameObject);
+                inventoryManager.AddItem(itemID, itemName, sprite, itemDescription);
             }
-        }
-    }
+                
+            
 
-    private void PlayPickUpSound()
-    {
-        if (pickUpSound != null)
-        {
-            audioSource.PlayOneShot(pickUpSound, pickUpVolume);
         }
-    }
-
-    private void PickUpItem()
-    {
-        manager.setItemPickUp(itemID - 1);
-        if (IsProgress != null)
-        {
-            IsProgress.onCLick();
-        }
-        Destroy(gameObject);
-        inventoryManager.AddItem(itemID, itemName, sprite, itemDescription);
     }
 
     public void OnAnimationComplete()
     {
         Debug.Log("Animation complete, adding item to inventory.");
-        PickUpItem();
+        manager.setItemPickUp(itemID-1);
+        if(IsProgress != null)
+        {
+            IsProgress.onCLick();
+        }
+        inventoryManager.AddItem(itemID, itemName, sprite, itemDescription);
+        Destroy(gameObject);
     }
 }

@@ -5,49 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a57fc650-d301-43a3-b2a7-b79b875ba63e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tax_Fraud_demons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tax_Fraud_demons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Systems/Inventory/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Systems/Inventory/Item.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 10.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 10.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 11.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 11.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 12.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 12.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 13.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 13.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 14.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 14.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 15.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 15.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 16.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 16.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 17.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 17.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 18.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 18.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 19.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 19.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 2.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 20.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 20.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 3.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 4.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 5.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 6.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 6.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 7.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 7.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 8.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 8.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 9.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/SFX/Footstep marble 9.wav.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
