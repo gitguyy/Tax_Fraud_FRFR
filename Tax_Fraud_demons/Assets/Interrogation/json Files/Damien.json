@@ -14,9 +14,9 @@
               {
                 "block": {
                   "dialogue": [ "P Are you the one responsible for tax fraud?",
-                    "N My brother in Satan, I have always been at your disposal for any help or questions.",
+                    "T My brother in Satan, I have always been at your disposal for any help or questions.",
                     "P Which is exactly what someone trying to misled me would do.",
-                    "N I would never do that to you, but I understand, you are doing your job.",
+                    "T I would never do that to you, but I understand, you are doing your job.",
                      "  "
                   ],
                   "clue": 0

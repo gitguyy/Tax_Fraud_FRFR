@@ -4,17 +4,17 @@
     "phases": [
       {
         "phase": {
-          "angryAnswer": [ "m I always pay my taxes, I swear.",
-            "m I don't order things, I'm scared of postdemons.",
-            "m Ew! Ew! Ew! What is that.?",
-            "m I really don't want to see what is in there." ],
+          "angryAnswer": [ "M I always pay my taxes, I swear.",
+            "M I don't order things, I'm scared of postdemons.",
+            "M Ew! Ew! Ew! What is that.?",
+            "M I really don't want to see what is in there." ],
           "textBlocks": [
             {
               "block": {
                 "dialogue": [ "P I think you might be the one responsible for tax fr-",
-                  "N Oh please, please, let me get back to work, I don't have the time -",
+                  "T Oh please, please, let me get back to work, I don't have the time -",
                   "P Which is exactly what you would be saying if you were trying to hide something.",
-                  "N Aaaaaaah!",
+                  "T Aaaaaaah!",
                   "  "
                 ],
                 "clue": 0

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3786bf42ddebc4745b1ebdae22f37390, type: 3}
   m_Name: Jadis
   m_EditorClassIdentifier: 
-  sprites: {fileID: 0}
+  sprites: {fileID: 9100000, guid: 6db2d67a33519bb43b411c3d1c52cefc, type: 2}
   text: {fileID: 4900000, guid: 101067319b08dc145b0d820bf753ea89, type: 3}
   ID: 4

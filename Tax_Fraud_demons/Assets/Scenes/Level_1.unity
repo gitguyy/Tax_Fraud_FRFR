@@ -6217,9 +6217,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 891523318}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3561232, y: 1.6274687, z: -10.139972}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.8727381, y: 0.845573, z: -10.139972}
+  m_LocalScale: {x: 0.2702703, y: 0.2702703, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 372409014}
@@ -6228,7 +6228,7 @@ Transform:
   - {fileID: 1891899543}
   - {fileID: 1342902831}
   - {fileID: 121152223}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1404091260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &913524009
 GameObject:
@@ -9161,6 +9161,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2059759000}
+  - {fileID: 891523319}
   m_Father: {fileID: 1642449041}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1407130649
@@ -12987,7 +12988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d5310a0c00efe140a14eb071ae7a689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeAt: 4
+  changeAt: 0
   sendInfo: {fileID: 2059759002}
 --- !u!95 &2059759004
 Animator:
@@ -14307,7 +14308,6 @@ SceneRoots:
   - {fileID: 1398874610}
   - {fileID: 1460595989}
   - {fileID: 1642449041}
-  - {fileID: 891523319}
   - {fileID: 734790243}
   - {fileID: 1779263674}
   - {fileID: 967317060}

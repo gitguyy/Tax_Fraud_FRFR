@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3786bf42ddebc4745b1ebdae22f37390, type: 3}
   m_Name: Damien
   m_EditorClassIdentifier: 
-  sprites: {fileID: 0}
+  sprites: {fileID: 9100000, guid: 7a3b6086aa5d8f04d81ec1ae2270eba4, type: 2}
   text: {fileID: 4900000, guid: 7b16ba1f8e345e44f92a5676fd8d3080, type: 3}
   ID: 3
