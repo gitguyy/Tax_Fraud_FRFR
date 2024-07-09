@@ -196,7 +196,7 @@
         "N I just stopped picking up calls.",
         "N Anyhow, how may I help you my brother?",
         "P I am with the IRS, and here to investigate possible tax fraud. Have you noticed any suspicous activity around the office?",
-        "N I must disapoint you, for I have been so immersed in meditation that I have not been conscious to the happenings of this immortal coil.",
+        "N I must dissapoint you, for I have been so immersed in meditation that I have not been conscious to the happenings of this immortal coil.",
         "P Anything else you might be able to tell me then? Maybe about your colleagues?",
         "N Certainly my brother.",
         "N The Lady in the front is Sharon, our superior.",
@@ -287,7 +287,7 @@
         "P Is this import tax receipt yours?",
         "P ...",
         "P ...",
-        "P No.",
+        "N No.",
 
         "E ",
 

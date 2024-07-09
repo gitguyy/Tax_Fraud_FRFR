@@ -102,6 +102,6 @@ public class Item : MonoBehaviour
             audioSource.PlayOneShot(pickUpSound, pickUpVolume);
         }
     }
-
+    
 
 }

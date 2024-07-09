@@ -22,6 +22,7 @@ public class progressionManager : MonoBehaviour
     [SerializeField]
     public int[] angerLevels;
     public bool[] itemsPickedUp { private set; get; }
+   
     #endregion;
     #region Singleton
 
@@ -80,6 +81,7 @@ public class progressionManager : MonoBehaviour
             objects[i].Initialize();
             objects[i].SetShow(progressionLevel);
         }
+        
     }
    
 
