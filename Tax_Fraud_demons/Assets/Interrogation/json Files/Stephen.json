@@ -6,8 +6,14 @@
           "angryAnswer": [
             "M Stephen: Why are you showing me a random piece of paper that has nothing to do with me.",
             "C Stephen: That could belong to anyone in the office.",
-            "T Stephen: ...Ehm, ew. Who would like something like that",
+            "N Stephen: ...Ehm, ew. Who would like something like that",
             "M Stephen: ..hah ur not suppose to see this."
+          ],
+          "resetSentence": [
+            "T anyway what were you saying",
+            "C anyway what were you saying",
+            "C anyway what were you saying",
+            "C anyway what were you saying"
           ],
           "textBlocks": [
             {
@@ -30,9 +36,15 @@
         "phase": {
           "angryAnswer": [
             "M Stephen: Where did you find this random piece of paper?",
-            "T Stephen: Some cardboard, and?",
+            "N Stephen: Some cardboard, and?",
             "M Stephen: You Are Utterly WRONG",
             "M Stephen: Yes, keep reminding me I have this, very funny."
+          ],
+          "resetSentence": [
+            "C anyway what were you saying",
+            "C anyway what were you saying",
+            "C anyway what were you saying",
+            "C anyway what were you saying"
           ],
           "textBlocks": [
             {
@@ -40,13 +52,23 @@
                 "dialogue": [
                   "A Stephen: Where did you get this??",
                   "P Mitch: You know where, from your cupboard. Why were you trying to hide this?",
-                  "M Stephen: This is an invasion of privacy!",
+                  "M Stephen: This is an invasion of privacy!"
+
+                ],
+                "clue": 3
+              }
+
+            },
+            {
+              "block": {
+                "dialogue": [
                   "P Mitch: In the name of uncovering tax fraud, anything goes. Tell me, why were you hiding this?",
                   "M Stephen: ... Because I was embarrassed? This proves nothing!",
                   "  "
                 ],
                 "clue": 3
               }
+
             }
           ]
         }
@@ -56,9 +78,15 @@
         "phase": {
           "angryAnswer": [
             "M Stephen: You're starting to annoy me with this.",
-            "T Stephen: Some cardboard, and?",
-            "T Stephen: (drools)",
+            "N Stephen: Some cardboard, and?",
+            "N Stephen: (drools)",
             "M Stephen: LET IT REST!"
+          ],
+          "resetSentence": [
+            "C anyway what were you saying",
+            "C anyway what were you saying",
+            "C anyway what were you saying",
+            "C anyway what were you saying"
           ],
           "textBlocks": [
             {
@@ -79,9 +107,15 @@
         "phase": {
           "angryAnswer": [
             "M Stephen: You're starting to annoy me with this.",
-            "T Stephen: Just send me to heaven with this.",
-            "T Stephen: This wasn't worth it I think.",
+            "N Stephen: Just send me to heaven with this.",
+            "N Stephen: This wasn't worth it I think.",
             "M Stephen: Nnnnnnngh!"
+          ],
+          "resetSentence": [
+            "C anyway what were you saying",
+            "C anyway what were you saying",
+            "C anyway what were you saying",
+            "C anyway what were you saying"
           ],
           "textBlocks": [
             {
@@ -103,10 +137,16 @@
       {
         "phase": {
           "angryAnswer": [
-            "m Stephen: Where did you find this random piece of paper?",
-            "m Stephen: Some cardboard, and?",
-            "m Stephen: Again??",
-            "m Stephen: Yes, keep reminding me I have this, very funny."
+            "M Stephen: Where did you find this random piece of paper?",
+            "M Stephen: Some cardboard, and?",
+            "M Stephen: Again??",
+            "M Stephen: Yes, keep reminding me I have this, very funny."
+          ],
+          "resetSentence": [
+            "C anyway what were you saying",
+            "C anyway what were you saying",
+            "C anyway what were you saying",
+            "C anyway what were you saying"
           ],
           "textBlocks": [
             {

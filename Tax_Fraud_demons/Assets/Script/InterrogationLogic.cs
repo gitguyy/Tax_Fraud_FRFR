@@ -14,7 +14,7 @@ public class InterrogationLogic : MonoBehaviour
     private Sprite[] npcSprites;
     private TextAsset text;
     private sendInfo getInfo;
-    
+    bool resetSentence;
     private suspectContainer mySuspectContainer = new();
     private suspect mySuspect = new();
     public bool won;
@@ -92,6 +92,7 @@ public class InterrogationLogic : MonoBehaviour
     struct phase
     {
         public string[] angryAnswer;
+        public string[] resetSentence;
         public BlockContainer[] textBlocks;
         
         
@@ -144,9 +145,9 @@ public class InterrogationLogic : MonoBehaviour
     #region thirdPartyUsedMethods
     public void checkForClueID(int ID)
     {
-        Debug.Log("ID: " + ID);
-        Debug.Log("ID in file: " + mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.clue);
-        Debug.Log("block: " + curBlock);
+        //Debug.Log("ID: " + ID);
+        //Debug.Log("ID in file: " + mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.clue);
+        //Debug.Log("block: " + curBlock);
         if (mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.clue == ID)
         {
             curClueID = ID;
@@ -216,8 +217,15 @@ public class InterrogationLogic : MonoBehaviour
     {
         if(curTextID < mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue.Length)
         {
-           
-            curTextID++;
+           if(!resetSentence)
+            {
+                curTextID++;
+            }
+           if(resetSentence)
+            {
+                resetSentence = false;
+            }
+         
             if(curTextID == mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue.Length)
             {
                 getNextBlock();
@@ -264,11 +272,21 @@ public class InterrogationLogic : MonoBehaviour
     {
         if (isAngry == true)
         {
-          
+            resetSentence = true;
             return mySuspect.phases[curPhase].phase.angryAnswer[curClueID -1].Remove(0, 2);
+           
             
         }
+        if(resetSentence)
+        {
+           
+            curTextID = 0;
+            
+            return mySuspect.phases[curPhase].phase.resetSentence[curClueID - 1].Remove(0, 2);
+        }
+
         Debug.Log("id to length ratio: " + mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue.Length + "/" + curTextID);
+        Debug.Log("curTextID: "+curTextID);
         return mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue[curTextID].Remove(0,2);
     }
 
@@ -276,6 +294,22 @@ public class InterrogationLogic : MonoBehaviour
     #region AnimationInformation
     public suspectState returnState()
     {
+        if(resetSentence == true && isAngry == false)
+        {
+            Debug.Log("reset emotions"+ mySuspect.phases[curPhase].phase.resetSentence[curClueID - 1][0]);
+            
+            switch ((mySuspect.phases[curPhase].phase.resetSentence[curClueID - 1][0]))
+            {
+                case 'T': return suspectState.Talking;
+                case 'C': return suspectState.Contemplating;
+                case 'N': return suspectState.Nervous;
+                case 'A': return suspectState.Anxious;
+                case 'B': return suspectState.Breakdown;
+                case 'M': return suspectState.Mad;
+                case 'F': return suspectState.Furious;
+                default: return suspectState.Null;
+            }
+        }
         if(isAngry != true)
         {
             switch ((mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue[curTextID][0]))
@@ -291,7 +325,8 @@ public class InterrogationLogic : MonoBehaviour
             }
         }
         else
-            switch ((mySuspect.phases[curPhase].phase.angryAnswer[curClueID - 1][0]))
+            
+        switch ((mySuspect.phases[curPhase].phase.angryAnswer[curClueID - 1][0]))
             {
                 case 'T': return suspectState.Talking;
                 case 'C': return suspectState.Contemplating;

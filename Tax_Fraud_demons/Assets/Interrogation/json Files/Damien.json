@@ -10,6 +10,12 @@
             "M Damian: My preferred literature would be Sun Tzu's 'The Art of No War'."
 
           ],
+          "resetSentence": [
+            "T anyway what were you saying",
+            "C anyway what were you saying",
+            "C anyway what were you saying",
+            "C anyway what were you saying"
+          ],
           "textBlocks": [
             {
               "block": {

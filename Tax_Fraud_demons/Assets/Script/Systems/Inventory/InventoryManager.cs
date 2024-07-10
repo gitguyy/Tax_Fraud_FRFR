@@ -122,7 +122,7 @@ public class InventoryManager : MonoBehaviour
     public void clicked(ItemSlot Item)
     {
         itemID = Item.itemID;
-        Debug.Log(itemID);
+        //Debug.Log(itemID);
         if (isInterrogation)
         {
            
