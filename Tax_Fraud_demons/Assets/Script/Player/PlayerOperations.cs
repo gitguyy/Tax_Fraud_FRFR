@@ -21,6 +21,8 @@ public class PlayerOperations : MonoBehaviour
     private GameObject dialogueBox;
     public ColissionManager col;
     DialogueSystem system;
+    [SerializeField]
+    private GameObject pressableArea;
     
     
 
@@ -39,10 +41,15 @@ public class PlayerOperations : MonoBehaviour
         //else Destroy(gameObject.GetComponent<PlayerOperations>()) ;
     }
 
+    public void onTransition()
+    {
+        pressableArea = GameObject.Find("pressableArea");
+    }
+
 
     private void OnEnable()
     {
-       
+        pressableArea.SetActive(false);
     }
 
     // Start is called before the first frame update
@@ -57,7 +64,15 @@ public class PlayerOperations : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(dialogueBox == null)
+        if(pressableArea != null)
+        {
+            if (dialogueBox.activeSelf == false)
+            {
+                pressableArea.SetActive(false);
+            }
+        }
+      
+        if (dialogueBox == null)
         {
             if(FindAnyObjectByType<DialogueBox>()!= null)
             {
@@ -77,18 +92,32 @@ public class PlayerOperations : MonoBehaviour
             }
             if (canTalkWith && Input.GetMouseButtonDown(0) &&!talking)
             {
+               
                 if(system == null)
                 {
                     system = DialogueSystem.Instance;
                 }
-                Debug.Log("normal talk");
+                pressableArea.SetActive(true);
+                
+
                 col.getObjectInfo();
+                if (pressableArea.GetComponent<NpcInformations>() != null && InteractObject.GetComponent<NpcInformations>() != null)
+                {
+                   
+                    int ID = InteractObject.GetComponent<NpcInformations>().getID();
+                    Debug.Log(ID + "name: " +InteractObject.gameObject.name);
+                    pressableArea.GetComponent<NpcInformations>().setID(ID);
+
+                }
+                else
+                    Debug.Log("no info");
                 //Debug.Log("talking initiated");
                 system.dialogue.backToDialogue();
                 talking = true;
                 system.dialogue.setTimer(system.letterTimer);
                
                 dialogueBox.SetActive(true);
+               
 
                 system.dialogue.setBox(dialogueBox);
 
@@ -110,8 +139,9 @@ public class PlayerOperations : MonoBehaviour
 
             if (canInteractWith && !canTalkWith && Input.GetMouseButtonDown(0))
             {
-               
+                Debug.Log("exit_1");
                 dialogueBox.SetActive(false);
+                pressableArea.SetActive(false);
                 system.dialogue.onExit(ref system.t);
                 
 
@@ -121,9 +151,11 @@ public class PlayerOperations : MonoBehaviour
             {
                 if (InteractObject != null)
                 {
+                    Debug.Log("exit_2");
                     talking = false;
                     dialogueBox.SetActive(false);
-                    
+                    pressableArea.SetActive(false);
+
                     system.dialogue.onExit(ref system.t);
                     system.resetText();
                

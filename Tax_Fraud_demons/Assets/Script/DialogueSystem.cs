@@ -31,6 +31,7 @@ public class DialogueSystem : MonoBehaviour
     int dialogueID;
     public static DialogueSystem Instance;
     MySceneManager sceneManager;
+    public int prevID;
     
 
     
@@ -162,8 +163,9 @@ public string getText()
             //update the text
             int temp = g.GetComponent<NpcInformations>().getID();
             ID = temp;
-            if (curObject != g )
+            if (curObject != g && temp != prevID)
             {
+                prevID = temp;
                 dialogue.onEnter(myActors.actors[ID],ID);
                 curObject = g;
 

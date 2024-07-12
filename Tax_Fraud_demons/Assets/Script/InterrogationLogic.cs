@@ -255,8 +255,13 @@ public class InterrogationLogic : MonoBehaviour
         Debug.Log("resetting block");
         curBlock = 0;
         curTextID = 0;
-        loader.loadScene("Level_1");
+        //loader.loadScene("Level_1");
         
+    }
+
+    public void ExitInterrogation()
+    {
+        loader.loadScene("Level_1");
     }
 
     private void QuickReset()

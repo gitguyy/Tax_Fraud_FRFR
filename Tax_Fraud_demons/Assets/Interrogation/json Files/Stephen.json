@@ -22,8 +22,8 @@
                   "P Mitch: I think you did the tax fraud.",
                   "M Stephen: Nnnngh I've done nothing.",
                   "P Mitch: Exactly, you have been the personification of a white piece of bread. Which means you are hiding something.",
-                  "N Stephen: No I'm not.",
-                  "  "
+                  "N Stephen: No I'm not."
+                  
                 ],
                 "clue": 4
               }
@@ -63,8 +63,8 @@
               "block": {
                 "dialogue": [
                   "P Mitch: In the name of uncovering tax fraud, anything goes. Tell me, why were you hiding this?",
-                  "M Stephen: ... Because I was embarrassed? This proves nothing!",
-                  "  "
+                  "M Stephen: ... Because I was embarrassed? This proves nothing!"
+                  
                 ],
                 "clue": 3
               }
@@ -93,8 +93,8 @@
               "block": {
                 "dialogue": [
                   "P Mitch: It proves that you are the most likely owner of this thing.",
-                  "N Stephen: NNNNNnnnngh. That was already here before I was hired.",
-                  "  "
+                  "N Stephen: NNNNNnnnngh. That was already here before I was hired."
+                  
                 ],
                 "clue": 2
               }
@@ -124,8 +124,8 @@
                   "P Mitch: Then why is there a big cardboard box that was recently ordered into the office. The only item around that matches the size of that box is the statue.",
                   "T Stephen: NNnnngh, nnngh I ordered that, is that a crime?",
                   "P Mitch: It was shipped over from heaven, which means that it would have had an import tax.",
-                  "N Stephen: I paid that!",
-                  "  "
+                  "N Stephen: I paid that!"
+                  
                 ],
                 "clue": 1
               }
@@ -161,8 +161,8 @@
                   "A Stephen: I AM?!?",
                   "P Mitch: No, but you're going to have to pay what you owe, plus a hefty fine.",
                   "A Stephen: (sobs)",
-                  "P Mitch: And this is why you always pay your taxes on time.",
-                  "  "
+                  "P Mitch: And this is why you always pay your taxes on time."
+                  
                 ],
                 "clue": 0
               }

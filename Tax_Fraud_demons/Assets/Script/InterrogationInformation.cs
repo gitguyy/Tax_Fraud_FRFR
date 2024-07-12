@@ -6,7 +6,6 @@ using UnityEngine;
 public class InterrogationInformation : ScriptableObject
 {
 
-
     [SerializeField]
     public RuntimeAnimatorController sprites;
     [SerializeField]
@@ -14,14 +13,10 @@ public class InterrogationInformation : ScriptableObject
     [SerializeField]
     public int ID;
 
-
+    
     public TextAsset GetText()
     {
         return text;
     }
-
-    
-
-
 
 }
