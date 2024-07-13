@@ -404,44 +404,108 @@
     },
     {
 
-    "dialogue":
-    [
-      "P Nice Poster",
-      "P ...",
-      "P That's all i have to say about it",
-      "P .....",
-      "P Yep that's it",
+      "dialogue": [
+        "P Nice Poster",
+        "P ...",
+        "P That's all i have to say about it",
+        "P .....",
+        "P Yep that's it",
 
-      "E ",
+        "E ",
 
-      "P If only Posters could talk...",
-      "P ....would make my job much easier",
-
+        "P If only Posters could talk...",
+        "P ....would make my job much easier",
 
 
-      "E ",
-      "P I like the guy's shirt",
 
-      "E ",
-      "P I like the guy's shirt",
+        "E ",
+        "P I like the guy's shirt",
 
-      "E ",
-      "P hm...",
-      "P I don't think there is much more to say about this",
+        "E ",
+        "P I like the guy's shirt",
 
-      "E ",
-      "P hm...",
-      "P I don't think there is much more to say about this",
+        "E ",
+        "P hm...",
+        "P I don't think there is much more to say about this",
 
-      "E ",
+        "E ",
+        "P hm...",
+        "P I don't think there is much more to say about this",
 
-      "P ....",
-      "E ",
-      "P ....",
+        "E ",
+
+        "P ....",
+        "E ",
+        "P ....",
 
 
-      "E "
-    ]
-}
+        "E "
+      ]
+    },
+    {
+
+      "dialogue": [
+        "P I've been told that someone on this floor has commited tax fraud.",
+        "P investigating this area would propably help.",
+        "P luckily i have my trusty suitcase to store any evidence.",
+        "P I should start by talking to the people on this floor.",
+        "P In case anything seems suspicious i can go back here to interrogate them",
+
+        "E ",
+
+        "P I've been told that someone on this floor has commited tax fraud.",
+        "P investigating this area would propably help.",
+        "P luckily i have my trusty suitcase to store any evidence.",
+        "P I should start by talking to the people on this floor.",
+        "P In case anything seems suspicious i can go back here to interrogate them",
+
+
+
+        "E ",
+        "P I've been told that someone on this floor has commited tax fraud.",
+        "P investigating this area would propably help.",
+        "P luckily i have my trusty suitcase to store any evidence.",
+        "P I should start by talking to the people on this floor.",
+        "P In case anything seems suspicious i can go back here to interrogate them",
+
+        "E ",
+        "P I've been told that someone on this floor has commited tax fraud.",
+        "P investigating this area would propably help.",
+        "P luckily i have my trusty suitcase to store any evidence.",
+        "P I should start by talking to the people on this floor.",
+        "P In case anything seems suspicious i can go back here to interrogate them",
+
+        "E ",
+        "P I've been told that someone on this floor has commited tax fraud.",
+        "P investigating this area would propably help.",
+        "P luckily i have my trusty suitcase to store any evidence.",
+        "P I should start by talking to the people on this floor.",
+        "P In case anything seems suspicious i can go back here to interrogate them",
+
+        "E ",
+        "P I've been told that someone on this floor has commited tax fraud.",
+        "P investigating this area would propably help.",
+        "P luckily i have my trusty suitcase to store any evidence.",
+        "P I should start by talking to the people on this floor.",
+        "P In case anything seems suspicious i can go back here to interrogate them",
+
+        "E ",
+
+        "P I've been told that someone on this floor has commited tax fraud.",
+        "P investigating this area would propably help.",
+        "P luckily i have my trusty suitcase to store any evidence.",
+        "P I should start by talking to the people on this floor.",
+        "P In case anything seems suspicious i can go back here to interrogate them",
+        "E ",
+        "P I've been told that someone on this floor has commited tax fraud.",
+        "P investigating this area would propably help.",
+        "P luckily i have my trusty suitcase to store any evidence.",
+        "P I should start by talking to the people on this floor.",
+        "P In case anything seems suspicious i can go back here to interrogate them",
+
+
+        "E "
+      ]
+    }
   ]
 }

@@ -9249,6 +9249,7 @@ GameObject:
   - component: {fileID: 1398874612}
   - component: {fileID: 1398874611}
   - component: {fileID: 1398874609}
+  - component: {fileID: 1398874613}
   m_Layer: 0
   m_Name: Gate_2
   m_TagString: Untagged
@@ -9343,6 +9344,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changeAt: 5
   sendInfo: {fileID: 1398874611}
+--- !u!114 &1398874613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398874608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132d2fdf5a9fbc745ad7000f194f13cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 1398874612}
 --- !u!1 &1404091259
 GameObject:
   m_ObjectHideFlags: 0
@@ -9761,6 +9775,7 @@ GameObject:
   - component: {fileID: 1460595992}
   - component: {fileID: 1460595991}
   - component: {fileID: 1460595990}
+  - component: {fileID: 1460595993}
   m_Layer: 0
   m_Name: Gate_1
   m_TagString: Untagged
@@ -9856,6 +9871,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changeAt: 3
   sendInfo: {fileID: 1460595991}
+--- !u!114 &1460595993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460595988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132d2fdf5a9fbc745ad7000f194f13cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 1460595992}
 --- !u!224 &1503655760 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6628777424630060387, guid: 7a9480c37a4746c4f8e619d2123fba8e, type: 3}
@@ -10489,7 +10517,7 @@ GameObject:
   - component: {fileID: 1601152779}
   m_Layer: 0
   m_Name: Poster
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
