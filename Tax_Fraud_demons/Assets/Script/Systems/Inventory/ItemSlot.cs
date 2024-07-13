@@ -85,6 +85,9 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
   // empty thingy
   if (itemDescriptionImage.sprite == null)
    itemDescriptionImage.sprite = emptySprite;
+  
+  // Play click sound
+  SoundManager.instance.PlayItemSlotSound();
  }
  public void OnRightClick()
  {
