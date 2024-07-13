@@ -35,7 +35,7 @@ public class InterrogationLogic : MonoBehaviour
     public int curAnger;
     public int startAnger;
     progressionManager progManager;
-    private int suspectID;
+    public int suspectID;
 
     
     
@@ -139,7 +139,8 @@ public class InterrogationLogic : MonoBehaviour
         mySuspectContainer = JsonUtility.FromJson<suspectContainer>(text.ToString());
         mySuspect = mySuspectContainer.suspect;
         inventoryManager = InventoryManager.Instance;
-        loader = new();
+        if(loader == null)
+        loader = gameObject.AddComponent<SceneLoader>();
     }
     #endregion
     #region thirdPartyUsedMethods

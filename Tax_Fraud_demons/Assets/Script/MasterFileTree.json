@@ -363,6 +363,44 @@
 
         "E "
       ]
+    },
+    {
+      "dialogue": [
+        "P A phone...",
+        "P There is nothing special about it...",
+        "P Hello?",
+        "P Hmmm just a long eardrum bursting tone",
+
+        "E ",
+
+        "P I dont think this phone knows anything about this paper..",
+        "P Well i guess it doesnt hurt to try",
+        "P ouch my ears, I guess it did hurt...",
+
+
+        "E ",
+        "P I should stop talking to innanimate objects...",
+
+        "E ",
+        "P I should stop talking to innanimate objects...",
+
+        "E ",
+        "P I suppose it is nice talking to someone who isnt crazy...",
+        "P Am I right?.... phone? ",
+
+        "E ",
+        "P I suppose it is nice talking to someone who isnt crazy...",
+        "P Am I right?.... phone? ",
+
+        "E ",
+
+        "P Well, this has been great",
+        "E ",
+        "P Well, this has been great",
+       
+
+        "E "
+      ]
     }
   ]
 }

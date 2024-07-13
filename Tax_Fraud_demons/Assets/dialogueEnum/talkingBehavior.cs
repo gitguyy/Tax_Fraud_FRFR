@@ -10,7 +10,7 @@ using UnityEditor;
 
 public class talkingBehavior : dialogueEnumerator
 {
-    string curText;
+    public string curText;
     [SerializeField]
     float spellTimer;
     public  Actor actor;
@@ -26,7 +26,7 @@ public class talkingBehavior : dialogueEnumerator
     EventManager manager;
     DialogueSystem system;
     progressionManager progress;
-    bool hasExited;
+    public bool hasExited;
     GameObject box;
     int NPC;
 
@@ -100,6 +100,11 @@ public class talkingBehavior : dialogueEnumerator
     public void backToDialogue()
     {
         hasExited = false;
+        if (progress != null)
+        {
+            startInt = progress.characterDialogue[NPC];
+            startIDs = progress.characterDialogue;
+        }
     }
     
 

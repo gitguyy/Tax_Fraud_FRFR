@@ -1,3 +1,4 @@
+using GameCreator.Runtime.Common;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -23,6 +24,11 @@ public class DialogueSystem : MonoBehaviour
     {
         public Actor[] actors;
     }
+    [System.Serializable]
+    struct ActorSounds
+    {
+        public List<AudioClip> sounds;
+    }
 
     [SerializeField]
     private TextAsset myText;
@@ -32,6 +38,8 @@ public class DialogueSystem : MonoBehaviour
     public static DialogueSystem Instance;
     MySceneManager sceneManager;
     public int prevID;
+    int prevSoundMitch = 0;
+    int prevSoundNPC = 0;
     
 
     
@@ -51,6 +59,13 @@ public class DialogueSystem : MonoBehaviour
     public GameObject Bubble;
     public talkingBehavior dialogue;
     public UnityEvent onTransition;
+
+    [SerializeField]
+    private ActorSounds[] sounds;
+    [SerializeField]
+    private ActorSounds mitch;
+    AudioSource source;
+
     
 
     GameObject curObject;
@@ -108,6 +123,7 @@ public class DialogueSystem : MonoBehaviour
         dialogue = gameObject.AddComponent<talkingBehavior>();
         ((talkingBehavior)dialogue).player = player;
         dialogue.onEnter(myActors.actors[0],ID) ;
+        source = GetComponent<AudioSource>();
 
     }
 
@@ -149,7 +165,7 @@ public class DialogueSystem : MonoBehaviour
 
 
 
-public string getText()
+     public string getText()
     {
         return t;
     }
@@ -171,8 +187,68 @@ public string getText()
 
             }                          
             dialogue.talkUpdate(ref t);
-                //Debug.Log("spelling");
-                if(t.Length != 0)
+           if(dialogue.checkDialogueType(dialogue.curText) == DialogueType.Player && dialogue.hasExited == false)
+            {
+                if (!source.isPlaying!)
+                {
+                    int randomSound = UnityEngine.Random.Range(0, mitch.sounds.Count - 1);
+                    if(randomSound == prevSoundMitch)
+                    {
+                      
+                        if(randomSound > 0)
+                        {
+                            randomSound--;
+                           
+                        }
+                        else if (randomSound < mitch.sounds.Count-1 )
+                        {
+                            randomSound++;
+                           
+                        }
+                        else
+                        {
+                            randomSound = UnityEngine.Random.Range(0, mitch.sounds.Count - 1);
+                            
+                        }
+                       
+                    }
+                    
+                    source.clip = mitch.sounds[randomSound];
+                    source.PlayOneShot(mitch.sounds[randomSound]);
+                    prevSoundMitch = randomSound;
+
+                }
+            }
+            if (dialogue.checkDialogueType(dialogue.curText) == DialogueType.NPC && dialogue.hasExited == false)
+            {
+                ActorSounds curSounds = sounds[ID];
+                if(!source.isPlaying!)
+                {
+                    int randomSound = UnityEngine.Random.Range(0, sounds[ID].sounds.Count - 1);
+                    if (randomSound == prevSoundNPC)
+                    {
+                        if (randomSound > 0)
+                        {
+                            randomSound--;
+                        }
+                        else if (randomSound < curSounds.sounds.Count - 1)
+                        {
+                            randomSound++;
+                        }
+                    }
+                    if (randomSound >= curSounds.sounds.Count)
+                    {
+                        randomSound = 0;
+                    }
+                    source.clip = curSounds.sounds[randomSound];
+                    source.PlayOneShot(curSounds.sounds[randomSound]);
+                    //Debug.Log("sound played");
+                    prevSoundNPC = randomSound;
+                    
+                }
+            }
+            //Debug.Log("spelling");
+            if (t.Length != 0)
                     {
                     letters.Invoke(t.Length);
                     }  

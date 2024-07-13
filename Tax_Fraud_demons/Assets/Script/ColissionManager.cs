@@ -29,7 +29,7 @@ public class ColissionManager : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        Debug.Log("Entered");
+       
 
         transformToSend = other.transform;
         gameObjectToSend = other.gameObject;
@@ -46,7 +46,7 @@ public class ColissionManager : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("exited");
+      
         player.canInteractWith = false;
         player.canTalkWith = false;
       
@@ -65,14 +65,14 @@ public class ColissionManager : MonoBehaviour
         switch (tag)
         {
             case "NPC":
-                Debug.Log("NPC");
+               
                 player.canTalkWith = true;
                 player.canInteractWith = true;
                
                
                 break;
             case "DOOR":
-                Debug.Log("DOOR");
+               
                 player.canTalkWith = false;
                 player.canInteractWith = true;
                 
