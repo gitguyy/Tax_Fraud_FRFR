@@ -397,10 +397,51 @@
         "P Well, this has been great",
         "E ",
         "P Well, this has been great",
-       
+
 
         "E "
       ]
-    }
+    },
+    {
+
+    "dialogue":
+    [
+      "P Nice Poster",
+      "P ...",
+      "P That's all i have to say about it",
+      "P .....",
+      "P Yep that's it",
+
+      "E ",
+
+      "P If only Posters could talk...",
+      "P ....would make my job much easier",
+
+
+
+      "E ",
+      "P I like the guy's shirt",
+
+      "E ",
+      "P I like the guy's shirt",
+
+      "E ",
+      "P hm...",
+      "P I don't think there is much more to say about this",
+
+      "E ",
+      "P hm...",
+      "P I don't think there is much more to say about this",
+
+      "E ",
+
+      "P ....",
+      "E ",
+      "P ....",
+
+
+      "E "
+    ]
+}
   ]
 }
