@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,7 @@ public class SoundManager : MonoBehaviour
     private float suitcaseVolume = 0.3f;
     private float buttonVolume = 0.3f;
     private float itemSlotVolume = 0.3f;
+    
 
     void Awake()
     {
