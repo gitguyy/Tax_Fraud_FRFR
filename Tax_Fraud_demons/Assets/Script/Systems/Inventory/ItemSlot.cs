@@ -37,12 +37,10 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
  private InventoryManager inventoryManager; // refference to invMang
 
- private void Start()//ref
- {
-
+    private void Start()//ref
+    {
         inventoryManager = InventoryManager.Instance;
-       
- }
+    }
     
 
     public void AddItem(int itemID, string itemName, Sprite itemSprite, string itemDescription)
@@ -53,25 +51,38 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         this.itemID = itemID;
   
         itemImage.sprite = itemSprite;
-  isFull = true;
+        isFull = true;
     }
 
- public void OnPointerClick(PointerEventData eventData)
- {
-  if (eventData.button == PointerEventData.InputButton.Left)
-  {
-   OnLeftClick();
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (eventData.button == PointerEventData.InputButton.Left)
+        {
+            OnLeftClick();
             if(isFull)
             {
                 inventoryManager.clicked(this);
             }
-  }
+        }
 
-  if (eventData.button == PointerEventData.InputButton.Right)
-  {
-   OnRightClick();
-  }
- }
+        if (eventData.button == PointerEventData.InputButton.Right)
+        {
+            OnRightClick();
+        }
+    }
+
+    public void EmptySlot()
+    {
+        isFull = false;
+        itemName = string.Empty;
+        itemID = 0;
+       
+        itemSprite = emptySprite;
+        
+        itemDescription = string.Empty;
+        itemImage.sprite = itemSprite;
+        itemSprite = emptySprite;
+    }
 
  public void OnLeftClick()
  {

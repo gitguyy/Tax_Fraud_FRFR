@@ -10,10 +10,10 @@
             "M Jenny: I really don't want to see what is in there."
           ],
           "resetSentence": [
-            "T anyway what were you saying",
-            "C anyway what were you saying",
-            "C anyway what were you saying",
-            "C anyway what were you saying"
+            "T Jenny: Anyway, what were you saying?",
+            "T Jenny: Anyway, what were you saying?",
+            "T Jenny: Anyway, what were you saying?",
+            "T Jenny: Anyway, what were you saying?"
           ],
           "textBlocks": [
             {

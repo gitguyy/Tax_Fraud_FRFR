@@ -58,6 +58,27 @@ public class progressionManager : MonoBehaviour
 
     }
 
+    public void RestartProgress()
+    {
+        progressionLevel = 0;
+       for(int i = 0; i< itemsPickedUp.Length; i++)
+        {
+            itemsPickedUp[i] = false;
+        }
+        for (int i = 0; i < characterProgress.Length; i++)
+        {
+            characterProgress[i] = 0;
+        }
+        for (int i = 0; i < characterDialogue.Length; i++)
+        {
+            characterDialogue[i] = 0;
+        }
+        for (int i = 0; i < angerLevels.Length; i++)
+        {
+            angerLevels[i] = 0;
+        }
+    }
+
     private void OnEnable()
     {
         

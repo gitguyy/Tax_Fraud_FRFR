@@ -20,6 +20,10 @@ public class WallCheck : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+        if(manager.progressionLevel == 0)
+        {
+            gameObject.SetActive(true);
+        }
     }
 
     // Update is called once per frame

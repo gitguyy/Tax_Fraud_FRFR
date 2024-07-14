@@ -5,12 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    GameManager thisManager;
+    public static GameManager thisManager;
     SceneLoader loader;
     utilty util;
+    InventoryManager inventoryManager;
+    progressionManager progression;
     
     private void Awake()
     {
+        
         if (FindAnyObjectByType<utilty>() != null)
         {
             Debug.LogError("too many Utils");
@@ -20,19 +23,27 @@ public class GameManager : MonoBehaviour
             gameObject.AddComponent<utilty>();
             Debug.Log("utility added");
         }
-        //check if there is another thisManager active
-        if(thisManager != null)
+        if(thisManager == null)
         {
-            Debug.LogError("too many gameManagers");
-        }
-        else
+            thisManager = this;
+        }else
         {
-            thisManager = gameObject.GetComponent<GameManager>();
-            Debug.Log("manager assigned");
+            Destroy(this);
         }
         //load the correct scene
         //give npcs indeces
 
+    }
+    private void Start()
+    {
+        inventoryManager = InventoryManager.Instance;
+        progression = progressionManager.Instance;
+    }
+
+    public void Restart()
+    {
+        inventoryManager.EmptyInventory();
+        progression.RestartProgress();
     }
 
 

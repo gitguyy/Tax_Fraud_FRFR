@@ -35,6 +35,18 @@ public class InventoryManager : MonoBehaviour
 
     }
 
+    public void EmptyInventory()
+    {
+        for (int i = 0; i < itemSlot.Length; i++)
+        {
+            if (itemSlot[i].isFull)
+            {
+                itemSlot[i].EmptySlot();
+               
+            }
+        }
+    }
+
     void InitializeUseMenu()
     {
         useItemMenu.SetActive(true);
