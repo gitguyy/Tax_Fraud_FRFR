@@ -91,8 +91,10 @@ public class InterrogationInteraction : MonoBehaviour
        
         if (doneSpelling)
         {
+            system.LoadWinScreen();
             originalText = system.getText();
             anim.SetTrigger();
+            system.checkForWin();
             
             doneSpelling = false;
            

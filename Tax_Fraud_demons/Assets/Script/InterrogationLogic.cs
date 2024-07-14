@@ -19,6 +19,7 @@ public class InterrogationLogic : MonoBehaviour
     private suspect mySuspect = new();
     public bool won;
 
+
     private string curText;
     private int curTextID;
     private int curBlock;
@@ -142,6 +143,26 @@ public class InterrogationLogic : MonoBehaviour
         if(loader == null)
         loader = gameObject.AddComponent<SceneLoader>();
     }
+
+    public void checkForWin()
+    {
+        Debug.Log(mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue[curTextID][1]);
+        switch ((mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue[curTextID][1]))
+        {
+           
+            case 'W': won = true; break;
+            default: return;
+        }
+    }
+
+    public void LoadWinScreen()
+    {
+        if(won)
+        {
+            loader.loadScene("Won");
+        }
+            
+    }
     #endregion
     #region thirdPartyUsedMethods
     public void checkForClueID(int ID)
@@ -216,6 +237,9 @@ public class InterrogationLogic : MonoBehaviour
 
     public void NextDialogue()
     {
+       
+            
+        
         if(curTextID < mySuspect.phases[curPhase].phase.textBlocks[curBlock].block.dialogue.Length)
         {
            if(!resetSentence)

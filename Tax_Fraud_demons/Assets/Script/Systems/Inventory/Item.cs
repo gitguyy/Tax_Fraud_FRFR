@@ -12,6 +12,7 @@ public class Item : MonoBehaviour
     [SerializeField] private int itemID;
     [SerializeField]
     private ItemProgress IsProgress;
+    bool pickedUp;
 
     [SerializeField] private AudioClip pickUpSound; // Add this line to specify the pick-up sound
     [SerializeField][Range(0f, 1f)] private float pickUpVolume = 1f; // Add this line to control the volume
@@ -62,11 +63,21 @@ public class Item : MonoBehaviour
         {
             if(animator != null)
             {
+                if(!pickedUp)
+                {
+                    if (IsProgress != null)
+                    {
+                        IsProgress.onCLick();
+                    }
+                    inventoryManager.AddItem(itemID, itemName, sprite, itemDescription);
+                    manager.setItemPickUp(itemID - 1);
+                    pickedUp = true;
+                }
                 animator.SetTrigger("Clicked");
             }
             if(animator == null)
             {
-               
+                pickedUp = true;
                 isClicked = true;
                 manager.setItemPickUp(itemID - 1);
                 if (IsProgress != null)
@@ -85,12 +96,8 @@ public class Item : MonoBehaviour
     public void OnAnimationComplete()
     {
         Debug.Log("Animation complete, adding item to inventory.");
-        manager.setItemPickUp(itemID-1);
-        if(IsProgress != null)
-        {
-            IsProgress.onCLick();
-        }
-        inventoryManager.AddItem(itemID, itemName, sprite, itemDescription);
+        
+       
         Destroy(gameObject);
     }
 

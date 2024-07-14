@@ -16,6 +16,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip itemSlotSound;
     public AudioClip interrogationMusic;
     public AudioClip investigationScene;
+    public AudioClip loseMusic;
+    public AudioClip winMusic;
 
     private float suitcaseVolume = 0.3f;
     private float buttonVolume = 0.3f;
@@ -109,6 +111,16 @@ public class SoundManager : MonoBehaviour
         if(sceneName == "Level_1")
         {
             audioSource.clip = investigationScene;
+            audioSource.Play();
+        }
+        if (sceneName == "Lost")
+        {
+            audioSource.clip = loseMusic;
+            audioSource.Play();
+        }
+        if (sceneName == "Won")
+        {
+            audioSource.clip = winMusic;
             audioSource.Play();
         }
     }
