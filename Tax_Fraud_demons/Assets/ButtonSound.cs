@@ -11,7 +11,11 @@ public class ButtonSound : MonoBehaviour
     
     void OnEnable()
     {
-        soundManager = FindAnyObjectByType<SoundManager>();
+        if(soundManager == null)
+        {
+            soundManager = FindAnyObjectByType<SoundManager>();
+        }
+       
         button = GetComponent<Button>();
         button.onClick.RemoveListener(soundManager.PlayButtonSound);
         button.onClick.AddListener(soundManager.PlayButtonSound);

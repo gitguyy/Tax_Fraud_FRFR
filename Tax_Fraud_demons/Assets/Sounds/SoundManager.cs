@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
@@ -12,6 +14,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip suitcaseSound;
     public AudioClip buttonSound;
     public AudioClip itemSlotSound;
+    public AudioClip interrogationMusic;
+    public AudioClip investigationScene;
 
     private float suitcaseVolume = 0.3f;
     private float buttonVolume = 0.3f;
@@ -88,6 +92,24 @@ public class SoundManager : MonoBehaviour
         if (clip != null)
         {
             audioSource.PlayOneShot(clip, volume);
+        }
+    }
+
+    public void OnSceneTransition()
+    {
+        UnityEngine.SceneManagement.Scene currentScene = SceneManager.GetActiveScene();
+
+        // Get the name of the active scene
+        string sceneName = currentScene.name;
+        if (sceneName == "Interrogation")
+        {
+            audioSource.clip = interrogationMusic;
+            audioSource.Play();
+        }
+        if(sceneName == "Level_1")
+        {
+            audioSource.clip = investigationScene;
+            audioSource.Play();
         }
     }
 }
