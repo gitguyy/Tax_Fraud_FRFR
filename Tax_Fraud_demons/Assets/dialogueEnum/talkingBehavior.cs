@@ -70,6 +70,7 @@ public class talkingBehavior : dialogueEnumerator
 
     public void onEnter(Actor _actor, int ID)
     {
+        Debug.Log("enter dialogue");
         hasExited = false;
         NPC = ID;
         actor = _actor;
@@ -238,7 +239,7 @@ public class talkingBehavior : dialogueEnumerator
         manager.Event.AddListener(listener.hideSprite);
         manager.RaiseEvent();
         manager.Event.RemoveAllListeners();
-
+        system.show.setText("");
         startInt = progress.characterDialogue[NPC];
 
         startIDs = progress.characterDialogue;

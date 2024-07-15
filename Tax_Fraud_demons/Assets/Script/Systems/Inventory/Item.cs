@@ -26,13 +26,15 @@ public class Item : MonoBehaviour
     private InventoryManager inventoryManager;
     [SerializeField] private Animator animator;
     private bool isClicked = false;
-    
+    DialogueSystem dialogueSystem;
+
     void Start()
     {
         inventoryManager = InventoryManager.Instance;
         animator = GetComponent<Animator>();
         audioSource = gameObject.GetComponent<AudioSource>(); // Add this line to add an audio source component
         audioSource.loop = false;
+        dialogueSystem = DialogueSystem.Instance;
     }
     
     // Check if item has been picked up before
@@ -65,6 +67,7 @@ public class Item : MonoBehaviour
             {
                 if(!pickedUp)
                 {
+                    dialogueSystem.dialogue.onExit();
                     if (IsProgress != null)
                     {
                         IsProgress.onCLick();
@@ -77,6 +80,7 @@ public class Item : MonoBehaviour
             }
             if(animator == null)
             {
+                dialogueSystem.dialogue.onExit();
                 pickedUp = true;
                 isClicked = true;
                 manager.setItemPickUp(itemID - 1);

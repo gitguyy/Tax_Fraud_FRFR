@@ -110,7 +110,8 @@ public class PlayerOperations : MonoBehaviour
 
                 }
                 else
-                    Debug.Log("no info");
+                    Debug.Log("no info" + InteractObject.gameObject.name);
+                
                 //Debug.Log("talking initiated");
                 system.dialogue.backToDialogue();
                 talking = true;
