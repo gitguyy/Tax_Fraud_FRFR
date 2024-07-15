@@ -100,8 +100,13 @@ public class DialogueSystem : MonoBehaviour
 
     private void OnEnable()
     {
+        t = myText.text;
+        player = PlayerOperations.instance;
+        myActors = JsonUtility.FromJson<ActorCollection>(t);
+        dialogue = gameObject.GetComponent<talkingBehavior>();
         show = FindAnyObjectByType<ShowDialogue>();
         Debug.Log("name of show dialogue object: " + show.gameObject.name);
+      
     }
 
 
@@ -120,12 +125,13 @@ public class DialogueSystem : MonoBehaviour
         player = PlayerOperations.instance;
         myActors = JsonUtility.FromJson<ActorCollection>(t);
         //Debug.Log(myActors.actors[0].dialogue[0]);
-        dialogue = gameObject.AddComponent<talkingBehavior>();
+        dialogue = gameObject.GetComponent<talkingBehavior>();
         ((talkingBehavior)dialogue).player = player;
         dialogue.onEnter(myActors.actors[0],ID) ;
         source = GetComponent<AudioSource>();
 
     }
+    
 
     public void ProgressAll(ref int[] startPoint)
     {
@@ -157,6 +163,7 @@ public class DialogueSystem : MonoBehaviour
             player.talk.RemoveAllListeners();
             player.talk.AddListener(onTalk);
             sceneManager.hasTransitioned = false;
+            dialogue.onEnter(myActors.actors[0], ID);
         }
         
       

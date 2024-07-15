@@ -77,7 +77,7 @@ public class talkingBehavior : dialogueEnumerator
 
 
         //progress.giveCharacterProgress(startID);
-        //Debug.Log("start ID: " + startInt);
+        Debug.Log("start ID: " + startInt);
         if(progress !=null)
         {
             startInt = progress.characterDialogue[ID];
@@ -88,6 +88,7 @@ public class talkingBehavior : dialogueEnumerator
         
         curText = actor.dialogue[startInt];
         stringID = startInt;
+        Debug.Log("string ID: " + stringID);
         iterator = 0;
         spelledString = "";
         
@@ -105,7 +106,11 @@ public class talkingBehavior : dialogueEnumerator
         {
             startInt = progress.characterDialogue[NPC];
             startIDs = progress.characterDialogue;
+           
         }
+        Debug.Log("start ID: " + startInt + " string ID: " + stringID);
+        
+
     }
     
 

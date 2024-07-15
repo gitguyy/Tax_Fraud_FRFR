@@ -67,6 +67,7 @@ public class Item : MonoBehaviour
             {
                 if(!pickedUp)
                 {
+
                     dialogueSystem.dialogue.onExit();
                     if (IsProgress != null)
                     {
