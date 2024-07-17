@@ -280,7 +280,7 @@ public class talkingBehavior : dialogueEnumerator
 
         showPlayerSprite listener = FindObjectOfType<showPlayerSprite>();
         ShowNPCSprite listenerNPC = FindObjectOfType<ShowNPCSprite>();
-        //Debug.Log("listener" + listener.gameObject.name);
+        Debug.Log("listener" + listener.gameObject.name);
         manager.Event.AddListener(listenerNPC.hideNPC);
         manager.Event.AddListener(listener.hideSprite);
         manager.RaiseEvent();

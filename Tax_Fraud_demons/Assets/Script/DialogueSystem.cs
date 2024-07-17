@@ -254,13 +254,8 @@ public class DialogueSystem : MonoBehaviour
                     
                 }
             }
-            if (t == null)
-            {
-                Debug.Log("t is not sned to an instance");
-                
-            }
-                //Debug.Log("spelling");
-                if (t.Length != 0)
+            //Debug.Log("spelling");
+            if (t.Length != 0)
                     {
                     letters.Invoke(t.Length);
                     }  
