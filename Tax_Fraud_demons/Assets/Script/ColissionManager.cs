@@ -31,7 +31,7 @@ public class ColissionManager : MonoBehaviour
 
        if(other.tag != "Border")
         {
-
+            Debug.Log("Enter");
             transformToSend = other.transform;
             gameObjectToSend = other.gameObject;
 
@@ -61,6 +61,7 @@ public class ColissionManager : MonoBehaviour
             checkTag(other.tag);
             transformToSend = other.transform;
             gameObjectToSend = other.gameObject;
+           
         }
     }
 
@@ -71,14 +72,15 @@ public class ColissionManager : MonoBehaviour
         switch (tag)
         {
             case "NPC":
-               
+
+                Debug.Log("NPC");
                 player.canTalkWith = true;
                 player.canInteractWith = true;
                
                
                 break;
             case "DOOR":
-               
+                Debug.Log("DOOR");
                 player.canTalkWith = false;
                 player.canInteractWith = true;
                 

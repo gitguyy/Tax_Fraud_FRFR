@@ -105,12 +105,12 @@ public class PlayerOperations : MonoBehaviour
                 {
                    
                     int ID = InteractObject.GetComponent<NpcInformations>().getID();
-                    Debug.Log(ID + "name: " +InteractObject.gameObject.name);
+                    //Debug.Log(ID + "name: " +InteractObject.gameObject.name);
                     pressableArea.GetComponent<NpcInformations>().setID(ID);
 
                 }
                 else
-                    Debug.Log("no info" + InteractObject.gameObject.name);
+                    //Debug.Log("no info" + InteractObject.gameObject.name);
                 
                 //Debug.Log("talking initiated");
                 system.dialogue.backToDialogue();

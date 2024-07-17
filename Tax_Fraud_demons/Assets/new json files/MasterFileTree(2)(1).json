@@ -1,0 +1,1863 @@
+{
+  "actors": [
+    {
+      "dialogue": [
+        "P Good day Ma'am, I am Mitch Mitchell Junior, with the Infernal Revenue Service. I've come to investigate your office for possible tax fr-",
+        "N JENNY! ANOTHER CALLER FOR YOU. AND BE FUCKING POLITE THIS TIME!",
+        "P Ahem, could you please -",
+        "N I have no time to talk to low-salary employees.",
+	      "P I have a feeling this might be more difficult than I thought.",
+	      "P No matter, I better try and talk to these people to get an idea of what's happening.",
+
+        "E ",
+
+        "P Do you have any idea who this receipt could belong to? I found it laying in the trash.",
+        "N Yes, because I pay very close attention to every crumpled up piece of paper that people toss in the garbage around here.",
+        "P  A 'No' would have sufficed.",
+	      "N No, Nyet, Nada, Nilch. Happy? Go ask someone else, I'm busy regretting my life choices.",
+
+        "E ",
+
+        "P I heard that Jadis recently carried a big box into the office.",
+        "P Do you know where they might have put it?",
+        "N Do you think I care enough about these people to pay attention to where they put every little thing?",
+        "P The box would be a pretty big thing, and I don't see it anywhere.",
+        "P Is there any other place it could be?",
+        "N Ugh. There's a storage room, on the left side of the elevator.",
+        "NPYou will find the door buried behind all the trash, right next to my hopes and dreams.",
+
+        "E ",
+
+        "P I heard that Jadis recently carried a big box into the office.",
+        "P Do you know where they might have put it?",
+        "N Do you think I care enough about these people to pay attention to where they put every little thing?",
+        "P The box would be a pretty big thing, and I don't see it anywhere.",
+        "P Is there any other place it could be?",
+        "N Ugh. There's a storage room, on the left side of the elevator.",
+        "N You will find the door buried behind all the trash, right next to my hopes and dreams.",
+
+        "E ",
+
+        "P I found the box, but it doesn't say to whom it was delivered, and it was empty. Do you know where the contents could have been put?",
+        "N ...",
+        "N No I wouldn't know anything about that.",
+	      "N Just between you and me, Tax boy, you better not stick your nose where it isn't welcome.",
+
+        "E ",
+
+        "P I found the box, but it doesn't say to whom it was delivered, and it was empty. Do you know where the contents could have been put?",
+        "N ...",
+        "N No I wouldn't know anything about that.",
+	      "N Just between you and me, Tax boy, you better not stick your nose where it isn't welcome.",
+
+        "E ",
+
+        "P Are you, or is anyone else in the office, interested in collecting angel figurines?",
+        "N You are severely overestimating my emotional engagement in you, them, or any of this.",
+        "P Well, is there anyone who would actually care to help me around here then??",
+        "N Heh, go bother Jenny, I'm sure she'd love to help you considering how much she looooves working.",
+	
+        "E ",
+        "P Are you, or is anyone else in the office, interested in collecting angel figurines?",
+        "N You are severely overestimating my emotional engagement in you, them, or any of this.",
+        "P Well, is there anyone who would actually care to help me around here then??",
+        "N Heh, go bother Jenny, I'm sure she'd love to help you considering how much she looooves working.",
+
+        "E "
+
+      ]
+    },
+
+    {
+      "dialogue": [
+        "N Hello Sir, what seems to be the problem?",
+        "P Well, I -",
+        "N Pssst I'm on the phone",
+        "N (On the phone) You think you may have been wrongfully placed in hell?",
+        "N (On the phone) What? You think that you're only down here because you're gay?",
+        "N (On the phone) Sir, it says on your file that you murdered ten people in cold blood.",
+        "N (On the phone) No, we're not homophobic, YOU'RE JUST HOMOCIDAL.",
+        "P Excuse me -",
+        "N AAAAAAAaaaaaah!",
+
+        "E ",
+
+        "P Do you know -",
+        "N (On the phone) No, you can't use a 'Get Out of Jail Free' card to get out of hell, because that is from a board game-",
+        "N (On the phone) -AND THIS IS ETERNAL DAMNATION YOU CAN'T ESCAPE FROM!",
+        "P (I don't think I'll get a response out of her right now.)",
+
+        "E ",
+
+        "P ...",
+        "N (On the phone) No Sir, you do indeed deserve to suffer the tortures of tartarus. Yes. BECAUSE YOU TRIED TO SCALP THE NINTENDO SWITCH 2 FOR TRIPLE IT'S VALUE.",
+        "P I suppose that one is fair.",
+        "E ",
+        "P ...",
+        "N (On the phone) No Sir, you do indeed deserve to suffer the tortures of tartarus. Yes. BECAUSE YOU TRIED TO SCALP THE NINTENDO SWITCH 2 FOR TRIPLE IT'S VALUE.",
+        "P I suppose that one is fair.",
+
+        "E ",
+
+        "N (On the phone) Yes ma'am, drawing Sonic x Shadow erotic fanart is indeed one of the gravest of sins...",
+        "N (On the phone) ...AND IT DOESN'T MATTER THAT YOU WERE ELEVEN YEARS OLD WHEN YOU DID IT.",
+        "E ",
+        "N (On the phone) Yes ma'am, drawing Sonic x Shadow erotic fanart is indeed one of the gravest of sins...",
+        "N (On the phone) ...AND IT DOESN'T MATTER THAT YOU WERE ELEVEN YEARS OLD WHEN YOU DID IT.",
+
+        "E ",
+
+        "N (On the phone) Yes, unironically liking 'Rise of Skywalker' will get you send straight to hell... ",
+        "N (On the phone) ...AND YOU DESERVE IT BECAUSE THE WRITING OF THAT MOVIE IS GARBAGE AND -",
+        "N ...",
+        "N They hung up.",
+        "N WAIT I DON'T HAVE ANY CALLERS RIGHT NOW, WHAT DO I DO, I'M NOT USED TO THIS -",
+        "P You could tell me who in this office has an interest in collecting angel figurines.",
+        "N I don't know...this is the first time in a long time I'm actually seeing my environment...",
+        "NPBut I did see Stephen try to covertly put something in his cupboard several times.",
+        "N He thinks that if he hides it under his shirt and whistles loudly it will be less suspicous.",
+        "P Thank you for your assistance.",
+        "N ... What do I do with myself now? Who am I?",
+
+        "E ",
+
+        "N (On the phone) Yes, unironically liking 'Rise of Skywalker' will get you send straight to hell... ",
+        "N (On the phone) ...AND YOU DESERVE IT BECAUSE THE WRITING OF THAT MOVIE IS GARBAGE AND -",
+        "N ...",
+        "N They hung up.",
+        "N WAIT I DON'T HAVE ANY CALLERS RIGHT NOW, WHAT DO I DO, I'M NOT USED TO THIS -",
+        "P You could tell me who in this office has an interest in collecting angel figurines.",
+        "N I don't know...this is the first time in a long time I'm actually seeing my environment...",
+        "N But I did see Stephen try to covertly put something in his cupboard several times.",
+        "N He thinks that if he hides it under his shirt and whistles loudly it will be less suspicous.",
+        "P Thank you for your assistance.",
+        "N ... What do I do with myself now? Who am I?",
+
+        "E "
+      ]
+    },
+
+    {
+      "dialogue": [
+        "P Hello Sir, I am here to investigate a case of suspected tax fraud. Could you give me any information regarding suspicious activity?",
+        "N I think I'm gonna throw up.",
+        "P Please don't.",
+
+        "E ",
+
+        "P Do you know who this import tax receipt belongs to?",
+        "N Nnnnnnngh.",
+        "P I don't know what I expected.",
+
+        "E ",
+
+        "P Jadis recently carried a big box into the office. Do you know where she might have put it?",
+        "N Oaaargh...",
+        "P Is that a yes?",
+        "N Urrrrghhh.",
+        "P Do I need to call an ambulance.",
+        "E ",
+        "P Jadis recently carried a big box into the office. Do you know where she might have put it?",
+        "N Oaaargh...",
+        "P Is that a yes?",
+        "N Urrrrghhh.",
+        "P Do I need to call an ambulance.",
+
+        "E ",
+
+        "P The address on this box has been scratched off, do you know who it might belong to?",
+        "N Ouuwaahhhh......",
+        "P ...Sigh",
+        "P Do you know any place other than the storage room where people might put their stuff?",
+        "N Urgh! Ngggh! Gggghh!",
+        "P Great talk.",
+
+        "E ",
+
+        "P The address on this box has been scratched off, do you know who it might belong to?",
+        "N Ouuwaahhhh......",
+        "P ...Sigh",
+        "P Do you know any place other than the storage room where people might put their stuff?",
+        "N Urgh! Ngggh! Gggghh!",
+        "P Great talk.",
+
+        "E ",
+
+        "P Do you, or does anyone else here, have an interest in angel figurines.",
+        "N ....",
+        "N Careful where you tread, son.",
+        "E ",
+        "P Do you, or does anyone else here, have an interest in angel figurines.",
+        "N ....",
+        "N Careful where you tread, son.",
+
+        "E "
+      ]
+    },
+
+    {
+      "dialogue": [
+        "P .... Hello Sir?",
+        "N Approach my brother, I shall do you no harm.",
+        "P .... You are the first person that is actually talking to me.",
+        "N The poor souls of this department are responsible for providing customer support for all of humanity.",
+        "N They seek different ways of coping.",
+        "P How do you cope?",
+        "N I just stopped picking up calls.",
+        "N Anyhow, how may I help you my brother?",
+        "P I am with the IRS, and here to investigate possible tax fraud. Have you noticed any suspicous activity around the office?",
+        "N I must dissapoint you, for I have been so immersed in meditation that I have not been conscious to the happenings of this immortal coil.",
+        "P Anything else you might be able to tell me then? Maybe about your colleagues?",
+        "N Certainly my brother.",
+        "N The Lady in the front is Sharon, our superior.",
+        "N She delegates the work to us, then goes on smoke breaks.",
+        "N She may not hold herself to high standards, but she certainly does so for us.",
+        "N The girl after her is Jenny, our newest employee.",
+        "N She is the only still trying, and therefore receives everybody elses work.",
+        "N If I were her I would forgo the years of suffering and skip straight to enlightement.",
+        "N After that is Stephen.",
+        "N He's been working here longest after Sharon, but he's still an intern.",
+        "N I don't know if he has managed to figure out how to pick up a phone yet.",
+        "N The person behind me is Jadis.",
+        "N Do not worry about the fumes emitting from their desk, it is their tool to enlightement.",
+        "P And what is your name?",
+        "N This humble soul is known as Damien.",
+        "N If you have need for answers, do not hesitate to approach me.",
+
+        "E ",
+
+        "P I found this import tax receipt in the trash nearby, and it doesn't seem to have been paid yet.",
+        "P Do you know who this could belong to?",
+        "N I do not brother, I apologize.",
+        "P Do you know anyone who may have ordered something into the office?",
+        "NPI did see Jadis carrying a big box from the elevator, though I did not see where they put it. Either way, you might want to inquire about that.",
+
+        "E ",
+
+        "P The address on this package has been scratched off, do you know who it might belong to?",
+        "N Forgive me, this is the first time this earthly belonging has been brought before me.",
+        "P I see. Can you tell me if there is any extra space where people might put their things then?",
+        "N .....",
+        "N I shan't be the one to answer that question...it would go against my code of honor.",
+	"P I guess I gotta find someone who is too blissed out to care about honor...",
+        "E ",
+        "P The address on this package has been scratched off, do you know who it might belong to?",
+        "N Forgive me, this is the first time this earthly belonging has been brought before me.",
+        "P I see. Can you tell me if there is any extra space where people might put their things then?",
+        "N .....",
+        "N I shan't be the one to answer that question...it would go against my code of honor.",
+	"P I guess I gotta find someone who is too blissed out to care about honor...",
+        "E ",
+
+        "P Is anyone here into collecting angel figurines?",
+        "N No, I am only interested in statues of the buddha.",
+        "P I can only hope they are less inappropiate.",
+        "N ...",
+        "P ...",
+        "N ...",
+        "P I see.",
+
+        "E ",
+
+        "P Is anyone here into collecting angel figurines?",
+        "N No, I am only interested in statues of the buddha.",
+        "P I can only hope they are less inappropiate.",
+        "N ...",
+        "P ...",
+        "N ...",
+        "P I see.",
+
+        "E "
+      ]
+    },
+
+    {
+      "dialogue": [
+        "P ...",
+        "N ...",
+        "P Hello?",
+        "N ...",
+        "N Don't worry, it's catnip.",
+        "P Have you noticed any suspicious activity around the office pertaining to tax fraud?",
+        "N ...",
+        "N ...",
+        "N No I have not been frauding any faxes, I usually send stuff per mail.",
+        "P ... Alright.",
+        "N ...",
+        "N ...",
+        "N Don't look in the trash behind me.",
+        "E ",
+
+        "P Is this import tax receipt yours?",
+        "N ...",
+        "N ...",
+        "N Nah I can't read. Damien usually tells me what shit means.",
+
+        "E ",
+
+        "P I heard you were carrying a big box into the office. What did you order?",
+        "N ....",
+        "N Oh that wasn't mine. Somebody asked me to carry it for them as a favour.",
+        "P Who?",
+        "N ...",
+        "N I don't remember. I might have been very inebriated.",
+        "P Where did you put it?",
+        "N ...",
+        "N I don't remember that either.",
+        "P (Sigh.)",
+        "P Is there anything you DO remember?",
+        "N Hmmmmmmm.",
+        "N I only remember the smell of smoke. Lots, and lots of smoke. Like 30 years of depressing office works worth.",
+	
+        "E ",
+
+        "P I heard you were carrying a big box into the office. What did you order?",
+        "N ....",
+        "N Oh that wasn't mine. Somebody asked me to carry it for them as a favour.",
+        "P Who?",
+        "N ...",
+        "N I don't remember. I might have been very inebriated.",
+        "P Where did you put it?",
+        "N ...",
+        "N I don't remember that either.",
+        "P (Sigh.)",
+        "P Is there anything you DO remember?",
+        "N Hmmmmmmm.",
+        "N I only remember the smell of smoke. Lots, and lots of smoke. Like 30 years of depressing office works worth.",	
+
+        "E ",
+
+        "P The address on this package has been scratched off, do you know who it might belong to?",
+        "N ...",
+        "N ...",
+        "N A dress? What dress.",
+        "P Please just tell me if there's any place people might be hiding stuff in around here.",
+        "N Oh yeah, the GOON ROOM.",
+        "P The what?",
+        "N It's the room where people store all the stuff that is way too inappropiate for their workplace.",
+        "P Why don't people just order it home???",
+        "N ...",
+        "N ...",
+        "N We live here.",
+        "NPWell, thankfully the GOON ROOM safely hidden inside the STORAGE ROOM, you can't even see the door because of all the stuff in front of it.",
+        "N So nobody will be able to find it.",
+        "N ...",
+        "N ...",
+        "N Whoops.",
+        "E ",
+        "P The address on this package has been scratched off, do you know who it might belong to?",
+        "N ...",
+        "N ...",
+        "N A dress? What dress.",
+        "P Please just tell me if there's any place people might be hiding stuff in around here.",
+        "N Oh yeah, the GOON ROOM.",
+        "P The what?",
+        "N It's the room where people store all the stuff that is way too inappropiate for their workplace.",
+        "P Why don't people just order it home???",
+        "N ...",
+        "N ...",
+        "N We live here.",
+        "N Well, thankfully the GOON ROOM safely hidden inside the STORAGE ROOM, you can't even see the door because of all the stuff in front of it.",
+        "N So nobody will be able to find it.",
+        "N ...",
+        "N ...",
+        "N Whoops.",
+
+        "E ",
+
+        "P Do you like collecting angel figurines?",
+        "N ...",
+        "N  I don't have money.",
+        "E ",
+        "P Do you like collecting angel figurines?",
+        "N ...",
+        "N  I don't have money.",
+
+        "E "
+      ]
+    },
+    {
+      "dialogue": [
+        "P A phone...",
+        "P There is nothing special about it...",
+        "P Hello?",
+        "P Hmm... just a long eardrum bursting tone",
+
+        "E ",
+
+        "P I dont think this phone knows anything about this paper..",
+        "P Well i guess it doesnt hurt to try",
+        "P ...Ouch my ears, I guess it did hurt...",
+
+
+        "E ",
+        "P I should stop talking to inanimate objects...",
+
+        "E ",
+        "P I should stop talking to inanimate objects...",
+
+        "E ",
+        "P I suppose it is nice talking to someone who isn't crazy...",
+        "P Am I right?.... phone? ",
+
+        "E ",
+        "P I suppose it is nice talking to someone who isn't crazy...",
+        "P Am I right?.... phone? ",
+
+        "E ",
+
+        "P Well, this has been great",
+        "E ",
+        "P Well, this has been great",
+
+
+        "E "
+      ]
+    },
+    {
+
+      "dialogue": [
+        "P Nice Poster",
+        "P ...",
+        "P That's all i have to say about it",
+        "P .....",
+        "P Yep that's it",
+
+        "E ",
+
+        "P If only Posters could talk...",
+        "P ....would make my job much easier",
+
+
+
+        "E ",
+        "P I like the guy's shirt",
+
+        "E ",
+        "P I like the guy's shirt",
+
+        "E ",
+        "P hm...",
+        "P I don't think there is much more to say about this",
+
+        "E ",
+        "P hm...",
+        "P I don't think there is much more to say about this",
+
+        "E ",
+
+        "P ....",
+        "E ",
+        "P ....",
+
+
+        "E "
+      ]
+    },
+   {
+    "dialogue": [
+      "P The elevator, this is where I came from.",
+      "P I can't leave yet, there's fraudsters to catch!",
+      "E ",
+     
+      "P The elevator, this is where I came from.",
+      "P I can't leave yet, there's fraudsters to catch!",
+      "E ",
+     
+      "P The elevator, this is where I came from.",
+      "P I can't leave yet, there's fraudsters to catch!",
+      "E ",
+     
+      "P The elevator, this is where I came from.",
+      "P I can't leave yet, there's fraudsters to catch!",
+      "E ",
+     
+      "P The elevator, this is where I came from.",
+      "P I can't leave yet, there's fraudsters to catch!",
+      "E ",
+     
+      "P The elevator, this is where I came from.",
+      "P I can't leave yet, there's fraudsters to catch!",
+      "E ",
+     
+      "P The elevator, this is where I came from.",
+      "P I can't leave yet, there's fraudsters to catch!",
+      "E ",
+      
+      "P The elevator, this is where I came from.",
+      "P I can't leave yet, there's fraudsters to catch!",
+      "E "
+
+    ]
+    },
+   {
+    "dialogue": [
+      "P Dear Satan, does this computer even still work? It looks like it's coated in tobacco.",
+      "P I...I don't want to touch this. I'll look for clues somewhere else...somewhere less smoky.",
+      "E ",
+
+      "P Dear Satan, does this computer even still work? It looks like it's coated in tobacco.",
+      "P I...I don't want to touch this. I'll look for clues somewhere else...somewhere less smoky.",
+      "E ",
+
+      "P Dear Satan, does this computer even still work? It looks like it's coated in tobacco.",
+      "P I...I don't want to touch this. I'll look for clues somewhere else...somewhere less smoky.",
+      "E ",
+
+      "P Dear Satan, does this computer even still work? It looks like it's coated in tobacco.",
+      "P I...I don't want to touch this. I'll look for clues somewhere else...somewhere less smoky.",
+      "E ",
+
+      "P Dear Satan, does this computer even still work? It looks like it's coated in tobacco.",
+      "P I...I don't want to touch this. I'll look for clues somewhere else...somewhere less smoky.",
+      "E ",
+
+      "P Dear Satan, does this computer even still work? It looks like it's coated in tobacco.",
+      "P I...I don't want to touch this. I'll look for clues somewhere else...somewhere less smoky.",
+      "E ",
+
+      "P Dear Satan, does this computer even still work? It looks like it's coated in tobacco.",
+      "P I...I don't want to touch this. I'll look for clues somewhere else...somewhere less smoky.",
+      "E ",
+
+      "P Dear Satan, does this computer even still work? It looks like it's coated in tobacco.",
+      "P I...I don't want to touch this. I'll look for clues somewhere else...somewhere less smoky.",
+      "E "
+
+    ]
+    },
+   {
+    "dialogue": [
+      "P Is this...a pair of lungs??",
+      "P Is-is someone using these as...spare parts?",
+      "P Well...this has nothing to do with tax fraud, so I'll leave it.",
+      "E ",
+
+      "P Is this...a pair of lungs??",
+      "P Is-is someone using these as...spare parts?",
+      "P Well...this has nothing to do with tax fraud, so I'll leave it.",
+      "E ",
+
+      "P Is this...a pair of lungs??",
+      "P Is-is someone using these as...spare parts?",
+      "P Well...this has nothing to do with tax fraud, so I'll leave it.",
+      "E ",
+
+      "P Is this...a pair of lungs??",
+      "P Is-is someone using these as...spare parts?",
+      "P Well...this has nothing to do with tax fraud, so I'll leave it.",
+      "E ",
+
+      "P Is this...a pair of lungs??",
+      "P Is-is someone using these as...spare parts?",
+      "P Well...this has nothing to do with tax fraud, so I'll leave it.",
+      "E ",
+
+      "P Is this...a pair of lungs??",
+      "P Is-is someone using these as...spare parts?",
+      "P Well...this has nothing to do with tax fraud, so I'll leave it.",
+      "E ",
+
+      "P Is this...a pair of lungs??",
+      "P Is-is someone using these as...spare parts?",
+      "P Well...this has nothing to do with tax fraud, so I'll leave it.",
+      "E ",
+
+      "P Is this...a pair of lungs??",
+      "P Is-is someone using these as...spare parts?",
+      "P Well...this has nothing to do with tax fraud, so I'll leave it.",
+      "E "
+    ]
+    },
+   {
+    "dialogue": [
+      "P Approximately twenty-seven smoked cigarettes.",
+      "P Ah damn, one broke when I poked it.",
+      "P I guess that makes it twenty-eight smoked cigarettes...",
+      "P Approximately twenty-eight smoked cigarettes.",
+      "E ",
+
+      "P Approximately twenty-seven smoked cigarettes.",
+      "P Ah damn, one broke when I poked it.",
+      "P I guess that makes it twenty-eight smoked cigarettes...",
+      "P Approximately twenty-eight smoked cigarettes.",
+      "E ",
+
+      "P Approximately twenty-seven smoked cigarettes.",
+      "P Ah damn, one broke when I poked it.",
+      "P I guess that makes it twenty-eight smoked cigarettes...",
+      "P Approximately twenty-eight smoked cigarettes.",
+      "E ",
+
+      "P Approximately twenty-seven smoked cigarettes.",
+      "P Ah damn, one broke when I poked it.",
+      "P I guess that makes it twenty-eight smoked cigarettes...",
+      "P Approximately twenty-eight smoked cigarettes.",
+      "E ",
+
+      "P Approximately twenty-seven smoked cigarettes.",
+      "P Ah damn, one broke when I poked it.",
+      "P I guess that makes it twenty-eight smoked cigarettes...",
+      "P Approximately twenty-eight smoked cigarettes.",
+      "E ",
+
+      "P Approximately twenty-seven smoked cigarettes.",
+      "P Ah damn, one broke when I poked it.",
+      "P I guess that makes it twenty-eight smoked cigarettes...",
+      "P Approximately twenty-eight smoked cigarettes.",
+      "E ",
+
+      "P Approximately twenty-seven smoked cigarettes.",
+      "P Ah damn, one broke when I poked it.",
+      "P I guess that makes it twenty-eight smoked cigarettes...",
+      "P Approximately twenty-eight smoked cigarettes.",
+      "E ",
+      "P Approximately twenty-seven smoked cigarettes.",
+      "P Ah damn, one broke when I poked it.",
+      "P I guess that makes it twenty-eight smoked cigarettes...",
+      "P Approximately twenty-eight smoked cigarettes.",
+      "E "
+
+
+
+    ]
+    },
+   {
+      "dialogue": [
+        "P Ahhh...the beauty of hell...",
+        "P ...Thank Satan I'm in here.",
+	      "P I spent enough time staring out the window, time to get to work.",
+        "E ",
+         "P Ahhh...the beauty of hell...",
+        "P ...Thank Satan I'm in here.",
+	      "P I spent enough time staring out the window, time to get to work.",
+        "E ",
+         "P Ahhh...the beauty of hell...",
+        "P ...Thank Satan I'm in here.",
+	      "P I spent enough time staring out the window, time to get to work.",
+        "E ",
+         "P Ahhh...the beauty of hell...",
+        "P ...Thank Satan I'm in here.",
+	      "P I spent enough time staring out the window, time to get to work.",
+        "E ",
+         "P Ahhh...the beauty of hell...",
+        "P ...Thank Satan I'm in here.",
+	      "P I spent enough time staring out the window, time to get to work.",
+        "E ",
+         "P Ahhh...the beauty of hell...",
+        "P ...Thank Satan I'm in here.",
+	      "P I spent enough time staring out the window, time to get to work.",
+        "E ",
+         "P Ahhh...the beauty of hell...",
+        "P ...Thank Satan I'm in here.",
+	      "P I spent enough time staring out the window, time to get to work.",
+        "E ",
+         "P Ahhh...the beauty of hell...",
+        "P ...Thank Satan I'm in here.",
+	      "P I spent enough time staring out the window, time to get to work.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+        "P A stack of unfinished work files.",
+	      "P Actually...on closer inspection...these haven't even been started yet.",
+        "E ",
+         "P A stack of unfinished work files.",
+	      "P Actually...on closer inspection...these haven't even been started yet.",
+        "E ",
+         "P A stack of unfinished work files.",
+	      "P Actually...on closer inspection...these haven't even been started yet.",
+        "E ",
+         "P A stack of unfinished work files.",
+	      "P Actually...on closer inspection...these haven't even been started yet.",
+        "E ",
+         "P A stack of unfinished work files.",
+	      "P Actually...on closer inspection...these haven't even been started yet.",
+        "E ",
+         "P A stack of unfinished work files.",
+	      "P Actually...on closer inspection...these haven't even been started yet.",
+        "E ",
+         "P A stack of unfinished work files.",
+	      "P Actually...on closer inspection...these haven't even been started yet.",
+        "E ",
+         "P A stack of unfinished work files.",
+	      "P Actually...on closer inspection...these haven't even been started yet.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+        "P That is an obscene amount of phones.",
+        "P Is she seriously taking care of all of these?",
+	      "P I don't want to pick up any of these...who knows what might happen.",
+        "E ",
+         "P That is an obscene amount of phones.",
+        "P Is she seriously taking care of all of these?",
+	      "P I don't want to pick up any of these...who knows what might happen.",
+        "E ",
+         "P That is an obscene amount of phones.",
+        "P Is she seriously taking care of all of these?",
+	      "P I don't want to pick up any of these...who knows what might happen.",
+        "E ",
+         "P That is an obscene amount of phones.",
+        "P Is she seriously taking care of all of these?",
+	      "P I don't want to pick up any of these...who knows what might happen.",
+        "E ",
+         "P That is an obscene amount of phones.",
+        "P Is she seriously taking care of all of these?",
+	      "P I don't want to pick up any of these...who knows what might happen.",
+        "E ",
+         "P That is an obscene amount of phones.",
+        "P Is she seriously taking care of all of these?",
+	      "P I don't want to pick up any of these...who knows what might happen.",
+        "E ",
+         "P That is an obscene amount of phones.",
+        "P Is she seriously taking care of all of these?",
+	      "P I don't want to pick up any of these...who knows what might happen.",
+        "E ",
+         "P That is an obscene amount of phones.",
+        "P Is she seriously taking care of all of these?",
+	      "P I don't want to pick up any of these...who knows what might happen.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+        "P Let's see, anything suspicious on this ladys PC?",
+        "P Hmmm...",
+        "P Just looks like a bunch of emails from a ihatethisworkplace1941@hellmail.com directing her to cover some shifts.",
+	      "P Well...looks like this has nothing to do with tax fraud, so I'll leave it.",
+        "E ",
+        "P Let's see, anything suspicious on this ladys PC?",
+        "P Hmmm...",
+        "P Just looks like a bunch of emails from a ihatethisworkplace1941@hellmail.com directing her to cover some shifts.",
+	      "P Well...looks like this has nothing to do with tax fraud, so I'll leave it.",
+        "E ",
+        "P Let's see, anything suspicious on this ladys PC?",
+        "P Hmmm...",
+        "P Just looks like a bunch of emails from a ihatethisworkplace1941@hellmail.com directing her to cover some shifts.",
+	      "P Well...looks like this has nothing to do with tax fraud, so I'll leave it.",
+        "E ",
+        "P Let's see, anything suspicious on this ladys PC?",
+        "P Hmmm...",
+        "P Just looks like a bunch of emails from a ihatethisworkplace1941@hellmail.com directing her to cover some shifts.",
+	      "P Well...looks like this has nothing to do with tax fraud, so I'll leave it.",
+        "E ",
+        "P Let's see, anything suspicious on this ladys PC?",
+        "P Hmmm...",
+        "P Just looks like a bunch of emails from a ihatethisworkplace1941@hellmail.com directing her to cover some shifts.",
+	      "P Well...looks like this has nothing to do with tax fraud, so I'll leave it.",
+        "E ",
+        "P Let's see, anything suspicious on this ladys PC?",
+        "P Hmmm...",
+        "P Just looks like a bunch of emails from a ihatethisworkplace1941@hellmail.com directing her to cover some shifts.",
+	      "P Well...looks like this has nothing to do with tax fraud, so I'll leave it.",
+        "E ",
+        "P Let's see, anything suspicious on this ladys PC?",
+        "P Hmmm...",
+        "P Just looks like a bunch of emails from a ihatethisworkplace1941@hellmail.com directing her to cover some shifts.",
+	      "P Well...looks like this has nothing to do with tax fraud, so I'll leave it.",
+        "E ",
+        "P Let's see, anything suspicious on this ladys PC?",
+        "P Hmmm...",
+        "P Just looks like a bunch of emails from a ihatethisworkplace1941@hellmail.com directing her to cover some shifts.",
+	      "P Well...looks like this has nothing to do with tax fraud, so I'll leave it.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+        "P This one seems to be shut off.",
+        "E ",
+        "P This one seems to be shut off.",
+        "E ",
+        "P This one seems to be shut off.",
+        "E ",
+        "P This one seems to be shut off.",
+        "E ",
+        "P This one seems to be shut off.",
+        "E ",
+        "P This one seems to be shut off.",
+        "E ",
+        "P This one seems to be shut off.",
+        "E ",
+        "P This one seems to be shut off.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+        "P Alright Mr. Intern, what are you hiding on this.",
+        "P Wh-",
+        "P This is the windows set up screen.",
+	      "P I don't think this computer has been touched since 220 BC.",
+        "E ",
+        "P Alright Mr. Intern, what are you hiding on this.",
+        "P Wh-",
+        "P This is the windows set up screen.",
+	      "P I don't think this computer has been touched since 220 BC.",
+        "E ",
+        "P Alright Mr. Intern, what are you hiding on this.",
+        "P Wh-",
+        "P This is the windows set up screen.",
+	      "P I don't think this computer has been touched since 220 BC.",
+        "E ",
+        "P Alright Mr. Intern, what are you hiding on this.",
+        "P Wh-",
+        "P This is the windows set up screen.",
+	      "P I don't think this computer has been touched since 220 BC.",
+        "E ",
+        "P Alright Mr. Intern, what are you hiding on this.",
+        "P Wh-",
+        "P This is the windows set up screen.",
+	      "P I don't think this computer has been touched since 220 BC.",
+        "E ",
+        "P Alright Mr. Intern, what are you hiding on this.",
+        "P Wh-",
+        "P This is the windows set up screen.",
+	      "P I don't think this computer has been touched since 220 BC.",
+        "E ",
+        "P Alright Mr. Intern, what are you hiding on this.",
+        "P Wh-",
+        "P This is the windows set up screen.",
+	      "P I don't think this computer has been touched since 220 BC.",
+        "E ",
+        "P Alright Mr. Intern, what are you hiding on this.",
+        "P Wh-",
+        "P This is the windows set up screen.",
+	      "P I don't think this computer has been touched since 220 BC.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+        "P Woah.",
+        "P Uh-",
+        "P Are we allowed to have other religions figures in hell?",
+
+	      "P He looks so...tranquil.",
+	      "P No...no I shouldn't...I mustn't...",
+
+
+	      "P Maybe just...one touch...",
+
+	      "P (Beautifully smooth, stone texture. Truly divine)",
+        "E ",
+        "P Woah.",
+        "P Uh-",
+        "P Are we allowed to have other religions figures in hell?",
+
+	      "P He looks so...tranquil.",
+	      "P No...no I shouldn't...I mustn't...",
+
+
+	      "P Maybe just...one touch...",
+
+	      "P (Beautifully smooth, stone texture. Truly divine)",
+        "E ",
+        "P Woah.",
+        "P Uh-",
+        "P Are we allowed to have other religions figures in hell?",
+
+	      "P He looks so...tranquil.",
+	      "P No...no I shouldn't...I mustn't...",
+
+
+	      "P Maybe just...one touch...",
+
+	      "P (Beautifully smooth, stone texture. Truly divine)",
+        "E ",
+        "P Woah.",
+        "P Uh-",
+        "P Are we allowed to have other religions figures in hell?",
+
+	      "P He looks so...tranquil.",
+	      "P No...no I shouldn't...I mustn't...",
+
+
+	      "P Maybe just...one touch...",
+
+	      "P (Beautifully smooth, stone texture. Truly divine)",
+        "E ",
+        "P Woah.",
+        "P Uh-",
+        "P Are we allowed to have other religions figures in hell?",
+
+	      "P He looks so...tranquil.",
+	      "P No...no I shouldn't...I mustn't...",
+
+
+	      "P Maybe just...one touch...",
+
+	      "P (Beautifully smooth, stone texture. Truly divine)",
+        "E ",
+        "P Woah.",
+        "P Uh-",
+        "P Are we allowed to have other religions figures in hell?",
+
+	      "P He looks so...tranquil.",
+	      "P No...no I shouldn't...I mustn't...",
+
+
+	      "P Maybe just...one touch...",
+
+	      "P (Beautifully smooth, stone texture. Truly divine)",
+        "E ",
+        "P Woah.",
+        "P Uh-",
+        "P Are we allowed to have other religions figures in hell?",
+
+	      "P He looks so...tranquil.",
+	      "P No...no I shouldn't...I mustn't...",
+
+
+	      "P Maybe just...one touch...",
+
+	      "P (Beautifully smooth, stone texture. Truly divine)",
+        "E ",
+        "P Woah.",
+        "P Uh-",
+        "P Are we allowed to have other religions figures in hell?",
+
+	      "P He looks so...tranquil.",
+	      "P No...no I shouldn't...I mustn't...",
+
+
+	      "P Maybe just...one touch...",
+
+	      "P (Beautifully smooth, stone texture. Truly divine)",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+        "P Ahhh, Incense. It smells very pleasing.",
+        "P Though personally I prefer the smell of freshly printed Tax Forms.",
+
+	      "P Best not break this, it may very well be the only thing keeping this place from smelling like a slaughterhouse.",
+        "E ",
+        "P Ahhh, Incense. It smells very pleasing.",
+        "P Though personally I prefer the smell of freshly printed Tax Forms.",
+
+	      "P Best not break this, it may very well be the only thing keeping this place from smelling like a slaughterhouse.",
+        "E ",
+        "P Ahhh, Incense. It smells very pleasing.",
+        "P Though personally I prefer the smell of freshly printed Tax Forms.",
+
+	      "P Best not break this, it may very well be the only thing keeping this place from smelling like a slaughterhouse.",
+        "E ",
+        "P Ahhh, Incense. It smells very pleasing.",
+        "P Though personally I prefer the smell of freshly printed Tax Forms.",
+
+	      "P Best not break this, it may very well be the only thing keeping this place from smelling like a slaughterhouse.",
+        "E ",
+        "P Ahhh, Incense. It smells very pleasing.",
+        "P Though personally I prefer the smell of freshly printed Tax Forms.",
+
+	      "P Best not break this, it may very well be the only thing keeping this place from smelling like a slaughterhouse.",
+        "E ",
+        "P Ahhh, Incense. It smells very pleasing.",
+        "P Though personally I prefer the smell of freshly printed Tax Forms.",
+
+	      "P Best not break this, it may very well be the only thing keeping this place from smelling like a slaughterhouse.",
+        "E ",
+        "P Ahhh, Incense. It smells very pleasing.",
+        "P Though personally I prefer the smell of freshly printed Tax Forms.",
+
+	      "P Best not break this, it may very well be the only thing keeping this place from smelling like a slaughterhouse.",
+        "E ",
+        "P Ahhh, Incense. It smells very pleasing.",
+        "P Though personally I prefer the smell of freshly printed Tax Forms.",
+
+	      "P Best not break this, it may very well be the only thing keeping this place from smelling like a slaughterhouse.",
+        "E "
+
+
+      ]
+    },
+   {
+      "dialogue": [
+        "P A suspicious lack of personal computer...",
+        "P ...",
+        "P Or maybe he is just tired of working.",
+        "E ",
+         "P A suspicious lack of personal computer...",
+        "P ...",
+        "P Or maybe he is just tired of working.",
+        "E ",
+         "P A suspicious lack of personal computer...",
+        "P ...",
+        "P Or maybe he is just tired of working.",
+        "E ",
+         "P A suspicious lack of personal computer...",
+        "P ...",
+        "P Or maybe he is just tired of working.",
+        "E ",
+         "P A suspicious lack of personal computer...",
+        "P ...",
+        "P Or maybe he is just tired of working.",
+        "E ",
+         "P A suspicious lack of personal computer...",
+        "P ...",
+        "P Or maybe he is just tired of working.",
+        "E ",
+         "P A suspicious lack of personal computer...",
+        "P ...",
+        "P Or maybe he is just tired of working.",
+        "E ",
+         "P A suspicious lack of personal computer...",
+        "P ...",
+        "P Or maybe he is just tired of working.",
+        "E "
+
+
+      ]
+    },
+   {
+      "dialogue": [
+        "P Hey!",
+        "P This is a fire hazard!!",
+        "P Haha, just kidding, we're literally in hell.",
+        "E ",
+        "P Hey!",
+        "P This is a fire hazard!!",
+        "P Haha, just kidding, we're literally in hell.",
+        "E ",
+        "P Hey!",
+        "P This is a fire hazard!!",
+        "P Haha, just kidding, we're literally in hell.",
+        "E ",
+        "P Hey!",
+        "P This is a fire hazard!!",
+        "P Haha, just kidding, we're literally in hell.",
+        "E ",
+        "P Hey!",
+        "P This is a fire hazard!!",
+        "P Haha, just kidding, we're literally in hell.",
+        "E ",
+        "P Hey!",
+        "P This is a fire hazard!!",
+        "P Haha, just kidding, we're literally in hell.",
+        "E ",
+        "P Hey!",
+        "P This is a fire hazard!!",
+        "P Haha, just kidding, we're literally in hell.",
+        "E ",
+        "P Hey!",
+        "P This is a fire hazard!!",
+        "P Haha, just kidding, we're literally in hell.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+        "P Oh.",
+        "P Oh my...",
+        "P This looks...supremely comfortable...",
+
+	      "P I...I really shouldn't.",
+
+	      "P ...",
+ 
+
+	      "P (Damn, it's exactly as comfortable as it looked.)",
+        "E ",
+         "P Oh.",
+        "P Oh my...",
+        "P This looks...supremely comfortable...",
+
+	      "P I...I really shouldn't.",
+
+	      "P ...",
+ 
+
+	      "P (Damn, it's exactly as comfortable as it looked.)",
+        "E ",
+         "P Oh.",
+        "P Oh my...",
+        "P This looks...supremely comfortable...",
+
+	      "P I...I really shouldn't.",
+
+	      "P ...",
+ 
+
+	      "P (Damn, it's exactly as comfortable as it looked.)",
+        "E ",
+         "P Oh.",
+        "P Oh my...",
+        "P This looks...supremely comfortable...",
+
+	      "P I...I really shouldn't.",
+
+	      "P ...",
+ 
+
+	      "P (Damn, it's exactly as comfortable as it looked.)",
+        "E ",
+         "P Oh.",
+        "P Oh my...",
+        "P This looks...supremely comfortable...",
+
+	      "P I...I really shouldn't.",
+
+	      "P ...",
+ 
+
+	      "P (Damn, it's exactly as comfortable as it looked.)",
+        "E ",
+         "P Oh.",
+        "P Oh my...",
+        "P This looks...supremely comfortable...",
+
+	      "P I...I really shouldn't.",
+
+	      "P ...",
+ 
+
+	      "P (Damn, it's exactly as comfortable as it looked.)",
+        "E ",
+         "P Oh.",
+        "P Oh my...",
+        "P This looks...supremely comfortable...",
+
+	      "P I...I really shouldn't.",
+
+	      "P ...",
+ 
+
+	      "P (Damn, it's exactly as comfortable as it looked.)",
+        "E ",
+         "P Oh.",
+        "P Oh my...",
+        "P This looks...supremely comfortable...",
+
+	      "P I...I really shouldn't.",
+
+	      "P ...",
+ 
+
+	      "P (Damn, it's exactly as comfortable as it looked.)",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P Plantera Lucifera, the Hellrose. Quite a fancy choice of flora for such a dingy office.",
+
+	      "P I shall not touch it...I fear I might kill it just by looking at it for too long.",
+        "E ",
+
+ "P Plantera Lucifera, the Hellrose. Quite a fancy choice of flora for such a dingy office.",
+
+	      "P I shall not touch it...I fear I might kill it just by looking at it for too long.",
+        "E ",
+
+ "P Plantera Lucifera, the Hellrose. Quite a fancy choice of flora for such a dingy office.",
+
+	      "P I shall not touch it...I fear I might kill it just by looking at it for too long.",
+        "E ",
+
+ "P Plantera Lucifera, the Hellrose. Quite a fancy choice of flora for such a dingy office.",
+
+	      "P I shall not touch it...I fear I might kill it just by looking at it for too long.",
+        "E ",
+
+ "P Plantera Lucifera, the Hellrose. Quite a fancy choice of flora for such a dingy office.",
+
+	      "P I shall not touch it...I fear I might kill it just by looking at it for too long.",
+        "E ",
+
+ "P Plantera Lucifera, the Hellrose. Quite a fancy choice of flora for such a dingy office.",
+
+	      "P I shall not touch it...I fear I might kill it just by looking at it for too long.",
+        "E ",
+
+ "P Plantera Lucifera, the Hellrose. Quite a fancy choice of flora for such a dingy office.",
+
+	      "P I shall not touch it...I fear I might kill it just by looking at it for too long.",
+        "E ",
+
+ "P Plantera Lucifera, the Hellrose. Quite a fancy choice of flora for such a dingy office.",
+
+	      "P I shall not touch it...I fear I might kill it just by looking at it for too long.",
+        "E "
+
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P Saphirica Balthazarum. This plant is very rare! I heard licking it is supposed to induce prophetic visions!",
+      
+	      "P ...I'm not going to lick it.",
+        "E ",
+         "P Saphirica Balthazarum. This plant is very rare! I heard licking it is supposed to induce prophetic visions!",
+      
+	      "P ...I'm not going to lick it.",
+        "E ",
+         "P Saphirica Balthazarum. This plant is very rare! I heard licking it is supposed to induce prophetic visions!",
+      
+	      "P ...I'm not going to lick it.",
+        "E ",
+         "P Saphirica Balthazarum. This plant is very rare! I heard licking it is supposed to induce prophetic visions!",
+      
+	      "P ...I'm not going to lick it.",
+        "E ",
+         "P Saphirica Balthazarum. This plant is very rare! I heard licking it is supposed to induce prophetic visions!",
+      
+	      "P ...I'm not going to lick it.",
+        "E ",
+         "P Saphirica Balthazarum. This plant is very rare! I heard licking it is supposed to induce prophetic visions!",
+      
+	      "P ...I'm not going to lick it.",
+        "E ",
+         "P Saphirica Balthazarum. This plant is very rare! I heard licking it is supposed to induce prophetic visions!",
+      
+	      "P ...I'm not going to lick it.",
+        "E ",
+         "P Saphirica Balthazarum. This plant is very rare! I heard licking it is supposed to induce prophetic visions!",
+      
+	      "P ...I'm not going to lick it.",
+        "E "
+
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P Yeah this one is just weed.",
+
+	      "P I have nothing more to say. I'm a Tax Auditor, not a narc.",
+        "E ",
+         "P Yeah this one is just weed.",
+
+	      "P I have nothing more to say. I'm a Tax Auditor, not a narc.",
+        "E ",
+         "P Yeah this one is just weed.",
+
+	      "P I have nothing more to say. I'm a Tax Auditor, not a narc.",
+        "E ",
+         "P Yeah this one is just weed.",
+
+	      "P I have nothing more to say. I'm a Tax Auditor, not a narc.",
+        "E ",
+         "P Yeah this one is just weed.",
+
+	      "P I have nothing more to say. I'm a Tax Auditor, not a narc.",
+        "E ",
+         "P Yeah this one is just weed.",
+
+	      "P I have nothing more to say. I'm a Tax Auditor, not a narc.",
+        "E ",
+         "P Yeah this one is just weed.",
+
+	      "P I have nothing more to say. I'm a Tax Auditor, not a narc.",
+        "E ",
+         "P Yeah this one is just weed.",
+
+	      "P I have nothing more to say. I'm a Tax Auditor, not a narc.",
+        "E "
+
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P What in the hells is that.",
+
+	      "P OUCH.",
+
+	      "P I deduce...whatever it is, it's hot.",
+        "E ",
+          "P What in the hells is that.",
+
+	      "P OUCH.",
+
+	      "P I deduce...whatever it is, it's hot.",
+        "E ",
+          "P What in the hells is that.",
+
+	      "P OUCH.",
+
+	      "P I deduce...whatever it is, it's hot.",
+        "E ",
+          "P What in the hells is that.",
+
+	      "P OUCH.",
+
+	      "P I deduce...whatever it is, it's hot.",
+        "E ",
+          "P What in the hells is that.",
+
+	      "P OUCH.",
+
+	      "P I deduce...whatever it is, it's hot.",
+        "E ",
+          "P What in the hells is that.",
+
+	      "P OUCH.",
+
+	      "P I deduce...whatever it is, it's hot.",
+        "E ",
+          "P What in the hells is that.",
+
+	      "P OUCH.",
+
+	      "P I deduce...whatever it is, it's hot.",
+        "E ",
+          "P What in the hells is that.",
+
+	      "P OUCH.",
+
+	      "P I deduce...whatever it is, it's hot.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P This computer...good satan it's absolutely overrun with viruses.",
+
+	      "P I've never seen this many trojans in one place.",
+
+	      "P It's completely unusable. It shows approximately twelve pop-up ads per frame.",
+        "E ",
+         "P This computer...good satan it's absolutely overrun with viruses.",
+
+	      "P I've never seen this many trojans in one place.",
+
+	      "P It's completely unusable. It shows approximately twelve pop-up ads per frame.",
+        "E ",
+         "P This computer...good satan it's absolutely overrun with viruses.",
+
+	      "P I've never seen this many trojans in one place.",
+
+	      "P It's completely unusable. It shows approximately twelve pop-up ads per frame.",
+        "E ",
+         "P This computer...good satan it's absolutely overrun with viruses.",
+
+	      "P I've never seen this many trojans in one place.",
+
+	      "P It's completely unusable. It shows approximately twelve pop-up ads per frame.",
+        "E ",
+         "P This computer...good satan it's absolutely overrun with viruses.",
+
+	      "P I've never seen this many trojans in one place.",
+
+	      "P It's completely unusable. It shows approximately twelve pop-up ads per frame.",
+        "E ",
+         "P This computer...good satan it's absolutely overrun with viruses.",
+
+	      "P I've never seen this many trojans in one place.",
+
+	      "P It's completely unusable. It shows approximately twelve pop-up ads per frame.",
+        "E ",
+         "P This computer...good satan it's absolutely overrun with viruses.",
+
+	      "P I've never seen this many trojans in one place.",
+
+	      "P It's completely unusable. It shows approximately twelve pop-up ads per frame.",
+        "E ",
+         "P This computer...good satan it's absolutely overrun with viruses.",
+
+	      "P I've never seen this many trojans in one place.",
+
+	      "P It's completely unusable. It shows approximately twelve pop-up ads per frame.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P What uh...colorful choices of decoration.",
+        "E ",
+        "P What uh...colorful choices of decoration.",
+        "E ",
+        "P What uh...colorful choices of decoration.",
+        "E ",
+        "P What uh...colorful choices of decoration.",
+        "E ",
+        "P What uh...colorful choices of decoration.",
+        "E ",
+        "P What uh...colorful choices of decoration.",
+        "E ",
+        "P What uh...colorful choices of decoration.",
+        "E ",
+        "P What uh...colorful choices of decoration.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P These PCs might be older than hell itself.",
+        "E ",
+         "P These PCs might be older than hell itself.",
+        "E ",
+         "P These PCs might be older than hell itself.",
+        "E ",
+         "P These PCs might be older than hell itself.",
+        "E ",
+         "P These PCs might be older than hell itself.",
+        "E ",
+         "P These PCs might be older than hell itself.",
+        "E ",
+         "P These PCs might be older than hell itself.",
+        "E ",
+         "P These PCs might be older than hell itself.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P These phones seem to have been broken through some sort of...extremely angry punch.",
+        "E ",
+        "P These phones seem to have been broken through some sort of...extremely angry punch.",
+        "E ",
+        "P These phones seem to have been broken through some sort of...extremely angry punch.",
+        "E ",
+        "P These phones seem to have been broken through some sort of...extremely angry punch.",
+        "E ",
+        "P These phones seem to have been broken through some sort of...extremely angry punch.",
+        "E ",
+        "P These phones seem to have been broken through some sort of...extremely angry punch.",
+        "E ",
+        "P These phones seem to have been broken through some sort of...extremely angry punch.",
+        "E ",
+        "P These phones seem to have been broken through some sort of...extremely angry punch.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P Empty water cooler tanks.",
+        "E ",
+         "P Empty water cooler tanks.",
+        "E ",
+         "P Empty water cooler tanks.",
+        "E ",
+         "P Empty water cooler tanks.",
+        "E ",
+         "P Empty water cooler tanks.",
+        "E ",
+         "P Empty water cooler tanks.",
+        "E ",
+         "P Empty water cooler tanks.",
+        "E ",
+         "P Empty water cooler tanks.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P These keyboards have all of their keys missing...wait, there's a note on one of these.",
+	      "P It reads: 'For Satans sake, stop eating the keycaps Steve - Jenny'.",
+
+        "E ",
+        
+        "P These keyboards have all of their keys missing...wait, there's a note on one of these.",
+	      "P It reads: 'For Satans sake, stop eating the keycaps Steve - Jenny'.",
+
+        "E ",
+        
+        "P These keyboards have all of their keys missing...wait, there's a note on one of these.",
+	      "P It reads: 'For Satans sake, stop eating the keycaps Steve - Jenny'.",
+
+        "E ",
+        
+        "P These keyboards have all of their keys missing...wait, there's a note on one of these.",
+	      "P It reads: 'For Satans sake, stop eating the keycaps Steve - Jenny'.",
+
+        "E ",
+        
+        "P These keyboards have all of their keys missing...wait, there's a note on one of these.",
+	      "P It reads: 'For Satans sake, stop eating the keycaps Steve - Jenny'.",
+
+        "E ",
+        
+        "P These keyboards have all of their keys missing...wait, there's a note on one of these.",
+	      "P It reads: 'For Satans sake, stop eating the keycaps Steve - Jenny'.",
+
+        "E ",
+        
+        "P These keyboards have all of their keys missing...wait, there's a note on one of these.",
+	      "P It reads: 'For Satans sake, stop eating the keycaps Steve - Jenny'.",
+
+        "E ",
+        
+        "P These keyboards have all of their keys missing...wait, there's a note on one of these.",
+	      "P It reads: 'For Satans sake, stop eating the keycaps Steve - Jenny'.",
+
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P A very large stack of papers, all printed with the same thing.",
+        "P 'GOOGLE HOW DO I STOP THE PRINTER THANK YOU SIGNED SHARON'...",
+        "E ",
+         "P A very large stack of papers, all printed with the same thing.",
+        "P 'GOOGLE HOW DO I STOP THE PRINTER THANK YOU SIGNED SHARON'...",
+        "E ",
+         "P A very large stack of papers, all printed with the same thing.",
+        "P 'GOOGLE HOW DO I STOP THE PRINTER THANK YOU SIGNED SHARON'...",
+        "E ",
+         "P A very large stack of papers, all printed with the same thing.",
+        "P 'GOOGLE HOW DO I STOP THE PRINTER THANK YOU SIGNED SHARON'...",
+        "E ",
+         "P A very large stack of papers, all printed with the same thing.",
+        "P 'GOOGLE HOW DO I STOP THE PRINTER THANK YOU SIGNED SHARON'...",
+        "E ",
+         "P A very large stack of papers, all printed with the same thing.",
+        "P 'GOOGLE HOW DO I STOP THE PRINTER THANK YOU SIGNED SHARON'...",
+        "E ",
+         "P A very large stack of papers, all printed with the same thing.",
+        "P 'GOOGLE HOW DO I STOP THE PRINTER THANK YOU SIGNED SHARON'...",
+        "E ",
+         "P A very large stack of papers, all printed with the same thing.",
+        "P 'GOOGLE HOW DO I STOP THE PRINTER THANK YOU SIGNED SHARON'...",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P Empty binders.",
+        "E ",
+         "P Empty binders.",
+        "E ",
+         "P Empty binders.",
+        "E ",
+         "P Empty binders.",
+        "E ",
+         "P Empty binders.",
+        "E ",
+         "P Empty binders.",
+        "E ",
+         "P Empty binders.",
+        "E ",
+         "P Empty binders.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P Dried out sharpies, most of these are missing their caps.",
+        "E ",
+        "P Dried out sharpies, most of these are missing their caps.",
+        "E ",
+        "P Dried out sharpies, most of these are missing their caps.",
+        "E ",
+        "P Dried out sharpies, most of these are missing their caps.",
+        "E ",
+        "P Dried out sharpies, most of these are missing their caps.",
+        "E ",
+        "P Dried out sharpies, most of these are missing their caps.",
+        "E ",
+        "P Dried out sharpies, most of these are missing their caps.",
+        "E ",
+        "P Dried out sharpies, most of these are missing their caps.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P A rolled up banner saying 'For a worse tomorrow, vote for Lucifer. Just kidding I'm the KING of hell I don't need your votes, peasants.",
+        "E ",
+         "P A rolled up banner saying 'For a worse tomorrow, vote for Lucifer. Just kidding I'm the KING of hell I don't need your votes, peasants.",
+        "E ",
+         "P A rolled up banner saying 'For a worse tomorrow, vote for Lucifer. Just kidding I'm the KING of hell I don't need your votes, peasants.",
+        "E ",
+         "P A rolled up banner saying 'For a worse tomorrow, vote for Lucifer. Just kidding I'm the KING of hell I don't need your votes, peasants.",
+        "E ",
+         "P A rolled up banner saying 'For a worse tomorrow, vote for Lucifer. Just kidding I'm the KING of hell I don't need your votes, peasants.",
+        "E ",
+         "P A rolled up banner saying 'For a worse tomorrow, vote for Lucifer. Just kidding I'm the KING of hell I don't need your votes, peasants.",
+        "E ",
+         "P A rolled up banner saying 'For a worse tomorrow, vote for Lucifer. Just kidding I'm the KING of hell I don't need your votes, peasants.",
+        "E ",
+         "P A rolled up banner saying 'For a worse tomorrow, vote for Lucifer. Just kidding I'm the KING of hell I don't need your votes, peasants.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P What is this, some sort of cute, marketable mascot???",
+
+        "P They should put this creature into some manner of fighting game, that would be exceptional.",
+
+        "P ...",
+
+        "P Isabelle in hell...heh...that rhymes...",
+        "E ",
+        "P What is this, some sort of cute, marketable mascot???",
+
+        "P They should put this creature into some manner of fighting game, that would be exceptional.",
+
+        "P ...",
+
+        "P Isabelle in hell...heh...that rhymes...",
+        "E ",
+        "P What is this, some sort of cute, marketable mascot???",
+
+        "P They should put this creature into some manner of fighting game, that would be exceptional.",
+
+        "P ...",
+
+        "P Isabelle in hell...heh...that rhymes...",
+        "E ",
+        "P What is this, some sort of cute, marketable mascot???",
+
+        "P They should put this creature into some manner of fighting game, that would be exceptional.",
+
+        "P ...",
+
+        "P Isabelle in hell...heh...that rhymes...",
+        "E ",
+        "P What is this, some sort of cute, marketable mascot???",
+
+        "P They should put this creature into some manner of fighting game, that would be exceptional.",
+
+        "P ...",
+
+        "P Isabelle in hell...heh...that rhymes...",
+        "E ",
+        "P What is this, some sort of cute, marketable mascot???",
+
+        "P They should put this creature into some manner of fighting game, that would be exceptional.",
+
+        "P ...",
+
+        "P Isabelle in hell...heh...that rhymes...",
+        "E ",
+        "P What is this, some sort of cute, marketable mascot???",
+
+        "P They should put this creature into some manner of fighting game, that would be exceptional.",
+
+        "P ...",
+
+        "P Isabelle in hell...heh...that rhymes...",
+        "E ",
+        "P What is this, some sort of cute, marketable mascot???",
+
+        "P They should put this creature into some manner of fighting game, that would be exceptional.",
+
+        "P ...",
+
+        "P Isabelle in hell...heh...that rhymes...",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P Hmmm, this seems to be a Big Fucking Gun.",
+        "E ",
+        
+        "P Hmmm, this seems to be a Big Fucking Gun.",
+        "E ",
+        
+        "P Hmmm, this seems to be a Big Fucking Gun.",
+        "E ",
+        
+        "P Hmmm, this seems to be a Big Fucking Gun.",
+        "E ",
+        
+        "P Hmmm, this seems to be a Big Fucking Gun.",
+        "E ",
+        
+        "P Hmmm, this seems to be a Big Fucking Gun.",
+        "E ",
+        
+        "P Hmmm, this seems to be a Big Fucking Gun.",
+        "E ",
+        
+        "P Hmmm, this seems to be a Big Fucking Gun.",
+        "E "
+
+      ]
+    },
+
+   {
+      "dialogue": [
+
+        "P A strange round object with a screwdriver keeping the two halves apart. There is a warm glow emitting from within.",
+        "E ",
+         "P A strange round object with a screwdriver keeping the two halves apart. There is a warm glow emitting from within.",
+        "E ",
+         "P A strange round object with a screwdriver keeping the two halves apart. There is a warm glow emitting from within.",
+        "E ",
+         "P A strange round object with a screwdriver keeping the two halves apart. There is a warm glow emitting from within.",
+        "E ",
+         "P A strange round object with a screwdriver keeping the two halves apart. There is a warm glow emitting from within.",
+        "E ",
+         "P A strange round object with a screwdriver keeping the two halves apart. There is a warm glow emitting from within.",
+        "E ",
+         "P A strange round object with a screwdriver keeping the two halves apart. There is a warm glow emitting from within.",
+        "E ",
+         "P A strange round object with a screwdriver keeping the two halves apart. There is a warm glow emitting from within.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P Sword.",
+        "E ",
+        "P Sword.",
+        "E ",
+        "P Sword.",
+        "E ",
+        "P Sword.",
+        "E ",
+        "P Sword.",
+        "E ",
+        "P Sword.",
+        "E ",
+        "P Sword.",
+        "E ",
+        "P Sword.",
+        "E "
+
+      ]
+    },
+   {
+      "dialogue": [
+
+        "P Snake?",
+        "P Snake???",
+        "P SNAAAAAAKEEEEEE!!!",
+        "E ",
+         "P Snake?",
+        "P Snake???",
+        "P SNAAAAAAKEEEEEE!!!",
+        "E ",
+         "P Snake?",
+        "P Snake???",
+        "P SNAAAAAAKEEEEEE!!!",
+        "E ",
+         "P Snake?",
+        "P Snake???",
+        "P SNAAAAAAKEEEEEE!!!",
+        "E ",
+         "P Snake?",
+        "P Snake???",
+        "P SNAAAAAAKEEEEEE!!!",
+        "E ",
+         "P Snake?",
+        "P Snake???",
+        "P SNAAAAAAKEEEEEE!!!",
+        "E ",
+         "P Snake?",
+        "P Snake???",
+        "P SNAAAAAAKEEEEEE!!!",
+        "E ",
+         "P Snake?",
+        "P Snake???",
+        "P SNAAAAAAKEEEEEE!!!",
+        "E "
+
+      ]
+    },
+    {
+
+      "dialogue": [
+        "P I've been told that someone on this floor has committed tax fraud.",
+        "P Investigating this area would probably help.",
+        "P Luckily I have my trusty suitcase to store any evidence.",
+        "P I should start by talking to the people on this floor.",
+        "P In case anything seems suspicious I can go back here to interrogate them",
+
+        "E ",
+
+        "P I've been told that someone on this floor has committed tax fraud.",
+        "P Investigating this area would probably help.",
+        "P Luckily I have my trusty suitcase to store any evidence.",
+        "P I should start by talking to the people on this floor.",
+        "P In case anything seems suspicious I can go back here to interrogate them",
+
+
+
+        "E ",
+        "P I've been told that someone on this floor has committed tax fraud.",
+        "P Investigating this area would probably help.",
+        "P Luckily I have my trusty suitcase to store any evidence.",
+        "P I should start by talking to the people on this floor.",
+        "P In case anything seems suspicious I can go back here to interrogate them",
+
+        "E ",
+        "P I've been told that someone on this floor has committed tax fraud.",
+        "P Investigating this area would probably help.",
+        "P Luckily I have my trusty suitcase to store any evidence.",
+        "P I should start by talking to the people on this floor.",
+        "P In case anything seems suspicious I can go back here to interrogate them",
+
+        "E ",
+        "P I've been told that someone on this floor has committed tax fraud.",
+        "P Investigating this area would probably help.",
+        "P Luckily I have my trusty suitcase to store any evidence.",
+        "P I should start by talking to the people on this floor.",
+        "P In case anything seems suspicious I can go back here to interrogate them",
+
+        "E ",
+        "P I've been told that someone on this floor has committed tax fraud.",
+        "P Investigating this area would probably help.",
+        "P Luckily I have my trusty suitcase to store any evidence.",
+        "P I should start by talking to the people on this floor.",
+        "P In case anything seems suspicious I can go back here to interrogate them",
+
+        "E ",
+
+        "P I've been told that someone on this floor has committed tax fraud.",
+        "P Investigating this area would probably help.",
+        "P Luckily I have my trusty suitcase to store any evidence.",
+        "P I should start by talking to the people on this floor.",
+        "P In case anything seems suspicious I can go back here to interrogate them",
+        "E ",
+        "P I've been told that someone on this floor has committed tax fraud.",
+        "P Investigating this area would probably help.",
+        "P Luckily I have my trusty suitcase to store any evidence.",
+        "P I should start by talking to the people on this floor.",
+        "P In case anything seems suspicious I can go back here to interrogate them",
+
+
+        "E "
+      ]
+    }
+  ]
+}
