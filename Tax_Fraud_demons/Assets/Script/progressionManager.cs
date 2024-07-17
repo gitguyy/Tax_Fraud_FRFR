@@ -44,8 +44,8 @@ public class progressionManager : MonoBehaviour
         angerLevels = new int[5];
         sceneManager = MySceneManager.Instance;
         dialogue = DialogueSystem.Instance;
-        characterDialogue = new int[8];
-        characterProgress = new int[8];
+        characterDialogue = new int[42];
+        characterProgress = new int[42];
       
         objects = FindObjectsOfType<ProgressBaseObjects>();
         for (int i = 0; i < objects.Length; i++)
