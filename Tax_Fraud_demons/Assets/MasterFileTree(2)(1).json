@@ -233,20 +233,25 @@
         "NPI did see Jadis carrying a big box from the elevator, though I did not see where they put it. Either way, you might want to inquire about that.",
 
         "E ",
+        "P Do you know where Jadis Might have put it?",
+        "N Apologies i do not.",
+        "E ",
+        "P Do you know where Jadis Might have put it?",
+        "N Apologies i do not.",
 
         "P The address on this package has been scratched off, do you know who it might belong to?",
         "N Forgive me, this is the first time this earthly belonging has been brought before me.",
         "P I see. Can you tell me if there is any extra space where people might put their things then?",
         "N .....",
         "N I shan't be the one to answer that question...it would go against my code of honor.",
-	      "P I guess I gotta find someone who is too blissed out to care about honor...",
+        "P I guess I gotta find someone who is too blissed out to care about honor...",
         "E ",
         "P The address on this package has been scratched off, do you know who it might belong to?",
         "N Forgive me, this is the first time this earthly belonging has been brought before me.",
         "P I see. Can you tell me if there is any extra space where people might put their things then?",
         "N .....",
         "N I shan't be the one to answer that question...it would go against my code of honor.",
-	      "P I guess I gotta find someone who is too blissed out to care about honor...",
+        "P I guess I gotta find someone who is too blissed out to care about honor...",
         "E ",
 
         "P Is anyone here into collecting angel figurines?",
@@ -259,6 +264,26 @@
 
         "E ",
 
+        "P Is anyone here into collecting angel figurines?",
+        "N No, I am only interested in statues of the buddha.",
+        "P I can only hope they are less inappropiate.",
+        "N ...",
+        "P ...",
+        "N ...",
+        "P I see.",
+
+        "E ",
+
+
+        "P Is anyone here into collecting angel figurines?",
+        "N No, I am only interested in statues of the buddha.",
+        "P I can only hope they are less inappropiate.",
+        "N ...",
+        "P ...",
+        "N ...",
+        "P I see.",
+
+        "E ",
         "P Is anyone here into collecting angel figurines?",
         "N No, I am only interested in statues of the buddha.",
         "P I can only hope they are less inappropiate.",

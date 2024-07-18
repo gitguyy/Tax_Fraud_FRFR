@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Jenny
   m_EditorClassIdentifier: 
   sprites: {fileID: 9100000, guid: 3b1872b9a08f2ea419a31c3b53cb6545, type: 2}
-  text: {fileID: 4900000, guid: f0dfdf7a8d0fb354a8138b1882c42746, type: 3}
+  text: {fileID: 4900000, guid: 68518aaa8594fec4d8c6ce28c0e29fc7, type: 3}
   ID: 1

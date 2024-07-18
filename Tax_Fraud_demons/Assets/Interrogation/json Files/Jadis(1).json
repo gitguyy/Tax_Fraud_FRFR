@@ -1,0 +1,48 @@
+{
+  "suspect": {
+    "phases": [
+      {
+        "phase": {
+          "angryAnswer": [
+            "T Jadis: I can't read.",
+            "T Jadis: Oh yeah, I carried this. But I told you, I don't remember for whom.",
+            "T Jadis: ... Can I keep it?",
+            "T Jadis: I think I suddenly learned how to read, can I borrow this?"
+          ],
+          "resetSentence": [
+            "T Jadis: Anyway, what were you saying?",
+            "T Jadis: Anyway, what were you saying?",
+            "T Jadis: Anyway, what were you saying?",
+            "T Jadis: Anyway, what were you saying?"
+          ],
+          "textBlocks": [
+            {
+              "block": {
+                "dialogue": [
+                  "P Mitch: Alright Mister-uh...Miss...uh...",
+                  "N Jadis: ....",
+                  "N Jadis: ....",
+                  "N Jadis: Yea?",
+                  "P Mitch: ...Yes alright, I need you to start talking.",
+                  "N Jadis: ...",
+                  "N Jadis: ...",
+                  "N Jadis: Aight...about what.",
+                  "P Mitch: ...The tax fraud.",
+                  "N Jadis: ...",
+                  "N Jadis: ...",
+                  "N Jadis: Woah...what is that. ",
+                  "T Mitch: (Either I show this cooked cat some evidence or I interrogate someone else, because this is going nowhere)."
+
+
+                  
+                ],
+                "clue": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}   
+    

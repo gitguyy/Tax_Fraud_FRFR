@@ -44,12 +44,15 @@ public class PlayerOperations : MonoBehaviour
     public void onTransition()
     {
         pressableArea = GameObject.Find("pressableArea");
+        
     }
 
 
     private void OnEnable()
     {
         pressableArea.SetActive(false);
+        talking = false;
+        
     }
 
     // Start is called before the first frame update
@@ -85,6 +88,27 @@ public class PlayerOperations : MonoBehaviour
         }
         if(dialogueBox != null)
         {
+            if (InteractObject == null && Input.GetMouseButtonDown(0) && canTalkWith)
+            {
+                if (system == null)
+                {
+                    system = DialogueSystem.Instance;
+                }
+                canTalkWith = true;
+                system.dialogue.setTimer(system.letterTimer);
+                InteractObject = col.gameObjectToSend;
+                Debug.Log("interact object is null;");
+                dialogueBox.SetActive(true);
+                pressableArea.SetActive(true);
+                if (pressableArea.GetComponent<NpcInformations>() != null && InteractObject.GetComponent<NpcInformations>() != null)
+                {
+
+                    int ID = InteractObject.GetComponent<NpcInformations>().getID();
+                    Debug.Log(ID + "name: " + InteractObject.gameObject.name);
+                    pressableArea.GetComponent<NpcInformations>().setID(ID);
+
+                }
+            }
             if (talking && Input.GetMouseButtonDown(0) && canTalkWith)
             {
                 Debug.Log("set timer_PLayerOperations");
@@ -122,16 +146,21 @@ public class PlayerOperations : MonoBehaviour
 
                 system.dialogue.setBox(dialogueBox);
 
-
+                if (InteractObject == null)
+                {
+                    InteractObject = col.gameObjectToSend;
+                    Debug.Log("interact object is null;");
+                }
 
             }
-
-            if (talking)
+           
+            if (talking && InteractObject != null)
             {
                 talk.Invoke(InteractObject);
               
 
             }
+            
             
             if (Input.GetMouseButtonDown(0))
             {

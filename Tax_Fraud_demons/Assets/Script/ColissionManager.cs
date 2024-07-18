@@ -9,16 +9,18 @@ public class ColissionManager : MonoBehaviour
     public UnityEvent<Transform> setTransform;
     public UnityEvent<GameObject> setObject;
     Transform transformToSend;
-    GameObject gameObjectToSend;
+    public GameObject gameObjectToSend;
 
     private void OnEnable()
     {
-        
+        setObject.RemoveAllListeners();
+        setObject.AddListener(PlayerOperations.instance.setInteract);
     }
     private void Start()
     {
+        //setObject.AddListener(PlayerOperations.instance.setInteract);
+        setObject.RemoveAllListeners();
         setObject.AddListener(PlayerOperations.instance.setInteract);
-       
         player = PlayerOperations.instance;
         if(player == null)
         {
@@ -26,6 +28,7 @@ public class ColissionManager : MonoBehaviour
         }
 
     }
+   
     private void OnTriggerEnter2D(Collider2D other)
     {
 
@@ -71,7 +74,7 @@ public class ColissionManager : MonoBehaviour
         switch (tag)
         {
             case "NPC":
-               
+                Debug.Log("Npc " + gameObjectToSend);
                 player.canTalkWith = true;
                 player.canInteractWith = true;
                

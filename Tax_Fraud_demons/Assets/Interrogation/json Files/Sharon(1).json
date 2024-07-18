@@ -1,0 +1,39 @@
+{
+  "suspect": {
+    "phases": [
+      {
+        "phase": {
+          "angryAnswer": [
+            "T Sharon: I have as much respect for customs as I have for you.",
+            "T Sharon: Ah yes, my future house.",
+            "T Sharon: Get that filth away from me.",
+            "T Sharon: I'd rather read 'Fifty Shades of Red' then this trash."
+          ],
+          "resetSentence": [
+            "T Sharon: You got anything else to bother me with?",
+            "T Sharon: You got anything else to bother me with?",
+            "T Sharon: You got anything else to bother me with?",
+            "T Sharon: You got anything else to bother me with?"
+          ],
+          "textBlocks": [
+            {
+              "block": {
+                "dialogue": [
+                  "P Mitch: Alright, you're gonna give me some answers.",
+                  "T Sharon: And how am I gonna do that, hm.",
+                  "P Mitch: You oversee this department, if anyone should know what is going on here, it would be you.",
+                  "T Sharon: Brilliant deduction...unfortunately I don't care enough to remember anything, ever. You'll have better luck asking literally anyone else.",
+                  "P Mitch: (If I have evidence that implicates her, I better show it now because I doubt she's going to listen to me a second longer.)"
+                  
+                ],
+                "clue": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}   
+    
+    

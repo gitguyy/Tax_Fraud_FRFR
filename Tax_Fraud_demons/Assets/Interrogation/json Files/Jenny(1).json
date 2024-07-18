@@ -1,0 +1,38 @@
+{
+  "suspect": {
+    "phases": [
+      {
+        "phase": {
+          "angryAnswer": [
+            "M Jenny: I always pay my taxes, I swear.",
+            "M Jenny: I don't order things, I'm scared of postdemons.",
+            "M Jenny: Ew! Ew! Ew! What is that.?",
+            "M Jenny: I really don't want to see what is in there."
+          ],
+          "resetSentence": [
+            "T Jenny: Are we done yet? I have MOUNTAINS of work to do.",
+            "T Jenny: Are we done yet? I have MOUNTAINS of work to do.",
+            "T Jenny: Are we done yet? I have MOUNTAINS of work to do.",
+            "T Jenny: Are we done yet? I have MOUNTAINS of work to do."
+          ],
+          "textBlocks": [
+            {
+              "block": {
+                "dialogue": [
+                  "P Mitch: I'm going to need you to start giving me some answ-",
+                  "T Jenny: Oh please, please, let me get back to work, I don't have the time -",
+                  "P Mitch: Which is exactly what you would be saying if you were trying to hide something.",
+                  "M Jenny: PLEASEPLEASEPLEASEPLEASEPLEASEPLEASE",
+                  "P Mitch: (If I want to keep her here I gotta show her some evidence that implicates her...otherwise I need to interrogate someone else.)"
+
+                ],
+                "clue": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+    

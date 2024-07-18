@@ -1,0 +1,40 @@
+{
+  "suspect": {
+    "phases": [
+      {
+        "phase": {
+          "angryAnswer": [
+            "M Damian: Artificial debt created by artificial borders. In the grand scheme of things, heaven and hell are one and the same.",
+            "M Damian: This is the box I saw Jadis carry, you finally found it!",
+            "M Damian: Our heavenly brethren. We should not shun them and instead bridge the gap of artificial morality.",
+            "M Damian: My preferred literature would be Sun Tzu's 'The Art of No War'."
+
+          ],
+          "resetSentence": [
+            "T Damien: Nevertheless, let us get back to what we were discussing.",
+            "T Damien: Nevertheless, let us get back to what we were discussing.",
+            "T Damien: Nevertheless, let us get back to what we were discussing.",
+            "T Damien: Nevertheless, let us get back to what we were discussing."
+          ],
+          "textBlocks": [
+            {
+              "block": {
+                "dialogue": [
+                  "P Mitch: I'm going to need you to start giving me some answers.",
+                  "T Damian: My brother in Satan, I have always been at your disposal for any help or questions.",
+                  "P Mitch: Well...yes, but I need you to tell me more!!",
+                  "T Damian: Then ask me normally. There is no need for this brutish display of authority.",
+		              "P Mitch: (I either gotta show him something to get him to talk or interrogate someone else, I feel bad accusing him like this.)"
+
+                  
+                ],
+                "clue": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}   
+    

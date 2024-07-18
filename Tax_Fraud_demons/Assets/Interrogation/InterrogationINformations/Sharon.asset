@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Sharon
   m_EditorClassIdentifier: 
   sprites: {fileID: 9100000, guid: 1d77ef289504b4143a91055923a1c346, type: 2}
-  text: {fileID: 4900000, guid: 73b9ac0ba7dda4c41a45634c965dc329, type: 3}
+  text: {fileID: 4900000, guid: bc7dbce9dba8cf343b488eefa70604ef, type: 3}
+  ID: 0
