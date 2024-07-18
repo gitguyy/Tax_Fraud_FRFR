@@ -20,7 +20,7 @@ public class ItemToInventoryAnimation : MonoBehaviour
     bool hasReachedGoal;
     [SerializeField]
     private float time;
-    public float threshold = 0.1f;
+    public float threshold = 10f;
     GameObject destroyObject;
     #endregion
 
@@ -37,8 +37,14 @@ public class ItemToInventoryAnimation : MonoBehaviour
             return;
         }
     }
-    
-   
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.K))
+        {
+            CreateItem(itemSprite, origin);
+        }
+    }
 
     public void CreateItem(Sprite sprite, Transform itemToSet)
     {
