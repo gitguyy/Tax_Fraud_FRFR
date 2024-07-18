@@ -27,6 +27,7 @@ public class Item : MonoBehaviour
     [SerializeField] private Animator animator;
     private bool isClicked = false;
     DialogueSystem dialogueSystem;
+    ItemToInventoryAnimation itemAnim;
 
     void Start()
     {
@@ -40,7 +41,10 @@ public class Item : MonoBehaviour
     // Check if item has been picked up before
     private void OnEnable()
     {
-        
+        if(itemAnim == null)
+        {
+            itemAnim = FindAnyObjectByType<ItemToInventoryAnimation>();
+        }
         manager = progressionManager.Instance;
         if (manager != null)
         {
@@ -76,6 +80,7 @@ public class Item : MonoBehaviour
                     inventoryManager.AddItem(itemID, itemName, sprite, itemDescription);
                     manager.setItemPickUp(itemID - 1);
                     pickedUp = true;
+                    
                 }
                 animator.SetTrigger("Clicked");
             }
@@ -90,7 +95,10 @@ public class Item : MonoBehaviour
                     IsProgress.onCLick();
                 }
                 PlayPickUpSound();
+                if (itemAnim != null)
+                    itemAnim.CreateItem(sprite, transform);
                 Destroy(gameObject);
+
                 inventoryManager.AddItem(itemID, itemName, sprite, itemDescription);
                
             }
@@ -101,8 +109,9 @@ public class Item : MonoBehaviour
     public void OnAnimationComplete()
     {
         Debug.Log("Animation complete, adding item to inventory.");
-        
-       
+        if (itemAnim != null)
+            itemAnim.CreateItem(sprite, transform);
+
         Destroy(gameObject);
     }
 
