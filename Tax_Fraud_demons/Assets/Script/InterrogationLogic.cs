@@ -197,7 +197,7 @@ public class InterrogationLogic : MonoBehaviour
         curAnger++;
         angerSlider.value = curAnger;
         progManager.angerLevels[suspectID] += 1;
-        if(curAnger == 10)
+        if(curAnger == 4)
         {
             loader.loadScene("Lost");
         }

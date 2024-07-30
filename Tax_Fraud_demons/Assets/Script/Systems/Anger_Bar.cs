@@ -22,12 +22,6 @@ public class Anger_Bar : MonoBehaviour
 
     void Update()
     {
-        // Example condition to increase the anger bar (this can be customized)
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            IncreaseAnger(increaseRate);
-        }
-
         // Check if the anger bar has reached its maximum value
         if (currentAnger >= maxAnger)
         {

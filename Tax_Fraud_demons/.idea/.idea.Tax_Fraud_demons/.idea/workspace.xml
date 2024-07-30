@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a57fc650-d301-43a3-b2a7-b79b875ba63e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tax_Fraud_demons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tax_Fraud_demons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ItemToInventoryAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItemToInventoryAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/InterrogationLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/InterrogationLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Systems/Anger_Bar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Systems/Anger_Bar.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +28,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Systems/ParallaxEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sounds/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.10/Runtime/2D/Light2DManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Editor/EventSystem/EventTriggerRemoveDuringExecution.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -61,7 +62,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../../Desktop/TEST/Tax_Fraud_demons.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../../Desktop/TAX_FRAUD/BUILD\Tax_Fraud_demons.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\erihs\OneDrive\Desktop\TEST_GAME" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -130,6 +131,7 @@
       <workItem from="1720533838348" duration="22000" />
       <workItem from="1721040944978" duration="339000" />
       <workItem from="1722335650676" duration="938000" />
+      <workItem from="1722339801487" duration="1564000" />
     </task>
     <servers />
   </component>
