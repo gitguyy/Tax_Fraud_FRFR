@@ -38,27 +38,11 @@ public class ItemToInventoryAnimation : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.K))
-        {
-            CreateItem(itemSprite, origin);
-        }
-    }
-
     public void CreateItem(Sprite sprite, Transform itemToSet)
     {
         
         GameObject copy = Instantiate(item, itemToSet.transform.position, Quaternion.identity);
         copy.GetComponent<AnimatedItem>().setSprite(sprite);
         copy.GetComponent<AnimatedItem>().anim = this;
-       
-
-
-
     }
-   
-
-    
-
 }
